@@ -32,7 +32,15 @@
                 <!-- Navigation items will be injected here -->
             </nav>
 
-            <!-- User profile removed -->
+            <div class="sidebar-footer"
+                style="padding-top:10px; border-top:1px solid var(--border-color); margin-top:auto;">
+                <div style="display:flex; align-items:center; gap:8px; padding:0 0.5rem; opacity:0.7; transition:opacity 0.2s;"
+                    id="authContainer">
+                    <i class="fa-solid fa-lock" id="authIcon" style="font-size:0.9rem;"></i>
+                    <input type="password" id="adminPassword" placeholder="관리자 암호"
+                        style="background:transparent; border:none; color:var(--text-muted); font-size:0.85rem; width:100%; outline:none;">
+                </div>
+            </div>
         </aside>
 
         <!-- Main Content -->

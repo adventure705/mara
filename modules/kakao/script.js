@@ -29,7 +29,9 @@ export default {
     bindEvents() {
         // Add Button
         const addBtn = this.container.querySelector('#addBtn');
-        if (addBtn) addBtn.onclick = () => this.addItem();
+        if (addBtn) addBtn.onclick = () => {
+            if (window.app.checkAuth()) this.addItem();
+        };
 
         // Sort Headers
         this.container.querySelectorAll('th[data-sort]').forEach(th => {
@@ -48,6 +50,8 @@ export default {
         // Global Edit Toggle
         const toggleEdit = this.container.querySelector('#toggleEditModeBtn');
         if (toggleEdit) toggleEdit.onclick = () => {
+            if (!window.app.checkAuth()) return;
+
             this.isGlobalEditMode = !this.isGlobalEditMode;
             toggleEdit.innerHTML = this.isGlobalEditMode
                 ? '<i class="fa-solid fa-check"></i> 편집 완료'

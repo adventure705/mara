@@ -36,6 +36,7 @@ class App {
         this.isEditingSidebar = false;
         this.activeModule = null;
 
+        this.isAuthorized = false;
         this.start();
     }
 
@@ -61,19 +62,59 @@ class App {
         this.renderSidebar();
         this.setupEventListeners();
 
+        // Hide password field initially in mobile if sidebar is bottom-nav
+        // ... handled by css
+
         // Auto load first item if exists
         if (this.navItems.length > 0) {
             this.loadModule(this.navItems[0].id);
         }
     }
 
+    checkAuth() {
+        if (!this.isAuthorized) {
+            alert('편집 권한이 없습니다. 좌측 하단에 비밀번호를 입력해주세요.');
+            return false;
+        }
+        return true;
+    }
+
     setupEventListeners() {
+        // Password Auth
+        const passInput = document.getElementById('adminPassword');
+        if (passInput) {
+            passInput.addEventListener('input', (e) => {
+                if (e.target.value === '2510') {
+                    this.isAuthorized = true;
+                    document.getElementById('authIcon').className = 'fa-solid fa-lock-open';
+                    document.getElementById('authIcon').style.color = 'var(--primary-color)';
+                    document.getElementById('authContainer').style.opacity = '1';
+                } else {
+                    this.isAuthorized = false;
+                    document.getElementById('authIcon').className = 'fa-solid fa-lock';
+                    document.getElementById('authIcon').style.color = 'inherit';
+                    document.getElementById('authContainer').style.opacity = '0.7';
+
+                    // Force exit edit mode if auth revoked
+                    if (this.isEditingSidebar) {
+                        this.toggleSidebarEdit();
+                    }
+                    if (this.activeModule && this.activeModule.isGlobalEditMode) {
+                        this.activeModule.isGlobalEditMode = false;
+                        this.activeModule.render();
+                    }
+                }
+            });
+        }
+
         // Sidebar Edit Toggle
         document.getElementById('editSidebarBtn').addEventListener('click', () => {
-            this.toggleSidebarEdit();
+            if (this.checkAuth()) {
+                this.toggleSidebarEdit();
+            }
         });
 
-        // Global Search (can be passed to active module)
+        // Global Search
         document.getElementById('globalSearchInput').addEventListener('input', (e) => {
             if (this.activeModule && this.activeModule.handleSearch) {
                 this.activeModule.handleSearch(e.target.value);
@@ -87,7 +128,7 @@ class App {
             const div = document.createElement('div');
             div.className = 'nav-item';
             div.dataset.id = item.id;
-            div.draggable = this.isEditingSidebar;
+            div.draggable = this.isEditingSidebar && this.isAuthorized;
 
             // Icon
             const icon = document.createElement('i');
@@ -95,7 +136,7 @@ class App {
             div.appendChild(icon);
 
             // Name (Text or Input)
-            if (this.isEditingSidebar) {
+            if (this.isEditingSidebar && this.isAuthorized) {
                 const input = document.createElement('input');
                 input.value = item.name;
                 input.addEventListener('change', (e) => {
@@ -105,7 +146,7 @@ class App {
                 input.addEventListener('click', (e) => e.stopPropagation()); // Prevent loading module
                 div.appendChild(input);
 
-                // Reorder handles could go here if using a library, but native HTML5 drag is ok
+                // Reorder handles
                 div.addEventListener('dragstart', (e) => this.handleDragStart(e, index));
                 div.addEventListener('dragover', (e) => e.preventDefault());
                 div.addEventListener('drop', (e) => this.handleDrop(e, index));
@@ -120,14 +161,11 @@ class App {
 
             this.sidebarNav.appendChild(div);
         });
-
-        // Save if we rendered inputs
-        if (this.isEditingSidebar) {
-            // Maybe add "Add New" button logic later
-        }
     }
 
     toggleSidebarEdit() {
+        if (!this.checkAuth()) return;
+
         this.isEditingSidebar = !this.isEditingSidebar;
         const btn = document.getElementById('editSidebarBtn');
         btn.style.color = this.isEditingSidebar ? 'var(--primary-color)' : 'var(--text-muted)';

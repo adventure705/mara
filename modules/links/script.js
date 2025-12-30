@@ -45,11 +45,15 @@ export default {
     bindEvents() {
         // Add Button
         const addBtn = this.container.querySelector('#addBtn');
-        if (addBtn) addBtn.onclick = () => this.addItem();
+        if (addBtn) addBtn.onclick = () => {
+            if (window.app.checkAuth()) this.addItem();
+        };
 
         // Type Manager Button
         const typeManagerBtn = this.container.querySelector('#typeManagerBtn');
-        if (typeManagerBtn) typeManagerBtn.onclick = () => this.openTypeManager();
+        if (typeManagerBtn) typeManagerBtn.onclick = () => {
+            if (window.app.checkAuth()) this.openTypeManager();
+        };
 
         // Modal Close
         const closeBtn = this.container.querySelector('#closeTypeManagerBtn');
@@ -84,6 +88,8 @@ export default {
         // Global Edit Toggle
         const toggleEdit = this.container.querySelector('#toggleEditModeBtn');
         if (toggleEdit) toggleEdit.onclick = () => {
+            if (!window.app.checkAuth()) return;
+
             this.isGlobalEditMode = !this.isGlobalEditMode;
             toggleEdit.innerHTML = this.isGlobalEditMode
                 ? '<i class="fa-solid fa-check"></i> 편집 완료'
