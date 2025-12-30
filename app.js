@@ -84,7 +84,7 @@ class App {
         const passInput = document.getElementById('adminPassword');
         if (passInput) {
             passInput.addEventListener('input', (e) => {
-                if (e.target.value === '2510') {
+                if (e.target.value === '0705') {
                     this.isAuthorized = true;
                     document.getElementById('authIcon').className = 'fa-solid fa-lock-open';
                     document.getElementById('authIcon').style.color = 'var(--primary-color)';
