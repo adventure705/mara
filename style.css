@@ -61,6 +61,7 @@ body {
     flex-direction: column;
     padding: 1.5rem;
     transition: var(--transition);
+    z-index: 50;
 }
 
 .sidebar-header {
@@ -218,6 +219,8 @@ body {
     flex: 1;
     overflow-y: auto;
     padding: 2rem;
+    padding-bottom: 4rem;
+    /* Bottom padding for safety */
 }
 
 .welcome-screen {
@@ -299,7 +302,6 @@ textarea:focus {
     color: #fff;
 }
 
-/* Correction: contrast text on primary might need to be darker if blue is light, but white is standard for 58a6ff */
 .btn-primary:hover {
     background-color: var(--primary-hover);
 }
@@ -343,4 +345,154 @@ textarea:focus {
     padding-left: 32px;
     width: 250px;
     background-color: var(--bg-card);
+}
+
+/* --------------------------- */
+/*      MOBILE RESPONSIVE      */
+/* --------------------------- */
+
+@media (max-width: 768px) {
+    .app-container {
+        flex-direction: column;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    /* Top Bar Adjustments */
+    .top-bar {
+        height: 60px;
+        padding: 0 1rem;
+        flex-shrink: 0;
+    }
+
+    .top-bar h1 {
+        font-size: 1.1rem;
+    }
+
+    .search-global input {
+        width: 150px;
+        /* Smaller search box */
+        font-size: 0.9rem;
+    }
+
+    /* Content Area */
+    .content-area {
+        padding: 1rem;
+        padding-bottom: 80px;
+        /* Space for bottom nav */
+    }
+
+    /* Sidebar -> Bottom Navigation */
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        flex-direction: row;
+        border-right: none;
+        border-top: 1px solid var(--border-color);
+        padding: 0;
+        background-color: #161b22;
+        /* Ensure opacity */
+        box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    /* Hide elements not needed in Bottom Nav */
+    .sidebar-header,
+    .sidebar-footer,
+    #editSidebarBtn {
+        display: none;
+    }
+
+    .sidebar-nav {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+        overflow-y: hidden;
+        /* No scroll on bottom nav usually */
+    }
+
+    .nav-item {
+        flex-direction: column;
+        padding: 0.6rem 0.2rem;
+        border-radius: 0;
+        flex: 1;
+        justify-content: center;
+        gap: 4px;
+        font-size: 0.75rem;
+    }
+
+    .nav-item i {
+        margin: 0;
+        font-size: 1.4rem;
+        margin-bottom: 2px;
+    }
+
+    .nav-item.active {
+        background-color: transparent;
+        /* Remove bg */
+        color: var(--primary-color);
+        position: relative;
+    }
+
+    .nav-item.active::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 20px;
+        height: 3px;
+        background-color: var(--primary-color);
+        border-radius: 0 0 4px 4px;
+    }
+
+    /* Table Adjustments */
+    .data-table th,
+    .data-table td {
+        padding: 0.75rem 0.5rem;
+        font-size: 0.85rem;
+    }
+
+    .toolbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .toolbar h3 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #bulkActions {
+        width: 100%;
+    }
+
+    #toggleEditModeBtn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Input Grid */
+    .input-grid {
+        grid-template-columns: 1fr;
+        /* Stack inputs */
+    }
+
+    .form-actions button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Modals */
+    .modal-content {
+        width: 90% !important;
+        margin: 0 1rem;
+    }
 }
