@@ -72,11 +72,15 @@
 
     .link-cell {
         max-width: 300px;
-        display: flex;
-        align-items: center;
     }
 
-    .link-cell a {
+    .link-wrapper {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .link-wrapper a {
         display: block;
         color: var(--primary-color);
         text-decoration: none;
@@ -87,11 +91,7 @@
         margin-right: 4px;
     }
 
-    .link-cell a:hover {
-        text-decoration: underline;
-    }
-
-    .link-cell .icon-btn {
+    .link-wrapper .icon-btn {
         flex-shrink: 0;
     }
 

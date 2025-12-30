@@ -303,8 +303,10 @@ export default {
             safeUrl = 'http://' + safeUrl;
         }
         return `
-            <a href="${safeUrl}" target="_blank" title="${safeUrl}">${url}</a>
-            <button class="icon-btn" onclick="app.activeModule.copyToClipboard('${url}')" style="font-size:0.8em; margin-left:4px;" title="복사"><i class="fa-regular fa-copy"></i></button>
+            <div class="link-wrapper">
+                <a href="${safeUrl}" target="_blank" title="${safeUrl}">${url}</a>
+                <button class="icon-btn" onclick="app.activeModule.copyToClipboard('${url}')" style="font-size:0.8em; margin-left:4px;" title="복사"><i class="fa-regular fa-copy"></i></button>
+            </div>
         `;
     },
 
