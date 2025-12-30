@@ -351,8 +351,12 @@ export default {
 
     renderLink(url) {
         if (!url) return '-';
+        let safeUrl = url.trim();
+        if (!safeUrl.startsWith('http://') && !safeUrl.startsWith('https://')) {
+            safeUrl = 'http://' + safeUrl;
+        }
         return `
-            <a href="${url}" target="_blank" title="${url}"><i class="fa-brands fa-youtube"></i> 링크 열기</a>
+            <a href="${safeUrl}" target="_blank" title="${safeUrl}">${url}</a>
             <button class="icon-btn" onclick="app.activeModule.copyToClipboard('${url}')" style="font-size:0.8em; margin-left:4px;"><i class="fa-regular fa-copy"></i></button>
         `;
     },
