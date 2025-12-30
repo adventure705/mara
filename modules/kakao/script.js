@@ -11,18 +11,18 @@ export default {
 
     async init(container) {
         this.container = container;
-        this.loadData();
+        await this.loadData();
         this.render();
         this.bindEvents();
     },
 
-    loadData() {
-        const raw = localStorage.getItem(STORAGE_KEY);
-        this.data = raw ? JSON.parse(raw) : [];
+    async loadData() {
+        const data = await window.app.db.load(STORAGE_KEY);
+        this.data = data || [];
     },
 
-    saveData() {
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(this.data));
+    async saveData() {
+        await window.app.db.save(STORAGE_KEY, this.data);
         this.render();
     },
 
@@ -199,7 +199,7 @@ export default {
         const idx = this.data.findIndex(i => i.id === id);
         if (idx > -1) {
             this.data[idx][field] = value;
-            localStorage.setItem(STORAGE_KEY, JSON.stringify(this.data));
+            window.app.db.save(STORAGE_KEY, this.data);
         }
     },
 

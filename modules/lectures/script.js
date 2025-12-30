@@ -12,31 +12,31 @@ export default {
 
     async init(container) {
         this.container = container;
-        this.loadData();
-        this.loadSettings();
+        await this.loadData();
+        await this.loadSettings();
         this.render();
         this.bindEvents();
     },
 
-    loadData() {
-        const raw = localStorage.getItem(STORAGE_KEY);
-        this.data = raw ? JSON.parse(raw) : [];
+    async loadData() {
+        const data = await window.app.db.load(STORAGE_KEY);
+        this.data = data || [];
     },
 
-    loadSettings() {
-        const types = localStorage.getItem('lms_lecture_types');
+    async loadSettings() {
+        const types = await window.app.db.load('lms_lecture_types');
         if (types) {
-            this.lectureTypes = JSON.parse(types);
+            this.lectureTypes = types;
         }
     },
 
-    saveSettings() {
-        localStorage.setItem('lms_lecture_types', JSON.stringify(this.lectureTypes));
+    async saveSettings() {
+        await window.app.db.save('lms_lecture_types', this.lectureTypes);
         this.render();
     },
 
-    saveData() {
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(this.data));
+    async saveData() {
+        await window.app.db.save(STORAGE_KEY, this.data);
         this.render();
     },
 
@@ -396,7 +396,7 @@ export default {
         const idx = this.data.findIndex(i => i.id === id);
         if (idx > -1) {
             this.data[idx][field] = value;
-            localStorage.setItem(STORAGE_KEY, JSON.stringify(this.data));
+            window.app.db.save(STORAGE_KEY, this.data);
         }
     },
 

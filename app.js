@@ -1,4 +1,6 @@
 
+import { DataStore } from './firebase_service.js';
+
 const defaultSidebar = [
     {
         id: 'lectures',
@@ -25,31 +27,37 @@ const defaultSidebar = [
 
 class App {
     constructor() {
-        this.navItems = JSON.parse(localStorage.getItem('lms_sidebar_items')) || defaultSidebar;
-
-        // Auto-add new modules for existing users if missing
-        if (!this.navItems.find(i => i.id === 'links')) {
-            this.navItems.push(defaultSidebar.find(i => i.id === 'links'));
-            localStorage.setItem('lms_sidebar_items', JSON.stringify(this.navItems));
-        }
-
-        if (!this.navItems.find(i => i.id === 'kakao')) {
-            this.navItems.push(defaultSidebar.find(i => i.id === 'kakao'));
-            localStorage.setItem('lms_sidebar_items', JSON.stringify(this.navItems));
-        }
+        this.db = new DataStore();
+        this.navItems = [];
 
         this.sidebarNav = document.getElementById('sidebarNav');
         this.contentArea = document.getElementById('contentArea');
         this.pageTitle = document.getElementById('pageTitle');
         this.isEditingSidebar = false;
-
-        // Modules cache to store running instances if needed, or just function references
         this.activeModule = null;
 
-        this.init();
+        this.start();
     }
 
-    init() {
+    async start() {
+        // Initialize Firebase
+        await this.db.init();
+
+        // Load Sidebar Items
+        const loadedItems = await this.db.load('lms_sidebar_items');
+        this.navItems = loadedItems || defaultSidebar;
+
+        // Auto-add new modules for existing users if missing
+        if (!this.navItems.find(i => i.id === 'links')) {
+            this.navItems.push(defaultSidebar.find(i => i.id === 'links'));
+            this.db.save('lms_sidebar_items', this.navItems);
+        }
+
+        if (!this.navItems.find(i => i.id === 'kakao')) {
+            this.navItems.push(defaultSidebar.find(i => i.id === 'kakao'));
+            this.db.save('lms_sidebar_items', this.navItems);
+        }
+
         this.renderSidebar();
         this.setupEventListeners();
 
@@ -144,8 +152,8 @@ class App {
         this.renderSidebar();
     }
 
-    saveSidebar() {
-        localStorage.setItem('lms_sidebar_items', JSON.stringify(this.navItems));
+    async saveSidebar() {
+        await this.db.save('lms_sidebar_items', this.navItems);
     }
 
     async loadModule(id) {
