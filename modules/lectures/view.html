@@ -71,7 +71,9 @@
     }
 
     .link-cell {
-        max-width: 200px;
+        width: 220px;
+        max-width: 220px;
+        vertical-align: middle;
     }
 
     .link-wrapper {
@@ -88,6 +90,8 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         flex: 1;
+        min-width: 0;
+        /* Critical for flex truncation */
         margin-right: 4px;
     }
 
