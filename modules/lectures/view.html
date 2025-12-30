@@ -72,14 +72,19 @@
 
     .link-cell {
         max-width: 200px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
+        display: flex;
+        align-items: center;
     }
 
     .link-cell a {
+        display: block;
         color: var(--primary-color);
         text-decoration: none;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        flex: 1;
+        margin-right: 4px;
     }
 
     .link-cell a:hover {
