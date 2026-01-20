@@ -77,11 +77,14 @@
       }, [searchTerm]);
 
       return html`
-    <div className="flex h-screen bg-black text-zinc-100 overflow-hidden font-sans">
+    <div className="flex h-screen bg-black text-zinc-100 font-sans">
       <!-- Mobile Header -->
       <header className="lg:hidden fixed top-0 w-full h-16 bg-zinc-900/90 flex items-center justify-between px-6 z-50 border-b border-zinc-800">
          <h1 className="font-black text-lg text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">마라하기 쇼츠학개론</h1>
-         <button onClick=${() => setIsSidebarOpen(!isSidebarOpen)}><${LucideIcon} name="Menu" /></button>
+         <button onClick=${() => setIsSidebarOpen(!isSidebarOpen)} className="flex items-center gap-2 text-zinc-100 font-bold border border-zinc-700 px-3 py-1.5 rounded-lg bg-zinc-800">
+            <${LucideIcon} name="Menu" size=${18} />
+            <span>MENU</span>
+         </button>
       </header>
 
       <!-- Sidebar -->
