@@ -85,7 +85,21 @@
       </header>
 
       <!-- Sidebar -->
-      <aside className=${`fixed lg:relative z-[60] w-80 bg-zinc-900 border-r border-zinc-800 flex flex-col transition-transform duration-300 top-16 lg:top-0 left-0 bottom-0 lg:bottom-auto ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}`}>
+      <!-- Mobile Overlay -->
+      ${isSidebarOpen && html`
+          <div className="fixed inset-0 z-[60] bg-black/80 lg:hidden backdrop-blur-sm" onClick=${() => setIsSidebarOpen(false)}></div>
+      `}
+
+      <!-- Sidebar -->
+      <aside className=${`fixed lg:relative z-[70] w-80 bg-zinc-900 border-r border-zinc-800 flex flex-col transition-transform duration-300 top-0 left-0 h-full ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}`}>
+         <!-- Mobile Close Button Area (Only visible on Mobile) -->
+         <div className="lg:hidden p-4 flex justify-between items-center border-b border-zinc-800">
+             <span className="font-bold text-lg text-zinc-100">메뉴</span>
+             <button onClick=${() => setIsSidebarOpen(false)} className="p-2 text-zinc-400 hover:text-white">
+                 <${LucideIcon} name="X" size=${24} />
+             </button>
+         </div>
+
          <!-- Search Input -->
          <div className="p-6 border-b border-zinc-800 sticky top-0 bg-zinc-900 z-10">
             <h1 className="hidden lg:block font-black text-2xl mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 tracking-tight">마라하기<br/>쇼츠학개론 1기</h1>
@@ -126,7 +140,7 @@
                             <li className="p-8 text-center text-zinc-500 text-sm">검색 결과가 없습니다.</li>
                          ` : filteredResults.map(item => html`
                             <li key=${item.id}>
-                                <button onClick=${() => onChange(item.id)} className=${`w-full text-left p-4 rounded-xl text-sm transition-all border ${currentId === item.id ? 'bg-blue-500/10 border-blue-500/30' : 'bg-zinc-800/30 border-zinc-800 hover:bg-zinc-800 hover:border-zinc-700'}`}>
+                                <button onClick=${() => { onChange(item.id); setIsSidebarOpen(false); }} className=${`w-full text-left p-4 rounded-xl text-sm transition-all border ${currentId === item.id ? 'bg-blue-500/10 border-blue-500/30' : 'bg-zinc-800/30 border-zinc-800 hover:bg-zinc-800 hover:border-zinc-700'}`}>
                                     <span className="block text-xs font-bold text-blue-400 mb-1 line-clamp-1">${item.sectionTitle}</span>
                                     <span className=${`block font-bold mb-1 ${currentId === item.id ? 'text-blue-100' : 'text-zinc-200'}`}>${item.title.split(': ')[1] || item.title}</span>
                                     ${item.keywords && html`
@@ -169,7 +183,7 @@
                                       ${expandedSections.includes(section.id) && html`
                                          <div className="ml-4 border-l border-zinc-800 pl-3 mt-1 space-y-1">
                                             ${section.items.map(item => html`
-                                               <button onClick=${() => onChange(item.id)} className=${`w-full text-left p-2.5 rounded-lg text-sm flex items-center gap-3 transition-all ${currentId === item.id ? 'text-blue-400 bg-blue-500/10 border border-blue-500/20 font-bold shadow-lg shadow-blue-900/20' : 'text-zinc-400 hover:text-zinc-200 hover:bg-zinc-800/50 border border-transparent'}`}>
+                                               <button onClick=${() => { onChange(item.id); setIsSidebarOpen(false); }} className=${`w-full text-left p-2.5 rounded-lg text-sm flex items-center gap-3 transition-all ${currentId === item.id ? 'text-blue-400 bg-blue-500/10 border border-blue-500/20 font-bold shadow-lg shadow-blue-900/20' : 'text-zinc-400 hover:text-zinc-200 hover:bg-zinc-800/50 border border-transparent'}`}>
                                                   <${LucideIcon} name=${item.icon || 'FileText'} size=${14} className=${currentId === item.id ? 'text-blue-400' : 'text-zinc-600'} />
                                                   <span className="truncate">${item.title.split(': ')[1] || item.title}</span>
                                                </button>
