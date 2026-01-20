@@ -85,7 +85,7 @@
       </header>
 
       <!-- Sidebar -->
-      <aside className=${`fixed lg:relative z-40 w-80 bg-zinc-900 border-r border-zinc-800 flex flex-col transition-transform duration-300 ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}`}>
+      <aside className=${`fixed lg:relative z-40 w-80 bg-zinc-900 border-r border-zinc-800 flex flex-col transition-transform duration-300 top-0 left-0 h-full pt-16 lg:pt-0 ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}`}>
          <!-- Search Input -->
          <div className="p-6 border-b border-zinc-800 sticky top-0 bg-zinc-900 z-10">
             <h1 className="hidden lg:block font-black text-2xl mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 tracking-tight">마라하기<br/>쇼츠학개론 1기</h1>
