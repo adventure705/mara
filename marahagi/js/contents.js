@@ -1722,7 +1722,7 @@
                 source: {
                     title: "돈통과 소스", icon: "Database", color: "purple",
                     items: [
-                        { label: "에셋 = 돈통(쌀):", text: "곶간에 쌀이 많아야 밥을 짓는다. (결에 맞으면 조회수 낮아도 내 것)" },
+                        { label: "에셋 = 돈통(쌀):", text: "곳간에 쌀이 많아야 밥을 짓는다. (결에 맞으면 조회수 낮아도 내 것)" },
                         { label: "영상 = 소스:", text: "쌀 속에 있는 양념. 차별화 포인트가 무기가 된다." },
                         { label: "한계선 돌파:", text: "<span className=\"text-white font-bold\">감정, 공감대</span>가 한계를 깬다." }
                     ]
@@ -2945,6 +2945,2026 @@
     };
     // End of Lecture 3 Part 3
 
+    // --- Momcare Lecture 1 Part 1 Data ---
+    // --- Momcare Lecture 1 Part 1 Data ---
+    const momcareLecture1Part1Data = {
+        meta: {
+            week: "MOMCARE WEEK 1 - PART 1",
+            title: "대본 작성과<br/>야부리의 기술",
+            subtitle: "시청자의 감정을 건드리는 <span class='text-blue-400'>80%의 법칙</span>.<br/>데이터 기반의 '야부리'로 <span class='text-white underline decoration-blue-500'>일치율 0%</span>를 만듭니다.",
+            keywords: ["야부리", "감정", "후킹", "대본 루틴", "일치율 0", "재각색"]
+        },
+        sections: [
+            {
+                id: "mindset",
+                title: "1. 맘케어반 마인드셋 & 방향성",
+                subtitle: "올바른 시작이 가장 빠른 길이다",
+                cards: [
+                    {
+                        title: "1.1. 초기 어려움 & 마인드셋",
+                        icon: "Mountain",
+                        color: "red",
+                        items: [
+                            { label: "초기 어려움", text: "결 맞추기, 키워드 확장, 원본 찾기의 어려움은 당연한 과정입니다." },
+                            { label: "해결책", text: "대본 구성을 <span class='text-white font-bold'>'야부리(자연스러운 말솜씨)'</span>로 풀면 쉽게 해결됩니다." },
+                            { label: "일치율 개념", text: "대중적 소재일수록 중복이 많아 편집점을 2~3번 꼬아야 합니다. (맥락은 자연스럽게 유지)" },
+                            { label: "조급함 금지", text: "'어렵다' 생각 금지. 내 페이스대로. 쇼츠 수익은 비선형(1->10단계)입니다." }
+                        ]
+                    },
+                    {
+                        title: "1.2. 집단지성 & 특별 케어",
+                        icon: "HeartHandshake",
+                        color: "pink",
+                        items: [
+                            { label: "집단지성", text: "수강생 150명이 모은 2천 개 이상의 에셋을 분류하여 2강에서 제공합니다." },
+                            { label: "강사의 약속", text: "12월, 1월에 수강생과 똑같이 신규 채널을 시작하여 성과를 공유합니다." },
+                            { label: "학훈 & 규칙", text: "<span class='text-pink-400 font-black'>\"된다 (하모 된다)\"</span>. 선조치 후진금지 (10분 헤매면 즉시 질문)." }
+                        ]
+                    },
+                    {
+                        title: "1.3. 채널 기획 80% 법칙",
+                        icon: "PieChart",
+                        color: "blue",
+                        items: [
+                            { label: "한계선(고점)", text: "압구정에서 고깃집을 하는 것과 같습니다. <span class='text-blue-300'>고점이 높은 소재</span>를 선택해야 합니다." },
+                            { label: "에셋(Asset)", text: "비슷한 결의 채널을 모으는 것이 곧 자산이자 돈입니다. (신규 진입 용이)" },
+                            { label: "전략", text: "내가 잘할 수 있고, 관심 있고, 전문 지식이 있는 분야를 판단해야 합니다." }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: "script_principle",
+                title: "2. 콘텐츠 재창작 핵심 원리",
+                subtitle: "감정을 건드리는 것이 본질이다",
+                cards: [
+                    {
+                        title: "2.1. 좋은 영상의 본질",
+                        icon: "Smile",
+                        color: "yellow",
+                        items: [
+                            { label: "정의", text: "조회수 높은 영상 = 가이드라인 위반 없음 + 시청자가 좋아함." },
+                            { label: "핵심 요소", text: "재미, 감동, 신기함, 공감 등 모든 것은 <span class='text-yellow-400 font-bold'>감정</span>을 베이스로 합니다." },
+                            { label: "지식 채널", text: "지식조차 \"신기하다\", \"하나 얻었네\"라는 감정을 건드려야 합니다." }
+                        ]
+                    },
+                    {
+                        title: "2.2. 야부리(Yaburi) 규칙",
+                        icon: "MessageCircle",
+                        color: "green",
+                        items: [
+                            { label: "Concept", text: "친구/가족에게 설명하듯 편안하게 푸는 것." },
+                            { label: "No Subjectivity", text: "내 주관적 생각/경험 반영 금지. <span class='text-red-400'>철저히 데이터를 기반</span>으로 합니다." },
+                            { label: "Data Source", text: "벤치마킹 영상의 <span class='text-white font-bold'>댓글(시청자 반응)</span>을 제목, 소제목, 나레이션에 녹입니다." },
+                            { label: "기획 핵심", text: "키워드, 대본, 영상 배치 구조." }
+                        ]
+                    },
+                    {
+                        title: "2.3. 편집점 변경 & 후킹",
+                        icon: "Scissors",
+                        color: "purple",
+                        items: [
+                            { label: "Why?", text: "1. 일치율(알고리즘) 회피, 2. 시청자에게 신선함/새로움 제공." },
+                            { label: "How?", text: "와우 포인트(하이라이트/감정 고조)를 <span class='text-purple-400 font-bold'>맨 앞으로 배치(후킹)</span> + TTS 구간 삽입." },
+                            { label: "소제목", text: "썸네일 없는 쇼츠의 썸네일 역할. 1~2초 안에 시선을 잡아야 합니다. (예: 양념친 후킹 멘트)" }
+                        ]
+                    }
+                ],
+                routine_box: {
+                    title: "2.4. 대본 작성 루틴 기호 (약속)",
+                    list: [
+                        { symbol: "[ ] 대괄호", desc: "벤치 영상의 구간(초) 표시. (편집 시간 단축 핵심)" },
+                        { symbol: "\" \" 따옴표", desc: "영상 속 등장인물의 실제 대사." },
+                        { symbol: "( ) 괄호", desc: "자막으로만 들어가는 상황/감정 설명. (TTS X)" },
+                        { symbol: "일반 문장", desc: "TTS 나레이션 구간." }
+                    ]
+                }
+            },
+            {
+                id: "practice_cases_1",
+                title: "3. 대본 실습 피드백 (Part 1)",
+                subtitle: "수강생 vs 강사: 디테일의 차이",
+                cases: [
+                    {
+                        title: "Case 1: 아빠와 딸 (감동)",
+                        icon: "Heart",
+                        color: "pink",
+                        original: "딸의 문제 행동 -> 엄마의 하소연 -> 아빠의 훈육(겉)과 다정함(속).",
+                        student: {
+                            good: ["와우 포인트(뒷부분) 후킹 배치 ('다시는 싸움하지 마').", "단어 야부리 변경 ('사고 쳤어' -> '말썽 일으켰어').", "불필요한 사족 제거."],
+                            bad: ["문장 구조 전체가 원본과 유사함.", "폭력적 표현('발로 찼어요')은 가이드라인 위반 위험."]
+                        },
+                        instructor: {
+                            title: "아빠와 딸의 은밀한 거래",
+                            points: ["가격하는 표현 삭제 (가이드라인 준수).", "일상적이고 사랑스러운 어투로 의역.", "효과음/편집 최소화 (기본에 충실).", "제목/소제목으로 궁금증 유발."]
+                        }
+                    },
+                    {
+                        title: "Case 2: 아기 물범 (동물)",
+                        icon: "Droplets",
+                        color: "cyan",
+                        original: "생후 21일 물범의 첫 수영 도전.",
+                        student: {
+                            good: ["순수 와우 포인트 활용.", "감정 표현 우수 ('겁에 잔뜩 질려있던 녀석..')."],
+                            bad: ["루틴 미적용 (구간 [ ] 표시 누락).", "단어 중복 ('사육사')."]
+                        },
+                        instructor: {
+                            title: "20일 된 물범의 첫 수영",
+                            points: ["명확한 구간 표시([ ])로 편집 용이성 확보.", "'21일' -> '22일' 등 숫자 변경으로 일치율 회피.", "내용 순서 변경 (앞뒤 도치).", "'사육사' -> '아빠' 등으로 의역."]
+                        }
+                    },
+                    {
+                        title: "Case 3: 호날두 (국뽕/스포츠)",
+                        icon: "Trophy",
+                        color: "blue",
+                        original: "호날두 시상식 폭탄 발언.",
+                        student: {
+                            good: ["후킹 포인트 우수 ('비니시우스였어야 합니다').", "차세대 선수 순서 변경 (일치율 회피).", "임팩트 있는 문장 사용."],
+                            bad: ["구간 표시([ ]) 누락."]
+                        },
+                        instructor: {
+                            title: "아무도 예상치 못한 호날두의 한마디",
+                            points: ["영상 추가 삽입으로 길이 확보 (중국 바이두 등 소스 활용).", "제목/소제목으로 궁금증 유발."]
+                        }
+                    },
+                    {
+                        title: "Case 4: 잠수부 골든타임 (지식)",
+                        icon: "Anchor",
+                        color: "indigo",
+                        original: "심해 잠수부 5분 내 장비 해제 (골든타임).",
+                        student: {
+                            good: ["뛰지 않는 이유(질소 기포) 후킹 우수."],
+                            bad: ["필수 단어('심해', '질소') 변경의 어려움.", "전문성/풍부함 부족."]
+                        },
+                        instructor: {
+                            title: "돌이킬 수 없는 상황 (단어 순화)",
+                            points: ["'사망' -> '돌이킬 수 없는 상황' 순화.", "데드라인(5분) 정보 중간 배치로 긴박감 조성.", "물기, 땀 등 세밀한 상황 묘사 추가.", "인과관계(뛰지 않는 이유) 명확화."]
+                        }
+                    },
+                    {
+                        title: "Case 5: 아기 강아지 (감성)",
+                        icon: "Dog",
+                        color: "orange",
+                        original: "입양 간택하는 검은 강아지.",
+                        student: {
+                            good: ["자막 활용 우수 ('우리는 운명이에요').", "후반부 영상 미사용 (일치율 회피).", "감정선 자극."],
+                            bad: ["사족 존재."]
+                        },
+                        instructor: {
+                            title: "집사가 간택되어 가는 과정",
+                            points: ["'공주님과 한시도 떨어지기 싫은 오빠들' (사고의 확장).", "자막과 효과음만으로 감정 극대화.", "친근한 단어(댕댕이, 집사) 사용."]
+                        }
+                    }
+                ]
+            },
+            {
+                id: "practice_cases_2",
+                title: "4. 대본 실습 피드백 (Part 2)",
+                subtitle: "더 깊이 있는 '야부리'의 세계 (심화)",
+                cases: [
+                    {
+                        title: "Case 6: 골키퍼의 기적 (스포츠)",
+                        icon: "Activity",
+                        color: "green",
+                        original: "골키퍼 실수 위기 -> 선방 기적.",
+                        student: {
+                            good: ["극적 상황 후킹 배치.", "'골' -> '득점' 단어 변경.", "짧은 실수 장면 확장 설명."],
+                            bad: ["-"]
+                        },
+                        instructor: {
+                            title: "제목: '역사' -> '기적' (감정 극대화)",
+                            points: ["불필요한 문장 삭제 (간결화).", "'모두가 골이라 생각' -> '모두가 포기했던 순간' (양념).", "'운명처럼' 등 극적인 단어 사용."]
+                        }
+                    },
+                    {
+                        title: "Case 7: 달걀 삶는 비법 (정보)",
+                        icon: "Utensils",
+                        color: "yellow",
+                        original: "껍질 잘 벗겨지는 비법 재료.",
+                        student: {
+                            good: ["'놓치고 계십니다' 궁금증 유발 후킹.", "집에 있는 재료 강조 (친절함)."],
+                            bad: ["-"]
+                        },
+                        instructor: {
+                            title: "냉면 맛집이 감춰왔던 비법",
+                            points: ["'달걀' -> '계란' (유희어).", "시니어 타겟팅: '화면 두 번 누르면 가족 건강...'.", "자세한 설명 선호 (말 빠르게, 내용 빼곡하게)."]
+                        }
+                    },
+                    {
+                        title: "Case 8: 여동생 바보 오빠 (감동)",
+                        icon: "Users",
+                        color: "red",
+                        original: "군대 다녀온 오빠와 여동생의 재회.",
+                        student: {
+                            good: ["'펑펑 울어버리는 이유?' 후킹.", "감정선 묘사 우수 ('벅차오르는 눈물')."],
+                            bad: ["-"]
+                        },
+                        instructor: {
+                            title: "아빠보다 오빠를 좋아하는 여동생",
+
+                            points: ["상황 재설정: 군대 -> '대학 입학 후 6개월 만의 귀가' (짜깁기).", "여운 주는 클로징 멘트.", "효과음(우우우~) 적극 활용."]
+                        }
+                    },
+                    {
+                        title: "Case 9: 한국의 AS (국뽕)",
+                        icon: "Globe",
+                        color: "blue",
+                        original: "한국 vs 해외 AS 비교.",
+                        student: {
+                            good: ["결론(한국 AS) 후킹 배치.", "긴 원본 요약 우수."],
+                            bad: ["내용 중첩 존재 (방향 전환 필요)."]
+                        },
+                        instructor: {
+                            title: "외국인들이 한국을 못 떠나는 이유",
+                            points: ["순서 스위칭: 유럽 -> 미국 -> 인도 (일치율 회피).", "내용 다르게 표현 (교환/환불 저렴 등).", "국뽕 + 감정 건드리는 클로징 ('돌아가고 싶다')."]
+                        }
+                    }
+                ],
+                tip_box: {
+                    title: "지식 콘텐츠 및 대본 작성 솔루션",
+                    items: [
+                        { label: "단어 확장기", text: "필수 단어 변경이 어려울 때 사용." },
+                        { label: "GPT 활용", text: "단어 변경 후 '맞춤법 교정 및 다른 표현' 요청 -> 문단 조합." },
+                        { label: "순서 배치", text: "와우 포인트뿐만 아니라 전체 순서(커트)를 무조건 새로 배치." }
+                    ]
+                }
+            },
+            {
+                id: "conclusion",
+                title: "5. 결론 및 실천",
+                subtitle: "조급함을 버리고 본질로",
+                items: [
+                    { label: "자료 제공", text: "강사 제작 영상, 대본, 원본 에셋 카페 제공. (직접 하나하나 뜯어보고 곱씹어 볼 것)" },
+                    { label: "BGM 전략", text: "벤치 영상과 다른 BGM 사용 (유튜브 뮤직 등). 일치율 회피 및 감정선 조절." },
+                    { label: "실전 연습", text: "바이두 원본 찾기 -> 컷 편집하며 놀아보기. 단어 확장기 돌리며 문형 바꾸기 연습." },
+                    { label: "다음 강의", text: "8분 휴식 후 다음 대본 분석 이어짐. 감만 익히고 카페 자료로 공부할 것." }
+                ]
+            }
+        ]
+    };
+
+    window.Contents.momcare_lecture1_part1 = () => {
+        const data = momcareLecture1Part1Data;
+        const s1 = data.sections[0];
+        const s2 = data.sections[1];
+        const s3 = data.sections[2];
+        const s4 = data.sections[3];
+        const s5 = data.sections[4];
+
+        const renderCase = (c) => html`
+            <div className="flex flex-col lg:flex-row gap-8 p-8 rounded-[2.5rem] bg-zinc-900 border border-zinc-800 hover:border-${c.color}-500/30 transition-colors">
+                <div className="lg:w-1/3 flex flex-col justify-center items-center text-center p-6 bg-black rounded-3xl border border-zinc-800">
+                    <${LucideIcon} name=${c.icon} size=${64} className=${`text-${c.color}-400 mb-6`} />
+                    <h3 className="text-3xl font-black text-white mb-4 leading-tight">${c.title}</h3>
+                    <div className="bg-zinc-900 p-4 rounded-xl border border-zinc-800 w-full">
+                        <span className="text-zinc-500 font-bold text-sm uppercase block mb-2">Original Context</span>
+                        <p className="text-zinc-300 text-lg leading-snug">${c.original}</p>
+                    </div>
+                </div>
+                <div className="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="p-6 rounded-3xl bg-red-900/10 border border-red-500/20">
+                        <strong className="block text-red-400 mb-6 text-xl flex items-center gap-2"><${LucideIcon} name="User" size=${24}/> 수강생 포인트</strong>
+                        <div className="space-y-4 text-zinc-300">
+                            <div>
+                                <span className="text-green-400 font-bold block mb-1">Good:</span>
+                                <ul className="list-disc list-inside space-y-1 text-lg">
+                                    ${c.student.good.map(p => html`<li>${p}</li>`)}
+                                </ul>
+                            </div>
+                            ${c.student.bad && c.student.bad.length > 0 && c.student.bad[0] !== '-' ? html`
+                                <div>
+                                    <span className="text-red-400 font-bold block mb-1">Bad/Fix:</span>
+                                    <ul className="list-disc list-inside space-y-1 text-lg">
+                                        ${c.student.bad.map(p => html`<li>${p}</li>`)}
+                                    </ul>
+                                </div>
+                            ` : ''}
+                        </div>
+                    </div>
+                    <div className="p-6 rounded-3xl bg-blue-900/10 border border-blue-500/20">
+                        <strong className="block text-blue-400 mb-6 text-xl flex items-center gap-2"><${LucideIcon} name="Award" size=${24}/> 강사 솔루션</strong>
+                        <p className="text-white font-bold text-xl mb-4 p-3 bg-blue-500/10 rounded-lg border border-blue-500/20">"${c.instructor.title}"</p>
+                        <ul className="list-disc list-inside space-y-2 text-zinc-300 text-lg">
+                            ${c.instructor.points.map(p => html`<li>${p}</li>`)}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        return html`
+            <div className="space-y-48 pb-60">
+                <!-- Header -->
+                <div className="text-center space-y-12 py-32 animate-fade-in relative">
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-900/10 rounded-full blur-[120px] -z-10"></div>
+                    <${Badge} color="blue">${data.meta.week}<//>
+                    <h1 className="text-7xl lg:text-9xl font-black tracking-tighter leading-none text-white mb-8 drop-shadow-2xl" dangerouslySetInnerHTML=${{ __html: data.meta.title }}></h1>
+                    <p className="text-3xl lg:text-4xl text-zinc-200 max-w-6xl mx-auto leading-normal font-bold" dangerouslySetInnerHTML=${{ __html: data.meta.subtitle }}></p>
+                </div>
+
+                <!-- Section 1: Mindset -->
+                <${Section} title=${s1.title} subtitle=${s1.subtitle}>
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        ${s1.cards.map(card => html`
+                            <${Card} title=${card.title} icon=${card.icon} color=${card.color} className="h-full">
+                                <ul className="space-y-6">
+                                    ${card.items.map(item => html`
+                                        <li className="flex flex-col gap-2">
+                                            <span className="text-zinc-500 font-bold uppercase text-lg tracking-wide">${item.label}</span>
+                                            <span className="text-xl lg:text-2xl text-zinc-200 leading-relaxed" dangerouslySetInnerHTML=${{ __html: item.text }}></span>
+                                        </li>
+                                    `)}
+                                </ul>
+                            <//>
+                        `)}
+                    </div>
+                <//>
+
+                <!-- Section 2: Script Principles -->
+                <${Section} title=${s2.title} subtitle=${s2.subtitle}>
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+                         ${s2.cards.map(card => html`
+                             <${Card} title=${card.title} icon=${card.icon} color=${card.color}>
+                                <ul className="space-y-4">
+                                    ${card.items.map(item => html`
+                                        <li className="p-6 bg-black/40 rounded-2xl border border-white/5 hover:bg-black/60 transition-colors">
+                                            <strong className=${`block text-${card.color}-400 mb-2 text-lg uppercase`}>${item.label}</strong>
+                                            <span className="text-xl text-zinc-200 leading-relaxed font-medium" dangerouslySetInnerHTML=${{ __html: item.text }}></span>
+                                        </li>
+                                    `)}
+                                </ul>
+                             <//>
+                         `)}
+                    </div>
+                    <div className="p-10 lg:p-14 bg-zinc-900 rounded-[3.5rem] border border-zinc-700 relative overflow-hidden">
+                        <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/10 rounded-full blur-[80px]"></div>
+                        <strong className="text-3xl lg:text-4xl text-white block mb-10 flex items-center gap-4"><${LucideIcon} name="FileText" size=${48} className="text-blue-400"/> ${s2.routine_box.title}</strong>
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                             ${s2.routine_box.list.map(l => html`
+                                <div className="p-8 bg-black rounded-3xl border border-zinc-800 text-center flex flex-col items-center justify-center gap-4 hover:border-blue-500/30 transition-colors">
+                                    <div className="text-3xl font-black text-blue-400">${l.symbol}</div>
+                                    <div className="text-xl text-zinc-300 font-bold leading-snug">${l.desc}</div>
+                                </div>
+                             `)}
+                        </div>
+                    </div>
+                <//>
+
+                <!-- Section 3: Practice Cases Part 1 -->
+                <${Section} title=${s3.title} subtitle=${s3.subtitle}>
+                    <div className="space-y-12">
+                        ${s3.cases.map(c => renderCase(c))}
+                    </div>
+                <//>
+
+                <!-- Section 4: Practice Cases Part 2 -->
+                <${Section} title=${s4.title} subtitle=${s4.subtitle}>
+                    <div className="space-y-12 mb-16">
+                        ${s4.cases.map(c => renderCase(c))}
+                    </div>
+                    <div className="p-10 bg-yellow-900/10 border border-yellow-500/20 rounded-[3rem]">
+                        <strong className="text-3xl text-yellow-500 block mb-8 flex items-center gap-4"><${LucideIcon} name="Lightbulb" size=${40}/> ${s4.tip_box.title}</strong>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            ${s4.tip_box.items.map(item => html`
+                                <div className="flex flex-col gap-3 p-6 bg-black/40 rounded-3xl border border-yellow-500/10">
+                                    <span className="text-yellow-500 font-bold text-lg uppercase flex items-center gap-2"><${LucideIcon} name="Check" size=${20}/> ${item.label}</span>
+                                    <span className="text-xl text-zinc-200 leading-relaxed">${item.text}</span>
+                                </div>
+                            `)}
+                        </div>
+                    </div>
+                <//>
+
+                <!-- Section 5: Conclusion -->
+                <${Section} title=${s5.title} subtitle=${s5.subtitle}>
+                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        ${s5.items.map(item => html`
+                            <div className="p-8 bg-zinc-900 rounded-[2.5rem] border border-zinc-700 text-center hover:bg-zinc-800 transition-colors">
+                                <strong className="block text-xl text-white mb-4 font-bold uppercase tracking-wide text-blue-400">${item.label}</strong>
+                                <p className="text-xl text-zinc-300 leading-relaxed font-medium">${item.text}</p>
+                            </div>
+                        `)}
+                     </div>
+                <//>
+            </div>
+        `;
+    };
+
+    // --- Momcare Lecture 1 Part 2 Data ---
+    // --- Momcare Lecture 1 Part 2 Data ---
+    const momcareLecture1Part2Data = {
+        meta: {
+            week: "MOMCARE WEEK 1 - PART 2",
+            title: "영드자 기법과<br/>실전 편집 루틴",
+            subtitle: "드라마처럼 짜깁기하여 <span class='text-pink-400'>알고리즘을 속이다</span>.<br/>저작권 위험을 관리하며 수익을 극대화하는 <span class='text-white font-bold'>하이리스크 전략</span>.",
+            keywords: ["영드자", "구간 변경", "TTS", "의역", "하이리스크", "일치율"]
+        },
+        sections: [
+            {
+                id: "concept",
+                title: "1. 영드자 기법의 핵심",
+                subtitle: "(영상을 드라마처럼 짜깁기)",
+                cards: [
+                    {
+                        title: "1.1. Why Drama?",
+                        icon: "Film",
+                        color: "red",
+                        desc: "한계선 높음, 대중성 높음, 이미 완성된 몰입도.",
+                        items: [
+                            { label: "장점", text: "드라마는 대중성이 높아 한계선이 높습니다 (무조건 유리)." },
+                            { label: "단점", text: "경쟁이 매우 치열한 포화 시장입니다." },
+                            { label: "기회", text: "원본이 너무 완벽해서 사람들이 그대로 씁니다. <span class='text-white font-bold'>최대한 다르게 바꾸면</span> 기회가 됩니다." }
+                        ]
+                    },
+                    {
+                        title: "1.2. How to? (구간 바꾸기)",
+                        icon: "Shuffle",
+                        color: "blue",
+                        desc: "구간(구달) 바꾸기 & TTS 연결",
+                        items: [
+                            { label: "핵심 원리", text: "1분짜리 영상은 순서를 대충 꼬아도 말이 됩니다." },
+                            { label: "작업 방식", text: "원본을 일일이 발라내지 않고, **벤치 영상 내에서 순서만 변경**합니다." },
+                            { label: "효과", text: "일치율(저작권 중복) 0%. 시청자는 **신선하고 새로운 전개**로 인식합니다." }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: "practice_instructor",
+                title: "2. 강사 실전 적용 사례",
+                subtitle: "순서를 완벽하게 꼬아버리는 법 (회사 빌런)",
+                steps: [
+                    { step: "Step 1. 제목 설정", desc: "\"회사에서 함부로 적을 만들면 안 되는 이유\" (공감대 자극)" },
+                    { step: "Step 2. 후킹 배치", desc: "45초 구간('헉! 어떻게 알았어?')을 <span class='text-green-400 font-bold'>맨 앞으로</span> 이동하여 궁금증 유발." },
+                    { step: "Step 3. 중간 배치", desc: "29초 구간('발버둥 쳤다') 배치 -> 주인공이 행동할 수밖에 없는 당위성 부여." },
+                    { step: "Step 4. 복귀 & 꼬기", desc: "원본 처음('항문') -> 다른 장면('지영아', 전혀 다른 맥락) -> 다시 '고마워' 장면 연결." },
+                    { step: "Step 5. 결과", desc: "순서가 뒤죽박죽이지만 <span class='text-white font-bold'>대본(야부리)으로 연결</span>되어 자연스러움. (빌지 얹어주는 결말 창조)" }
+                ],
+                stats: {
+                    title: "영드자의 위력 (Efficiency)",
+                    items: [
+                        { label: "조회수", value: "300만~400만 View (기대치)" },
+                        { label: "소요 시간", value: "20~30분 (대본+순서)" },
+                        { label: "일치율", value: "0% (완벽한 새 영상 인식)" }
+                    ]
+                }
+            },
+            {
+                id: "script_technique",
+                title: "3. 대본 작성 구체적 기술",
+                subtitle: "의역과 감정 이입의 힘",
+                cards: [
+                    {
+                        title: "3.1. 의역 (Paraphrasing)",
+                        icon: "Edit3",
+                        color: "green",
+                        quote: "\"스스로를 속일 수 있을 만큼 의역하라.\"",
+                        items: [
+                            "자막 변경 불가(한계) -> <span class='text-green-400'>자막을 무시하고 내가 말하듯 의역</span>.",
+                            "예시: \"냄새가 나\" -> \"아, 냄새가 나는데? 알려줄까?\"",
+                            "목표: 똑같은 표현 회피. 내가 쓴 대본을 내가 봐도 몰라볼 정도여야 함."
+                        ]
+                    },
+                    {
+                        title: "3.2. 감정 이입 (Empathy)",
+                        icon: "SmilePlus",
+                        color: "yellow",
+                        quote: "\"내가 애국자, 내가 아빠가 되어라.\"",
+                        items: [
+                            "국뽕: \"와! 대한민국 미쳤어!\" (빙의 수준).",
+                            "피해자 구도: 가해자보다 <span class='text-yellow-400'>피해자가 더 불쌍해 보이게</span> 묘사 (가이드라인 회피 꿀팁)."
+                        ]
+                    }
+                ],
+                gukppong_case: {
+                    title: "실전 대본 재구성: 국뽕 영상 (외국인)",
+                    student: {
+                        good: "후킹(뒷부분 한국 칭찬) 전진 배치, 전체 순서 변경 양호.",
+                        bad: "단어가 원본과 너무 겹침."
+                    },
+                    instructor: {
+                        title: "한국에 오자마자 국적을 바꾸고 싶어졌다는 외국인",
+                        points: [
+                            "후킹: 29초 웃는 장면 배치 -> \"한국 오자마자 국적 바꾸고 싶어 함\"(나레이션 입힘).",
+                            "감정 극대화: \"와, 이러니 한국을 사랑할 수밖에 없죠. 이 나라와 사랑에 빠졌어.\"",
+                            "완벽한 의역: \"밤이 무서웠지만..\" -> \"밤거리를 걷는 이 순간이 믿기지 않아요\"."
+                        ]
+                    }
+                }
+            },
+            {
+                id: "advanced_cases",
+                title: "4. 감정 & 지식 극대화 실습 (심화)",
+                subtitle: "디테일이 명품을 만든다",
+                cases: [
+                    {
+                        title: "분노 유발 (목줄 없는 개)",
+                        icon: "Flame",
+                        color: "red",
+                        before: "단순 상황 묘사는 임팩트가 약함. '두 견주 모두 잘못'이라는 양비론은 몰입 방해.",
+                        after: [
+                            "제목: '무책임한 견주의 어이없는 태도' (분노 자극)",
+                            "<span class='text-yellow-400'>피해자 몰입 구도</span>: 우리 측을 '사랑스러운 반려견과 함께하는 남성'으로 긍정 묘사.",
+                            "가해자 묘사: '느긋하게 사라지는 태도' 강조로 분노 극대화."
+                        ]
+                    },
+                    {
+                        title: "지식/정보 (자물쇠 따기)",
+                        icon: "Unlock",
+                        color: "blue",
+                        before: "뻔한 설명은 지루함. 원본과 똑같은 단어 사용 시 중복 위험.",
+                        after: [
+                            "제목: '자물쇠 비번 잊었을 때 종이 한 장이면 끝'",
+                            "<span class='text-blue-400'>완벽한 의역</span>: '펜으로 표시한 종이' -> '선 한 줄이 표시된 종이', '막대기' -> '이쑤시개'.",
+                            "후킹: '이거 하나만 알면 고민 끝.' (뻔하지만 통하는 공식)"
+                        ]
+                    }
+                ]
+            },
+            {
+                id: "category_analysis",
+                title: "5. 카테고리별 심층 분석 (Insight)",
+                subtitle: "어디에 기회가 있는가? (7.1 ~ 7.5 분석)",
+                categories: [
+                    {
+                        title: "동물 (Animals)",
+                        icon: "Cat",
+                        color: "orange",
+                        status: "Red Ocean (과포화)",
+                        channels: [
+                            { name: "주월드", stats: "구독 8만 / 2.4억 뷰", note: "쏘쏘함. 벤치마킹 많아 트렌드 하락세." },
+                            { name: "1분월드", stats: "영상 2400개 / 5억 뷰", note: "중복도 높음." }
+                        ],
+                        insight: "가이드라인이 편해 개체수 폭증. 중복도 스트레스 심함. 나만의 확실한 차별화 없으면 비추천."
+                    },
+                    {
+                        title: "지식/정보 (Knowledge)",
+                        icon: "BookOpen",
+                        color: "blue",
+                        status: "Blue Ocean (기회)",
+                        channels: [
+                            { name: "그거 알아?", stats: "영상 400개 / 1.2억 뷰", note: "고점 높음(1000만). 현재 빠져나가는 추세." },
+                            { name: "쓱딱 (튜토리얼)", stats: "고점 1000만", note: "나무류 튜토리얼 방식 추천." }
+                        ],
+                        insight: "고점이 매우 높음. CCTV/범죄는 가이드라인 위험, '미담'이나 '생활 꿀팁' 중심으로 접근할 것."
+                    },
+                    {
+                        title: "감동/국뽕 (Emotion)",
+                        icon: "Flag",
+                        color: "red",
+                        status: "High Return (강추)",
+                        channels: [
+                            { name: "울림톡톡", stats: "3.7억 뷰 (고점 2800만)", note: "지하철 방송 같은 여운/감동." },
+                            { name: "국뽕주의", stats: "1500만 뷰", note: "스포츠 등 다양한 포맷 확장." }
+                        ],
+                        insight: "감정의 힘은 강력함. '눈물 쏙 뺀다'는 마인드. 국뽕은 '국가대표처럼' 찬양하라."
+                    },
+                    {
+                        title: "음악/드라마 (Story)",
+                        icon: "Music",
+                        color: "purple",
+                        status: "Steady Seller",
+                        channels: [
+                            { name: "쇼꾸마", stats: "1억 뷰 (고점 1200만)", note: "아이(Child) + 감동 결합." },
+                            { name: "쇼잉", stats: "14억 뷰 (초대형)", note: "재미있는 인물 상황. 1000만 뷰가 끊이지 않음." }
+                        ],
+                        insight: "음악은 '추억'을 자극. 해외 커버곡(저작권 안전) 활용. 드라마는 '다 이루어질 지니' 같은 인기 키워드 검색 필수."
+                    }
+                ]
+            },
+            {
+                id: "risk_strategy",
+                title: "6. 리스크 관리 & 마무리",
+                subtitle: "High Risk, High Return",
+                risk_box: {
+                    title: "위험 관리 전략",
+                    items: [
+                        { label: "수익 차이", text: "안전빵(250만원) vs 리스크(2,500만원). 10배 차이." },
+                        { label: "계정 분리", text: "채널 폭파 대비 <span class='text-white font-bold'>애드센스/기기 분리</span> 필수. (채널 날아가도 10개월 시간 버는 셈)" },
+                        { label: "저작권 소스", text: "OTT(넷플릭스 등) 활용. 방영 중 홍보 효과 노리기." }
+                    ]
+                },
+                footer: {
+                    title: "최종 학습 지침",
+                    text: "<span class='text-white underline'>1.5배속 반복 시청</span> (이해할 때까지).<br/>1주차 루틴(에셋-대본-편집) 무한 반복. <span class='text-green-400 font-bold'>완벽한 이해가 속도보다 중요합니다.</span>"
+                }
+            }
+        ]
+    };
+
+    window.Contents.momcare_lecture1_part2 = () => {
+        const data = momcareLecture1Part2Data;
+        const s1 = data.sections[0];
+        const s2 = data.sections[1];
+        const s3 = data.sections[2];
+        const s4 = data.sections[3];
+        const s5 = data.sections[4];
+        const s6 = data.sections[5];
+
+        const renderCase = (c) => html`
+            <div className="flex flex-col lg:flex-row gap-8 p-8 rounded-[2.5rem] bg-zinc-900 border border-zinc-800 hover:border-${c.color}-500/30 transition-colors">
+                <div className="lg:w-1/3 flex flex-col justify-center items-center text-center p-6 bg-black rounded-3xl border border-zinc-800">
+                    <${LucideIcon} name=${c.icon} size=${64} className=${`text-${c.color}-400 mb-6`} />
+                    <h3 className="text-3xl font-black text-white mb-4 leading-tight">${c.title}</h3>
+                    <div className="bg-zinc-900 p-4 rounded-xl border border-zinc-800 w-full">
+                        <span className="text-zinc-500 font-bold text-sm uppercase block mb-2">Before Context</span>
+                        <p className="text-zinc-300 text-lg leading-snug">${c.before}</p>
+                    </div>
+                </div>
+                <div className="lg:w-2/3 p-8 rounded-3xl bg-blue-900/10 border border-blue-500/20">
+                    <strong className="block text-blue-400 mb-6 text-xl flex items-center gap-2"><${LucideIcon} name="Award" size=${24}/> 강사 솔루션 / After</strong>
+                    <ul className="space-y-4 text-zinc-300 text-lg">
+                        ${c.after.map(p => html`
+                            <li className="flex gap-3">
+                                <span className="text-blue-500 mt-1">●</span>
+                                <span dangerouslySetInnerHTML=${{ __html: p }}></span>
+                            </li>
+                        `)}
+                    </ul>
+                </div>
+            </div>
+        `;
+
+        return html`
+            <div className="space-y-48 pb-60">
+                 <!-- Header -->
+                <div className="text-center space-y-12 py-32 animate-fade-in relative">
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-pink-900/20 rounded-full blur-[100px] -z-10"></div>
+                    <${Badge} color="pink">${data.meta.week}<//>
+                    <h1 className="text-7xl lg:text-9xl font-black tracking-tighter leading-none text-white mb-8 drop-shadow-2xl" dangerouslySetInnerHTML=${{ __html: data.meta.title }}></h1>
+                    <p className="text-3xl lg:text-4xl text-zinc-200 max-w-6xl mx-auto leading-normal font-bold" dangerouslySetInnerHTML=${{ __html: data.meta.subtitle }}></p>
+                </div>
+
+                <!-- Section 1: Concept -->
+                <${Section} title=${s1.title} subtitle=${s1.subtitle}>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                        ${s1.cards.map(c => html`
+                            <${Card} title=${c.title} icon=${c.icon} color=${c.color}>
+                                <div className="space-y-6">
+                                    ${c.desc && html`<p className="text-2xl text-white font-bold pb-4 border-b border-white/10">${c.desc}</p>`}
+                                    <ul className="space-y-4">
+                                        ${c.items.map(i => html`
+                                            <li className="flex flex-col gap-1">
+                                                <span className="text-zinc-500 font-bold uppercase text-sm">${i.label}</span>
+                                                <span className="text-xl text-zinc-300" dangerouslySetInnerHTML=${{ __html: i.text }}></span>
+                                            </li>
+                                        `)}
+                                    </ul>
+                                </div>
+                            <//>
+                        `)}
+                    </div>
+                <//>
+
+                <!-- Section 2: Instructor Practice -->
+                <${Section} title=${s2.title} subtitle=${s2.subtitle}>
+                    <div className="flex flex-col gap-12">
+                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+                            ${s2.steps.map((st, i) => html`
+                                <div className="p-6 bg-zinc-900 rounded-2xl border border-zinc-700 relative overflow-hidden group hover:-translate-y-2 transition-transform">
+                                    <span className="absolute -right-4 -bottom-4 text-8xl font-black text-white/5 group-hover:text-white/10 transition-colors">${i + 1}</span>
+                                    <strong className="block text-green-400 mb-3 text-lg border-b border-white/5 pb-2">${st.step}</strong>
+                                    <p className="text-zinc-200 text-lg font-medium z-10 relative" dangerouslySetInnerHTML=${{ __html: st.desc }}></p>
+                                </div>
+                            `)}
+                         </div>
+
+                         <div className="p-10 bg-gradient-to-r from-zinc-900 to-black rounded-[3rem] border border-zinc-700 mx-auto max-w-4xl w-full text-center">
+                            <h3 className="text-3xl text-white font-black mb-8"><${LucideIcon} name="Zap" className="inline mr-2 text-yellow-400"/> ${s2.stats.title}</h3>
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 divide-y md:divide-y-0 md:divide-x divide-zinc-700">
+                                ${s2.stats.items.map(it => html`
+                                    <div className="pt-4 md:pt-0">
+                                        <div className="text-zinc-400 text-lg uppercase font-bold mb-2">${it.label}</div>
+                                        <div className="text-2xl lg:text-3xl text-white font-black">${it.value}</div>
+                                    </div>
+                                `)}
+                            </div>
+                         </div>
+                    </div>
+                <//>
+
+                <!-- Section 3: Script Technique -->
+                <${Section} title=${s3.title} subtitle=${s3.subtitle}>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-12">
+                        ${s3.cards.map(c => html`
+                            <${Card} title=${c.title} icon=${c.icon} color=${c.color}>
+                                <div className="bg-black/40 p-6 rounded-2xl border border-white/5 mb-6">
+                                    <p className="text-2xl text-white font-bold italic text-center" dangerouslySetInnerHTML=${{ __html: c.quote }}></p>
+                                </div>
+                                <ul className="space-y-4 text-xl text-zinc-300">
+                                    ${c.items.map(i => html`<li class="flex gap-3"><span class="text-${c.color}-500">●</span> <span dangerouslySetInnerHTML=${{ __html: i }}></span></li>`)}
+                                </ul>
+                            <//>
+                        `)}
+                    </div>
+                    <div className="p-8 lg:p-12 bg-red-900/10 border border-red-500/20 rounded-[3rem]">
+                         <strong className="text-3xl text-red-500 block mb-8 flex items-center gap-4"><${LucideIcon} name="Youtube" size=${40}/> ${s3.gukppong_case.title}</strong>
+                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                            <div className="bg-black/40 p-6 rounded-3xl border border-red-500/10">
+                                <span className="text-zinc-500 font-bold uppercase mb-2 block">Student Analysis</span>
+                                <p className="text-zinc-300 text-lg mb-2"><span class="text-green-400">Good:</span> ${s3.gukppong_case.student.good}</p>
+                                <p className="text-zinc-300 text-lg"><span class="text-red-400">Bad:</span> ${s3.gukppong_case.student.bad}</p>
+                            </div>
+                            <div className="bg-blue-900/20 p-6 rounded-3xl border border-blue-500/20">
+                                <span className="text-blue-400 font-bold uppercase mb-2 block">Instructor's Re-write</span>
+                                <h4 className="text-white font-bold text-xl mb-3">"${s3.gukppong_case.instructor.title}"</h4>
+                                <ul className="list-disc list-inside space-y-2 text-zinc-200">
+                                    ${s3.gukppong_case.instructor.points.map(p => html`<li>${p}</li>`)}
+                                </ul>
+                            </div>
+                         </div>
+                    </div>
+                <//>
+
+                <!-- Section 4: Advanced Cases -->
+                <${Section} title=${s4.title} subtitle=${s4.subtitle}>
+                    <div className="space-y-8">
+                        ${s4.cases.map(c => renderCase(c))}
+                    </div>
+                <//>
+
+                <!-- Section 5: Category Analysis -->
+                <${Section} title=${s5.title} subtitle=${s5.subtitle}>
+                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        ${s5.categories.map(cat => html`
+                            <div className="p-8 rounded-[2.5rem] bg-zinc-900 border border-zinc-700 hover:border-${cat.color}-500/50 transition-colors flex flex-col h-full">
+                                <div className="flex justify-between items-start mb-6">
+                                    <div className="flex items-center gap-4">
+                                        <div className=${`p-4 rounded-2xl bg-${cat.color}-900/20 text-${cat.color}-400`}>
+                                            <${LucideIcon} name=${cat.icon} size=${36} />
+                                        </div>
+                                        <div>
+                                            <h3 className="text-2xl font-black text-white leading-none mb-1">${cat.title}</h3>
+                                            <span className=${`text-sm font-bold text-${cat.color}-400 uppercase tracking-wider`}>${cat.status}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="space-y-4 mb-6 flex-grow">
+                                    ${cat.channels.map(ch => html`
+                                        <div className="p-4 bg-black/50 rounded-xl border border-zinc-800 flex justify-between items-center">
+                                            <div>
+                                                <strong className="text-white block text-lg">${ch.name}</strong>
+                                                <span className="text-zinc-500 text-sm">${ch.note}</span>
+                                            </div>
+                                            <span className="text-zinc-300 font-bold text-sm bg-zinc-800 px-2 py-1 rounded">${ch.stats}</span>
+                                        </div>
+                                    `)}
+                                </div>
+                                <div className="mt-auto p-4 bg-zinc-800/50 rounded-xl border-l-4 border-${cat.color}-500">
+                                    <p className="text-zinc-300 text-lg leading-relaxed"><span class="text-white font-bold">Insight:</span> ${cat.insight}</p>
+                                </div>
+                            </div>
+                        `)}
+                     </div>
+                <//>
+
+                <!-- Section 6: Risk & Conclusion -->
+                <${Section} title=${s6.title} subtitle=${s6.subtitle}>
+                    <div className="space-y-12">
+                         <div className="bg-red-900/10 border border-red-500/20 p-8 rounded-[2.5rem]">
+                            <strong className="block text-2xl text-red-400 mb-6 flex items-center gap-3"><${LucideIcon} name="AlertTriangle" size=${32}/> ${s6.risk_box.title}</strong>
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                                ${s6.risk_box.items.map(item => html`
+                                    <div className="bg-black/50 p-6 rounded-2xl border border-red-500/10 hover:border-red-500/40 transition-colors">
+                                        <span className="block text-zinc-500 text-sm font-bold uppercase mb-2">${item.label}</span>
+                                        <span className="text-white text-xl font-medium leading-relaxed" dangerouslySetInnerHTML=${{ __html: item.text }}></span>
+                                    </div>
+                                `)}
+                            </div>
+                         </div>
+                         <div className="text-center p-12 bg-black rounded-[3rem] border border-zinc-800">
+                            <h3 className="text-3xl lg:text-4xl text-white font-black mb-6">${s6.footer.title}</h3>
+                            <p className="text-xl lg:text-2xl text-zinc-300 leading-relaxed" dangerouslySetInnerHTML=${{ __html: s6.footer.text }}></p>
+                         </div>
+                    </div>
+                <//>
+            </div>
+        `;
+    };
+
+    // --- Momcare Week 2 Feedback Part 1 Data ---
+    const momcareWeek2FeedbackPart1Data = {
+        meta: {
+            week: "MOMCARE WEEK 2 - FEEDBACK 1",
+            title: "대본의 80% 법칙과<br/>댓글 심리 활용",
+            subtitle: "콘텐츠 성공의 <span class='text-blue-400'>본질(80%)</span>을 뚫는 실전 피드백.<br/>벤치 영상의 <span class='text-white font-bold'>댓글</span>이 곧 대본의 정답지다.",
+            keywords: ["대본 루틴", "댓글 분석", "소몰이 기법", "깍두기 공식", "차별화"]
+        },
+        sections: [
+            {
+                id: "intro",
+                title: "1. 2주차 핵심 피드백 & 마인드셋",
+                subtitle: "(본질의 80%를 채워라)",
+                cards: [
+                    {
+                        title: "System & Revenue",
+                        icon: "BarChart2",
+                        color: "green",
+                        items: [
+                            "강사 수익 인증: 12월 강의 준비로 바빴음에도 <span class='text-white font-bold'>1억 200만 원</span> 달성.",
+                            "시스템의 힘: 메인 채널 2개가 날아갔으나(3천만/4천만 뷰), 남은 채널로 5,800만 원 수익.",
+                            "교훈: 채널이 날아가는 것은 '신의 계시'. 다시 시작하면 된다.",
+                            "숙제 피드백: 모든 제출자 대본 검토. <span class='text-green-400'>잘한 점/아쉬운 점/개선점</span> 꼼꼼히 피드백."
+                        ]
+                    },
+                    {
+                        title: "Zero Punch Risk",
+                        icon: "AlertTriangle",
+                        color: "red",
+                        items: [
+                            "신규/깡통 채널 위험성: 신뢰도가 없어 <span class='text-red-400'>'제로 펀치'</span>(노출 0) 발생 가능성 높음.",
+                            "알고리즘: 초반에 신고(싫어요/차단) 여부와 영상 질을 깐깐하게 검증.",
+                            "전략: 첫인상이 중요. 가이드라인 준수하여 '우등생'으로 시작해야 함."
+                        ]
+                    }
+                ]
+            },
+            {
+                id: "success_formula",
+                title: "2. 콘텐츠 성공의 본질적 공식",
+                subtitle: "이것만 알면 상위 20%",
+                cards: [
+                    {
+                        title: "Essentials (80%)",
+                        icon: "Target",
+                        color: "blue",
+                        items: [
+                            "에셋(Asset): 비슷한 결의 소재를 모아 채널 그룹화.",
+                            "한계선(Limit): <span class='text-blue-400 font-bold'>한계선이 높은 소재</span> 선정 (이미 모수가 정해져 있음).",
+                            "시청자 선호: 가이드라인/대본은 기본 옵션, 결국 '시청자가 좋아하는 영상'을 만드는 것이 핵심."
+                        ]
+                    },
+                    {
+                        title: "Differentiation (20%)",
+                        icon: "Sparkles",
+                        color: "yellow",
+                        items: [
+                            "차별화: 80% 기본기 위에 얹는 '한 끗'. 조회수 10만 -> 100만 견인.",
+                            "강사의 무기: <span class='text-yellow-400'>대본과 감정 이입</span>. 댓글을 통해 시청자의 감정을 유도.",
+                            "3강 예고: 수익 냈던 채널 컨셉 49개 중 중첩 제외 <span class='text-yellow-400 font-bold'>29개 영상 포메이션</span>(기획의도, 카테고리, 결과치) 공개."
+                        ]
+                    }
+                ]
+            },
+            {
+                id: "script_routine",
+                title: "3. 대본 작성 루틴 (깍두기 공식)",
+                subtitle: "효율과 퀄리티를 동시에",
+                cards: [
+                    {
+                        title: "Source Finding",
+                        icon: "Search",
+                        color: "purple",
+                        items: [
+                            "로드몰(Road Mall) 방법: 2강 내용 활용. 많은 채널 수집.",
+                            "틱톡/인스타: 스포츠, 드라마, 애니 등 키워드 추출 -> 해외 결에 맞는 영상 발굴 및 내 것으로 만들기.",
+                            "소재 선정: 70~80% 이해도 필요. 시작하는 순간 되돌릴 수 없음."
+                        ]
+                    },
+                    {
+                        title: "Title Power",
+                        icon: "Type",
+                        color: "pink",
+                        items: [
+                            "소제목의 힘: 피드 넘길 때 제목은 안 보여도 <span class='text-pink-400 font-bold'>소제목(썸네일 텍스트)</span>은 보임.",
+                            "가장 강력한 후킹 요소. 생활화 필요."
+                        ]
+                    }
+                ],
+                routine_steps: [
+                    { label: "1. 깍두기", text: "벤치마킹 영상 속 **구간 시점** (영상 그대로)." },
+                    { label: "2. 일반 문장", text: "설명용 **나레이션 (TTS)**." },
+                    { label: "3. 따옴표", text: "영상 속 인물의 **대화**." },
+                    { label: "4. 괄호", text: "**자막** (상황 설명)." }
+                ],
+                process_steps: [
+                    { step: "Step 1", desc: "가이드라인 준수 여부 확인." },
+                    { step: "Step 2", desc: "단어 변경 (벤치 영상 단어를 내 영상에 맞게)." },
+                    { step: "Step 3", desc: "인물 대사 자연스럽게 의역." },
+                    { step: "Step 4", desc: "구간(구다리) 바꾸기 연습." },
+                    { step: "Step 5", desc: "<span class='text-red-400 font-bold'>후킹 총력전</span>: 와우포인트에 TTS 녹이거나 감정 유도." }
+                ]
+            },
+            {
+                id: "cases",
+                title: "4. 실전 피드백 Case Study",
+                subtitle: "Original vs Student vs Instructor",
+                cases: [
+                    {
+                        title: "드라마 (치매 엄마)",
+                        icon: "Film",
+                        color: "purple",
+                        before: "원본: '매일 아침 눈 치운 치매 엄마'.",
+                        student: {
+                            good: "제목: '아들은 평생 모를 뻔한...'(후킹 굿). 순서 변경 및 자막 양념 우수.",
+                            bad: "없음 (매우 잘함)."
+                        },
+                        instructor: {
+                            title: "차별화 전략: TTS 감정 유도",
+                            points: [
+                                "<span class='text-yellow-400 font-bold'>댓글이 정답지</span>: '더 글로리' 예시. '개 안 키우던데' 댓글 반응 캐치.",
+                                "소몰이: 해당 장면 앞으로 빼고, '재준이 살기를 끌어올리고' TTS로 감정 유도."
+                            ]
+                        }
+                    },
+                    {
+                        title: "사회 실험 (시각장애인)",
+                        icon: "Users",
+                        color: "orange",
+                        before: "편집 요소(음표, 자막) 좋으나 차별화 필요.",
+                        student: {
+                            good: "교차 편집 우수. 자막을 원본과 다른 의미로 바꿔 재미 요소 추가.",
+                            bad: "-"
+                        },
+                        instructor: {
+                            title: "감정 몰입 극대화",
+                            points: [
+                                "제목: '깨닫는 순간 죄책감이 드는 사회 실험' (죄책감 키워드).",
+                                "구성: 가장 극적인 장면(밀치는 장면) 후킹 배치 -> TTS로 감정 몰입 유도."
+                            ]
+                        }
+                    },
+                    {
+                        title: "인물/국뽕 (화장품)",
+                        icon: "Smile",
+                        color: "pink",
+                        before: "흑인 여성에게 맞는 파데가 없어 한국 브랜드가 샘플 보냄.",
+                        student: {
+                            good: "제목: '뻔뻔하게 화장품 달라는 흑인 여성' (반전 유도). 이펙트 활용 굿.",
+                            bad: "-"
+                        },
+                        instructor: {
+                            title: "소재 발굴: 꼬리 타기",
+                            points: [
+                                "꼬리 타기: 원작자 해시태그 타고 들어가 관련 영상 파도타기.",
+                                "역발상: 인기순 고집 X. 최근 경쟁 채널이 안 쓴 소재가 블루오션."
+                            ]
+                        }
+                    },
+                    {
+                        title: "양산형 (크루즈)",
+                        icon: "Copy",
+                        color: "gray",
+                        before: "100일 크루즈 놓친 남자 -> 사실 다른 배 예약.",
+                        student: {
+                            good: "대본 재미있음 ('놓친 건 배가 아니라 사람들의 심장').",
+                            bad: "숫자('100일')를 그대로 씀. <span class='text-red-400'>150일, 3개월</span> 등으로 디테일 변경 필요."
+                        },
+                        instructor: {
+                            title: "TTS 소몰이 & 선빵",
+                            points: [
+                                "TTS를 '소몰이꾼'으로 사용.",
+                                "댓글 반응을 미리 알고, 그 감정을 느끼도록 TTS로 '선빵' 침."
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    };
+
+    // --- Momcare Week 2 Feedback Part 2 Data ---
+    const momcareWeek2FeedbackPart2Data = {
+        meta: {
+            week: "MOMCARE WEEK 2 - FEEDBACK 2",
+            title: "카테고리별 실전 피드백<br/>& 월급 채널 전략",
+            subtitle: "스포츠, 동물, 국뽕, 팬튜브... <span class='text-green-400'>월급 나오는 채널</span>의 비밀.<br/><span class='text-white font-bold'>역발상 소스 발굴</span>과 디테일 한 끗 차이.",
+            keywords: ["월급 채널", "스포츠 직캠", "팬튜브", "역발상", "소몰이"]
+        },
+        sections: [
+            {
+                id: "source_strategy",
+                title: "1. 소스 발굴 & 역발상 전략",
+                subtitle: "(인기순의 함정을 피하라)",
+                cards: [
+                    {
+                        title: "Original Source",
+                        icon: "Search",
+                        color: "blue",
+                        items: [
+                            "원본 찾기: 어렵지만 필수 (흐름 제어 가능). 못 찾으면 '자막 지우개' 사용.",
+                            "역발상: 인기순 정렬만 보면 다 똑같음. <span class='text-blue-400 font-bold'>조회수 낮은 영상</span>도 내가 살리면 됨.",
+                            "날짜순: 신선한 소재는 날짜순 정렬이 유리."
+                        ]
+                    },
+                    {
+                        title: "Differentiation",
+                        icon: "GitMerge",
+                        color: "purple",
+                        items: [
+                            "하리하리: High Risk, High Return. 소재가 깡패.",
+                            "연예인: 대중성/성장 빠름. 리스크 감수하고 기기 분리로 도전.",
+                            "양산형: '재미'가 베이스."
+                        ]
+                    }
+                ]
+            },
+            {
+                id: "cases",
+                title: "2. 카테고리별 심층 Case Study",
+                subtitle: "디테일이 명품을 만든다",
+                cases: [
+                    {
+                        title: "AI 영상 (트램펄린)",
+                        icon: "Cpu",
+                        color: "indigo",
+                        before: "토끼/캥거루가 트램펄린 뛰다 박살남.",
+                        student: {
+                            good: "제목 재미있음. 소스 변경 노력.",
+                            bad: "후킹(2-3초)이 너무 짧음(1초 미만). 이목을 끌 시간 부족."
+                        },
+                        instructor: {
+                            title: "소몰이 스토리텔링",
+                            points: [
+                                "후킹: '이 집 팡팡은 캥거루 아지트인 거 아무도 몰랐음' (대사)",
+                                "흐름: 아빠 설치 -> 밤마다 핫플 -> 결국 박살."
+                            ]
+                        }
+                    },
+                    {
+                        title: "감동 (입양/재활)",
+                        icon: "Heart",
+                        color: "pink",
+                        before: "입양 아들 재활 성공 마라톤 완주.",
+                        student: {
+                            good: "클로징 멘트 전율 ('지금 넘어져 있는 당신에게...'). <span class='text-pink-400 font-bold'>직접 더빙</span> 시도 굿.",
+                            bad: "-"
+                        },
+                        instructor: {
+                            title: "구간 변경의 정석",
+                            points: [
+                                "후킹 변경: 입양 사실보다 <span class='text-white font-bold'>의족 보여주는 장면</span>을 앞으로.",
+                                "순서: 몸 불편(후킹) -> 어머니 교육 -> 입양 사실(반전) -> 마라톤 완주."
+                            ]
+                        }
+                    },
+                    {
+                        title: "해외 레시피 (미국 가정식)",
+                        icon: "Utensils",
+                        color: "orange",
+                        before: "현실적인 미국 요리.",
+                        student: {
+                            good: "구다리 변경, 와우포인트, 더빙 좋음.",
+                            bad: "TTS(타입캐스트) 급발진/끊김 주의."
+
+                        },
+                        instructor: {
+                            title: "문화 차이 강조",
+                            points: [
+                                "주제 확장: 단순 요리가 아니라 <span class='text-orange-400'>'미국의 놀라운 문화 차이'</span>로 접근.",
+                                "흐름: 햄 한 통 다 붓기, 소스 들이붓기 등 '충격' 요소 강조."
+                            ]
+                        }
+                    },
+                    {
+                        title: "스포츠 (테니스/나달)",
+                        icon: "Activity",
+                        color: "green",
+                        before: "테니스 재미있는 상황.",
+                        student: {
+                            good: "자막 양념 대본력 우수.",
+                            bad: "확대를 너무 당겨서 <span class='text-red-400'>전체 뷰가 안 보임</span>. 상황 이해 방해."
+                        },
+                        instructor: {
+                            title: "월급 채널 (월클은 월급이다)",
+                            points: [
+                                "손흥민, 오타니 등 레전드는 꾸준함.",
+                                "저작권 꿀팁: 방송 중계 X. <span class='text-green-400 font-bold'>직수 캠(직촬)</span>만 골라라 (서포터즈 좋아요 추적).",
+                                "도파민 효과: 조회수 나오고 입금되는 순간 <span class='text-green-400 font-bold'>도파민</span> 폭발. 24시간 수익 창출."
+                            ]
+                        }
+                    },
+                    {
+                        title: "감동 2 (오래된 차)",
+                        icon: "Car",
+                        color: "blue",
+                        before: "아빠가 딸에게 똥차 선물 -> 딸 기뻐함.",
+                        student: {
+                            good: "제목(댓글 인용). <span class='text-blue-400 font-bold'>내용 추가</span>: 1년 뒤 더 좋은 차 받았다는 내용 찾아냄(완벽 차별화).",
+                            bad: "-"
+                        },
+                        instructor: {
+                            title: "추억 프레임",
+                            points: [
+                                "세차 장면 활용: '평생 추억의 나무를 첫 세차로 함께 했다'."
+                            ]
+                        }
+                    },
+                    {
+                        title: "동물 2 (고양이)",
+                        icon: "Cat",
+                        color: "yellow",
+                        before: "물 젖은 줄 모르다 화려한 회전.",
+                        student: {
+                            good: "올 TTS 시도.",
+                            bad: "후킹 불일치(대사는 '스피드'인데 화면은 평범). 폰트(궁서체)가 재미 반감."
+                        },
+                        instructor: {
+                            title: "빙의 & 폰트 깔맞춤",
+                            points: [
+                                "후킹: 돌고 있는 장면 바로 투입.",
+                                "재미있는 영상엔 재미있는 폰트/효과음 필수.",
+                                "빙의: 고양이에 빙의, 개그맨에 빙의."
+                            ]
+                        }
+                    },
+                    {
+                        title: "팬튜브 (손흥민/테일러)",
+                        icon: "Star",
+                        color: "purple",
+                        before: "팬심 자극 영상.",
+                        student: {
+                            good: "삐 처리로 궁금증 유발. 영어 대사 의역.",
+                            bad: "영상 길이 <span class='text-red-400'>1분 2초</span> (너무 김). 25초로 압축했어야."
+                        },
+                        instructor: {
+                            title: "따박따박 월급",
+                            points: [
+                                "팬튜브는 저작권 비교적 자유로움 (홍보 효과).",
+                                "아이유, BTS 등 메이저 공략.",
+                                "주의사항: 임영웅 등 팬덤이 <span class='text-red-400 font-bold'>불펌/양산형 싫어하는</span> 가수는 피할 것 (수익 안 가서 안 봄)."
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                id: "final_summary",
+                title: "3. 최종 요약 & Next Step",
+                subtitle: "결국 대본이다",
+                cards: [
+                    {
+                        title: "Script is Everything",
+                        icon: "PenTool",
+                        color: "red",
+                        items: [
+                            "기획의 80%는 대본.",
+                            "댓글 = 감정선/공감대 정답지.",
+                            "TTS = 대본을 몰고 가는 힘 (소몰이).",
+                            "프리랜서 활용: 원본 못 찾아도 대본만 잘 쓰면 해결 가능 (비용 아끼지 말 것)."
+                        ]
+                    },
+                    {
+                        title: "Action Plan",
+                        icon: "ChevronsRight",
+                        color: "green",
+                        items: [
+                            "소스 못 찾으면 프리랜서 써서라도 대본에 집중.",
+                            "월급 채널 10개 = 월 2~3천. (스포츠, 팬튜브, 국뽕)",
+
+                            "3강 예고: 대놓고 떠먹여주는 29개 카테고리 공개.",
+                            "자신감: 채널 날아가도 다시 키우면 그만. <span class='text-white font-bold'>무조건 할 수 있다</span>는 마인드."
+                        ]
+                    }
+                ]
+            }
+        ]
+    };
+
+    window.Contents.momcare_week2_part1 = () => {
+        const data = momcareWeek2FeedbackPart1Data;
+
+        const renderCase = (c) => html`
+            <div className="flex flex-col lg:flex-row gap-8 p-8 rounded-[2.5rem] bg-zinc-900 border border-zinc-800 hover:border-${c.color}-500/30 transition-colors">
+                <div className="lg:w-1/3 flex flex-col justify-center items-center text-center p-6 bg-black rounded-3xl border border-zinc-800">
+                    <${LucideIcon} name=${c.icon} size=${64} className=${`text-${c.color}-400 mb-6`} />
+                    <h3 className="text-3xl font-black text-white mb-4 leading-tight">${c.title}</h3>
+                    <div className="bg-zinc-900 p-4 rounded-xl border border-zinc-800 w-full">
+                        <span className="text-zinc-500 font-bold text-sm uppercase block mb-2">Before / Original</span>
+                        <p className="text-zinc-300 text-lg leading-snug">${c.before}</p>
+                    </div>
+                </div>
+                <div className="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="p-6 rounded-3xl bg-zinc-800/50 border border-zinc-700">
+                        <strong className="block text-zinc-400 mb-4 text-xl flex items-center gap-2"><${LucideIcon} name="User" size=${20}/> Student Feedback</strong>
+                        <div className="space-y-4">
+                            <div>
+                                <span className="text-green-400 font-bold block mb-1">Good:</span>
+                                <p className="text-zinc-300 leading-snug" dangerouslySetInnerHTML=${{ __html: c.student.good }}></p>
+                            </div>
+                            ${c.student.bad && c.student.bad !== "-" ? html`
+                                <div>
+                                    <span className="text-red-400 font-bold block mb-1">Bad / Fix:</span>
+                                    <p className="text-zinc-300 leading-snug" dangerouslySetInnerHTML=${{ __html: c.student.bad }}></p>
+                                </div>
+                            ` : ''}
+                        </div>
+                    </div>
+                    <div className="p-6 rounded-3xl bg-blue-900/10 border border-blue-500/20">
+                        <strong className="block text-blue-400 mb-4 text-xl flex items-center gap-2"><${LucideIcon} name="Award" size=${20}/> Instructor Insight</strong>
+                         <h4 className="text-white font-bold text-lg mb-3">${c.instructor.title}</h4>
+                        <ul className="list-disc list-inside space-y-2 text-zinc-300">
+                            ${c.instructor.points.map(p => html`<li dangerouslySetInnerHTML=${{ __html: p }}></li>`)}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        return html`
+            <div className="space-y-48 pb-60">
+                <div className="text-center space-y-12 py-32 animate-fade-in relative">
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-900/20 rounded-full blur-[100px] -z-10"></div>
+                    <${Badge} color="blue">${data.meta.week}<//>
+                    <h1 className="text-6xl lg:text-8xl font-black tracking-tighter leading-none text-white mb-8 drop-shadow-2xl" dangerouslySetInnerHTML=${{ __html: data.meta.title }}></h1>
+                    <p className="text-2xl lg:text-3xl text-zinc-200 max-w-5xl mx-auto leading-normal font-bold" dangerouslySetInnerHTML=${{ __html: data.meta.subtitle }}></p>
+                </div>
+
+                ${data.sections.map(s => html`
+                    <${Section} title=${s.title} subtitle=${s.subtitle}>
+                        ${s.cards ? html`
+                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                                ${s.cards.map(c => html`
+                                    <${Card} title=${c.title} icon=${c.icon} color=${c.color}>
+                                        <ul className="space-y-4 list-disc list-inside text-xl text-zinc-300">
+                                            ${c.items.map(i => html`<li dangerouslySetInnerHTML=${{ __html: i }}></li>`)}
+                                        </ul>
+                                    <//>
+                                `)}
+                            </div>
+                        ` : ''}
+
+                        ${s.routine_steps ? html`
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                                ${s.routine_steps.map(r => html`
+                                    <div className="bg-zinc-900 p-6 rounded-2xl border border-zinc-800 text-center">
+                                        <strong className="block text-blue-400 text-lg uppercase mb-2">${r.label}</strong>
+                                        <p className="text-zinc-200 font-medium" dangerouslySetInnerHTML=${{ __html: r.text }}></p>
+                                    </div>
+                                `)}
+                            </div>
+                            <div className="space-y-4 bg-black/40 p-8 rounded-3xl border border-zinc-800">
+                                <strong className="text-2xl text-white block mb-6">Step-by-Step Process</strong>
+                                ${s.process_steps.map(p => html`
+                                    <div className="flex items-start gap-4">
+                                        <span className="text-zinc-500 font-bold w-20 shrink-0">${p.step}</span>
+                                        <span className="text-xl text-zinc-300" dangerouslySetInnerHTML=${{ __html: p.desc }}></span>
+                                    </div>
+                                `)}
+                            </div>
+                        ` : ''}
+
+                        ${s.cases ? html`
+                            <div className="space-y-12">
+                                ${s.cases.map(c => renderCase(c))}
+                            </div>
+                        ` : ''}
+                    <//>
+                `)}
+            </div>
+        `;
+    };
+
+    window.Contents.momcare_week2_part2 = () => {
+        const data = momcareWeek2FeedbackPart2Data;
+        const renderCase = (c) => html`
+            <div className="flex flex-col lg:flex-row gap-8 p-8 rounded-[2.5rem] bg-zinc-900 border border-zinc-800 hover:border-${c.color}-500/30 transition-colors">
+                <div className="lg:w-1/3 flex flex-col justify-center items-center text-center p-6 bg-black rounded-3xl border border-zinc-800">
+                    <${LucideIcon} name=${c.icon} size=${64} className=${`text-${c.color}-400 mb-6`} />
+                    <h3 className="text-3xl font-black text-white mb-4 leading-tight">${c.title}</h3>
+                    <div className="bg-zinc-900 p-4 rounded-xl border border-zinc-800 w-full">
+                        <span className="text-zinc-500 font-bold text-sm uppercase block mb-2">Before / Original</span>
+                        <p className="text-zinc-300 text-lg leading-snug">${c.before}</p>
+                    </div>
+                </div>
+                <div className="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="p-6 rounded-3xl bg-zinc-800/50 border border-zinc-700">
+                        <strong className="block text-zinc-400 mb-4 text-xl flex items-center gap-2"><${LucideIcon} name="User" size=${20}/> Student Feedback</strong>
+                        <div className="space-y-4">
+                            <div>
+                                <span className="text-green-400 font-bold block mb-1">Good:</span>
+                                <p className="text-zinc-300 leading-snug" dangerouslySetInnerHTML=${{ __html: c.student.good }}></p>
+                            </div>
+                            ${c.student.bad && c.student.bad !== "-" ? html`
+                                <div>
+                                    <span className="text-red-400 font-bold block mb-1">Bad / Fix:</span>
+                                    <p className="text-zinc-300 leading-snug" dangerouslySetInnerHTML=${{ __html: c.student.bad }}></p>
+                                </div>
+                            ` : ''}
+                        </div>
+                    </div>
+                    <div className="p-6 rounded-3xl bg-green-900/10 border border-green-500/20">
+                        <strong className="block text-green-400 mb-4 text-xl flex items-center gap-2"><${LucideIcon} name="Zap" size=${20}/> Instructor Insight</strong>
+                         <h4 className="text-white font-bold text-lg mb-3">${c.instructor.title}</h4>
+                        <ul className="list-disc list-inside space-y-2 text-zinc-300">
+                            ${c.instructor.points.map(p => html`<li dangerouslySetInnerHTML=${{ __html: p }}></li>`)}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        return html`
+             <div className="space-y-48 pb-60">
+                <div className="text-center space-y-12 py-32 animate-fade-in relative">
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-green-900/20 rounded-full blur-[100px] -z-10"></div>
+                    <${Badge} color="green">${data.meta.week}<//>
+                    <h1 className="text-6xl lg:text-8xl font-black tracking-tighter leading-none text-white mb-8 drop-shadow-2xl" dangerouslySetInnerHTML=${{ __html: data.meta.title }}></h1>
+                    <p className="text-2xl lg:text-3xl text-zinc-200 max-w-5xl mx-auto leading-normal font-bold" dangerouslySetInnerHTML=${{ __html: data.meta.subtitle }}></p>
+                </div>
+
+                ${data.sections.map(s => html`
+                    <${Section} title=${s.title} subtitle=${s.subtitle}>
+                        ${s.cards ? html`
+                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                                ${s.cards.map(c => html`
+                                    <${Card} title=${c.title} icon=${c.icon} color=${c.color}>
+                                        <ul className="space-y-4 list-disc list-inside text-xl text-zinc-300">
+                                            ${c.items.map(i => html`<li dangerouslySetInnerHTML=${{ __html: i }}></li>`)}
+                                        </ul>
+                                    <//>
+                                `)}
+                            </div>
+                        ` : ''}
+
+                         ${s.cases ? html`
+                            <div className="space-y-12">
+                                ${s.cases.map(c => renderCase(c))}
+                            </div>
+                        ` : ''}
+                    <//>
+                `)}
+            </div>
+        `;
+    };
+
+    // --- Momcare Week 3 Feedback Part 1 Data ---
+    const momcareWeek3FeedbackPart1Data = {
+        meta: {
+            week: "MOMCARE WEEK 3 - FEEDBACK 1",
+            title: "영상 기획은 곧 메시지다",
+            subtitle: "시청자의 공감대와 감정을 움직이는 <span class='text-blue-400'>기획 루틴</span>과 <span class='text-white'>메시지 메이킹</span>의 정석.",
+            keywords: ["메시지 기획", "대본 루틴", "댓글 활용", "와우 포인트", "오버쿡 금지"]
+        },
+        sections: [
+            {
+                id: "principles",
+                title: "1. 콘텐츠 제작의 기본 원칙 & 루틴",
+                subtitle: "(1강~3강 기본기 점검)",
+                cards: [
+                    {
+                        title: "대본 & 기획 루틴 점검",
+                        icon: "ClipboardCheck",
+                        color: "blue",
+                        items: [
+                            "기본 집중: 1~3강의 핵심 토대 위에서 소재를 뽑고 대본을 작성해야 합니다.",
+                            "스토리 지표 = 댓글: 고민하지 말고 <span class='text-blue-400 font-bold'>댓글</span>에서 아이디어와 워딩을 가져오는 것이 가장 빠릅니다.",
+                            "80% 법칙: 시청자가 보기에 재밌는 영상의 <span class='text-white font-bold'>80~90%는 기획(시나리오)</span>에 달려있습니다.",
+                            "자막 양념: 댓글 내용을 TTS에 녹이지 않더라도 자막으로 충분히 맛을 낼 수 있습니다."
+                        ]
+                    },
+                    {
+                        title: "운영 전략 & 마인드셋",
+                        icon: "Brain",
+                        color: "purple",
+                        items: [
+                            "편집 오해: 50초를 꽉 채울 필요 없음. 기승전결에 맞춰 <span class='text-purple-400 font-bold'>필요한 장면만</span> 사용하세요.",
+                            "선 업로드 후 검수 금지: 비공개 상태에서 충분히 검수하세요. 한 번 박힌 첫인상은 회복하기 어렵습니다.",
+                            "우월감: 기본적인 것만 지켜도 남들보다 우월해질 수 있다는 자신감을 가지세요."
+                        ]
+                    },
+                    {
+                        title: "고위험 채널 관리 (에센)",
+                        icon: "ShieldAlert",
+                        color: "red",
+                        items: [
+                            "에센 분리: 공중파, 예능 등 위험도 높은 소재는 <span class='text-red-400 font-bold'>기기와 계정을 완전히 분리</span>해야 합니다.",
+                            "관리자 격리: 메인 채널과 섞이지 않도록 철저히 관리하세요 (웹예능, 해외드라마 등)."
+                        ]
+                    },
+                    {
+                        title: "와우 포인트 & TTS 공식",
+                        icon: "Zap",
+                        color: "yellow",
+                        items: [
+                            "배치 구조: [와우 포인트(1~3초)] -> [TTS 설명] 순서가 가장 편한 배치입니다.",
+                            "현장음 필수: 와우 포인트 구간(쳐다보기, 웃음 등)은 원본 사운드를 살려 몰입도를 유지하세요.",
+                            "TTS 양념: 상황이 인지될 정도로만 <span class='text-yellow-400 font-bold'>툭툭 던지듯</span> 짧게 넣으세요 (장황한 설명 금지).",
+                            "배너 활용: 띠 배너의 소제목으로 시청자의 눈길을 한 번 더 붙잡아야 합니다."
+                        ]
+                    }
+                ]
+            },
+            {
+                id: "market_strategy",
+                title: "2. 소재 선택과 시장 전략",
+                subtitle: "효율적인 루틴과 확장",
+                cards: [
+                    {
+                        title: "소재 선정 기준",
+                        icon: "MousePointer",
+                        color: "green",
+                        items: [
+                            "친숙함이 무기: 내가 잘 알고 친숙한 분야를 선택해야 <span class='text-green-400 font-bold'>방구석 전문가(관심모수)</span>들을 상대할 수 있습니다.",
+                            "감정의 결: 재미보다 감동, 축구보다 야구. 내가 잘 풀어낼 수 있는 '결'을 선택하세요.",
+                            "자신감: 알고 있다면 내가 조금 더 자신 있는 것을 시작해야 변화가 생깁니다."
+                        ]
+                    },
+                    {
+                        title: "시스템 효율화 전략",
+                        icon: "Layers",
+                        color: "zinc",
+                        items: [
+                            "시간 단축: 소재 30분, 대본 1시간, 편집 3시간 -> 1~3강 기본기를 지키면 절반 이하로 줄어듭니다.",
+                            "물량 승부: 3시간 걸려 영상 1개를 만드는 것보다, 루틴화된 공식으로 <span class='text-white font-bold'>3시간에 3개</span>를 만드는 것이 확률적으로 우위입니다.",
+                            "채널 운영: 채널 1개보다 5개 운영하는 사람이 수익이 더 클 확률이 높습니다."
+                        ]
+                    },
+                    {
+                        title: "채널 확장 전략",
+                        icon: "Globe",
+                        color: "pink",
+                        items: [
+                            "터진 건 또 터진다: 국내에서 터진 영상(A)과 결이 같은 <span class='text-pink-400 font-bold'>해외 영상(B)</span>은 무조건 터집니다.",
+                            "물량 공세: 평일보다 주말/연휴(추석, 설날)에 물량을 집중하세요. (48시간 볼륨업)",
+                            "해외 확장: 포화도가 높을 땐 키워드로 확장하여 해외 에센을 만들어 결합하세요."
+                        ]
+                    },
+                    {
+                        title: "수익 & 멘탈 관리",
+                        icon: "DollarSign",
+                        color: "blue",
+                        items: [
+                            "월급 개념: 유튜브 수익은 월급입니다. 1분마다 조회수를 확인하며 일희일비하지 마세요.",
+                            "타이밍: 모든 영상이 100만 뷰가 나올 수는 없습니다. 원작자도 타이밍을 놓치곤 합니다.",
+                            "여유: 채널이 날아가도 다시 시작할 수 있다는 마음가짐이 중요합니다."
+                        ]
+                    }
+                ],
+                script_routine: {
+                    title: "실전 대본 작성 4단계 루틴",
+                    desc: "이 틀만 지켜도 작업 속도가 3배 빨라집니다. 소재 선정은 10분 이내로!",
+                    steps: [
+                        { label: "1. 깍두기 []", text: "벤치마킹 영상의 **구간 표시** (편집점)" },
+                        { label: "2. 일반 문장", text: "**나레이션 (TTS)**: 상황 설명 및 감정 유도" },
+                        { label: "3. 따옴표 \"\"", text: "영상 속 인물의 **대화 내용**" },
+                        { label: "4. 괄호 ()", text: "**자막 양념**: 시각적 설명이나 강조 멘트" }
+                    ]
+                }
+            },
+            {
+                id: "case_study_1",
+                title: "3. 실전 Case Study: 감동 & 스포츠",
+                subtitle: "야시장 할아버지 / 즐라탄 / 반려견",
+                cases: [
+                    {
+                        title: "감동: 야시장 할아버지",
+                        icon: "Heart",
+                        color: "red",
+                        context: "이틀 밤새 만든 곰돌이 인형을 건네는 할아버지 (원작 34초).",
+                        feedback: [
+                            { type: "good", text: "원작보다 짧고 간결한 편집(29초). BGM 선정이 매우 좋음." },
+                            { type: "fix", text: "제목/소제목은 <span class='text-red-400'>차분한 감동 결</span>로. (예: '작은 인형이 가져다준 기적')" },
+                            { type: "fix", text: "문장 끝 어미 반복('~돼요') 지양. 변형을 주어 지루함 탈피." }
+                        ],
+                        insight: "댓글('찡하다', '황금빛이다')을 그대로 소제목으로 쓰세요."
+                    },
+                    {
+                        title: "스포츠: 즐라탄의 도발",
+                        icon: "Activity",
+                        color: "orange",
+                        context: "즐라탄의 자신만만한 캐릭터성과 도발.",
+                        feedback: [
+                            { type: "good", text: "대본의 흐름과 야부리(스토리텔링) 흡입력이 훌륭함." },
+                            { type: "fix", text: "<span class='text-orange-400 font-bold'>템포 조절 실패</span>. 너무 빠르고 튐. 즐라탄의 여유를 살릴 수 있도록 느긋하게 편집할 것." },
+                            { type: "fix", text: "제목 단어 중복('악마', '악마') 교정. 자막 줄바꿈(중앙 정렬) 디테일 신경 쓸 것." }
+                        ],
+                        insight: "화려한 이펙트보다 '보기 편한 편집'이 우선입니다."
+                    },
+                    {
+                        title: "감동: 용감한 반려견",
+                        icon: "Dog",
+                        color: "yellow",
+                        context: "도둑을 막아선 강아지 -> 귀가 중인 주인을 침입자로 오인(반전).",
+                        feedback: [
+                            { type: "good", text: "<span class='text-yellow-400 font-bold'>완벽함(Perfect).</span> 감히 나무랄 데가 없음. 더빙 목소리의 차별화가 압권." },
+                            { type: "fix", text: "소제목은 유머체 금지. 메시지 힘을 주는 직관적 문구로. (예: '상 받아야 하는 댕댕이', '낯선 외국에서 만난 엄마의 마음')" }
+                        ],
+                        insight: "더빙 목소리 자체가 강력한 차별화 포인트입니다."
+                    }
+                ]
+            },
+            {
+                id: "case_study_2",
+                title: "4. 실전 Case Study: 지식 & 국뽕",
+                subtitle: "금융치료 / 한국의 서비스 / 인종차별",
+                cases: [
+                    {
+                        title: "지식/유머: 금융 치료",
+                        icon: "Brain",
+                        color: "purple",
+                        context: "병원의 소름 끼치는 전시물 -> 금융 치료(유머)로 메시지 전환 시도.",
+                        feedback: [
+                            { type: "fix", text: "<span class='text-purple-400 font-bold'>메시지 불명확</span>. 유머인지 차별인지 모호함. 기획 = 명확한 메시지." },
+                            { type: "fix", text: "오버쿡(Overcook) 금지. 관점을 너무 비틀면 산으로 감. 원래 맛에 양념만 살짝 칠 것." }
+                        ],
+                        insight: "닭을 다시 튀기지 마세요. 잘 튀겨진 후라이드(테이블)에 양념만 얹으세요."
+                    },
+                    {
+                        title: "국뽕: 한국의 서비스",
+                        icon: "ThumbsUp",
+                        color: "blue",
+                        context: "한식 뷔페 브이로그 -> '친절함과 서비스'로 메시지 메이킹.",
+                        feedback: [
+                            { type: "good", text: "<span class='text-blue-400 font-bold'>졸업 수준.</span> 기획부터 자막, 효과음까지 국뽕의 감동을 완벽하게 살림." },
+                            { type: "good", text: "소제목('7천 원짜리 풀코스')에도 국뽕 감성을 잘 녹여냄. (예: '따뜻한 마음', '한국인의 정')" }
+                        ],
+                        insight: "영상 기획은 곧 메시지입니다. 댓글에 정답이 있습니다."
+                    },
+                    {
+                        title: "영드자: 인종차별 영화",
+                        icon: "Film",
+                        color: "zinc",
+                        context: "인종차별 소재 영화 리뷰.",
+                        feedback: [
+                            { type: "fix", text: "메시지가 '인종차별'에서 '직업(검사)'로 흐려짐. 차별의 계기점을 명확히 보여줘야 함." },
+                            { type: "tip", text: "보물찾기 전략: 어제 먹은 치킨은 오늘 맛없습니다. 경쟁자가 덜한 <span class='text-white font-bold'>타이밍</span>을 노리세요." }
+                        ],
+                        insight: "비슷한 영상이 많을 땐 '타이밍'이 생명입니다. (올드보이 군만두 전략)"
+                    }
+                ]
+            }
+        ]
+    };
+
+    window.Contents.momcare_week3_part1 = () => {
+        const data = momcareWeek3FeedbackPart1Data;
+
+        const renderCaseCard = (c) => html`
+            <div className="p-8 rounded-[2rem] bg-zinc-900 border border-zinc-800 hover:border-${c.color}-500/50 transition-colors flex flex-col h-full shadow-lg">
+                <div className="flex items-center gap-4 mb-6">
+                    <div className=${`p-4 rounded-2xl bg-${c.color}-400/10 text-${c.color}-400`}>
+                        <${LucideIcon} name=${c.icon} size=${32} />
+                    </div>
+                    <h3 className="text-2xl font-black text-white leading-tight">${c.title}</h3>
+                </div>
+                
+                <div className="mb-6 p-4 bg-black rounded-xl border border-zinc-800">
+                    <span className="text-zinc-500 font-bold text-xs uppercase block mb-1">Context</span>
+                    <p className="text-zinc-300 text-lg leading-snug">${c.context}</p>
+                </div>
+
+                <div className="space-y-4 mb-8 flex-grow">
+                    ${c.feedback.map(f => html`
+                        <div className="flex items-start gap-3">
+                            <span className=${`shrink-0 px-2 py-1 rounded text-xs font-black uppercase mt-1 ${f.type === 'good' ? 'bg-green-900/50 text-green-400 border border-green-500/30' : f.type === 'tip' ? 'bg-blue-900/50 text-blue-400 border border-blue-500/30' : 'bg-red-900/50 text-red-400 border border-red-500/30'}`}>${f.type === 'fix' ? 'Fix' : f.type.toUpperCase()}</span>
+                            <p className="text-zinc-200 text-lg leading-relaxed" dangerouslySetInnerHTML=${{ __html: f.text }}></p>
+                        </div>
+                    `)}
+                </div>
+
+                <div className=${`mt-auto pt-4 border-t border-${c.color}-500/20`}>
+                    <p className=${`text-${c.color}-300 font-medium italic text-lg`}>
+                        <span className="not-italic mr-2">💡</span> ${c.insight}
+                    </p>
+                </div>
+            </div>
+        `;
+
+        return html`
+            <div className="space-y-48 pb-60">
+                <!-- Header -->
+                <div className="text-center space-y-12 py-32 animate-fade-in relative">
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-900/20 rounded-full blur-[100px] -z-10"></div>
+                    <${Badge} color="blue">${data.meta.week}<//>
+                    <h1 className="text-6xl lg:text-8xl font-black tracking-tighter leading-none text-white mb-8 drop-shadow-2xl" dangerouslySetInnerHTML=${{ __html: data.meta.title }}></h1>
+                    <p className="text-2xl lg:text-3xl text-zinc-200 max-w-5xl mx-auto leading-normal font-bold" dangerouslySetInnerHTML=${{ __html: data.meta.subtitle }}></p>
+                </div>
+
+                 <!-- Section 1 -->
+                <${Section} title=${data.sections[0].title} subtitle=${data.sections[0].subtitle}>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        ${data.sections[0].cards.map(c => html`
+                            <${Card} title=${c.title} icon=${c.icon} color=${c.color}>
+                                <ul className="space-y-4 text-xl text-zinc-300">
+                                    ${c.items.map(item => html`
+                                        <li className="flex items-start gap-3">
+                                            <span className=${`text-${c.color}-400 mt-1.5 shrink-0`}>●</span>
+                                            <span dangerouslySetInnerHTML=${{ __html: item }}></span>
+                                        </li>
+                                    `)}
+                                </ul>
+                            <//>
+                        `)}
+                    </div>
+                <//>
+
+                <!-- Section 2 -->
+                <${Section} title=${data.sections[1].title} subtitle=${data.sections[1].subtitle}>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                        ${data.sections[1].cards.map(c => html`
+                            <${Card} title=${c.title} icon=${c.icon} color=${c.color}>
+                                <ul className="space-y-4 text-xl text-zinc-300">
+                                    ${c.items.map(item => html`
+                                        <li className="flex items-start gap-3">
+                                            <span className=${`text-${c.color}-400 mt-1.5 shrink-0`}>●</span>
+                                            <span dangerouslySetInnerHTML=${{ __html: item }}></span>
+                                        </li>
+                                    `)}
+                                </ul>
+                            <//>
+                        `)}
+                    </div>
+                    
+                    <div className="p-10 rounded-[2.5rem] bg-gradient-to-br from-zinc-900 to-black border border-zinc-800 shadow-2xl">
+                         <div className="text-center mb-10">
+                            <h3 className="text-3xl font-black text-white mb-3" dangerouslySetInnerHTML=${{ __html: data.sections[1].script_routine.title }}></h3>
+                            <p className="text-xl text-zinc-400">${data.sections[1].script_routine.desc}</p>
+                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                            ${data.sections[1].script_routine.steps.map(step => html`
+                                <div className="p-6 bg-zinc-800/50 rounded-2xl border border-zinc-700 hover:bg-zinc-800 transition-colors">
+                                    <strong className="block text-blue-400 text-lg uppercase mb-3 border-b border-zinc-700 pb-2">${step.label}</strong>
+                                    <p className="text-white text-lg font-medium" dangerouslySetInnerHTML=${{ __html: step.text }}></p>
+                                </div>
+                            `)}
+                        </div>
+                    </div>
+                <//>
+
+                <!-- Section 3: Case Studies 1 -->
+                <${Section} title=${data.sections[2].title} subtitle=${data.sections[2].subtitle}>
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        ${data.sections[2].cases.map(c => renderCaseCard(c))}
+                    </div>
+                <//>
+
+                <!-- Section 4: Case Studies 2 -->
+                <${Section} title=${data.sections[3].title} subtitle=${data.sections[3].subtitle}>
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        ${data.sections[3].cases.map(c => renderCaseCard(c))}
+                    </div>
+                <//>
+            </div>
+        `;
+    };
+
+    // --- Momcare Week 3 Feedback Part 2 Data ---
+    const momcareWeek3FeedbackPart2Data = {
+        meta: {
+            week: "MOMCARE WEEK 3 - FEEDBACK 2",
+            title: "피드백의 정석: 실전 하이엔드",
+            subtitle: "라이프핵, 감동, 유머까지. <span class='text-blue-400'>메시지</span> 하나로 조회수와 수익(쇼핑)을 동시에 잡는 법.",
+            keywords: ["쇼핑 태그", "시각적 후킹", "자막 템포", "팬튜브 공식", "날먹 콘텐츠"]
+        },
+        sections: [
+            {
+                id: "lifehack_shopping",
+                title: "1. 라이프핵 & 쇼핑 수익화",
+                subtitle: "(조회수 + 수익모델 접목)",
+                cards: [
+                    {
+                        title: "쇼핑 태그 전략 (수익화)",
+                        icon: "ShoppingBag",
+                        color: "green",
+                        items: [
+                            "허들 파괴: 일반 조회수는 '시청' 허들이 있지만, 꿀팁 콘텐츠는 문제 해결을 통해 '구매' 허들까지 무너뜨립니다.",
+                            "쿠팡 태그: 구독자 1만(랜덤 3천) 달성 시 <span class='text-green-400 font-bold'>쇼핑 태그</span> 활성화. (내가 태그한 제품 구매 시 수수료 6.7%)",
+                            "전환율: 지식/정보성 카테고리에 쇼핑을 붙이면 수익 전환율이 압도적입니다.",
+                            "일치율 관리: 클립 소스(틱톡, 도인 등)가 넘쳐나므로, 장면을 교체해 일치율을 낮추기 쉽습니다."
+                        ]
+                    },
+                    {
+                        title: "피드백: 휴지 방향제 꿀팁",
+                        icon: "Scissors",
+                        color: "zinc",
+                        feedback: [
+                            { type: "good", text: "메시지가 명확하고 와우 포인트(Wow Point)를 잘 뽑아냄." },
+                            { type: "fix", text: "단어 중복(히말라야, 한 캡 등) 과다. <span class='text-red-400'>동의어 교체</span>로 피로도 줄일 것." }
+                        ],
+                        insight: "라이프 핵은 쇼핑 수익 창출을 위한 최고의 '빌드업' 소재입니다."
+                    }
+                ]
+            },
+            {
+                id: "touching_story",
+                title: "2. 감동 스토리 & 시각적 후킹",
+                subtitle: "TTS보다 강력한 '한 장면'",
+                cards: [
+                    {
+                        title: "시각적 후킹 전략",
+                        icon: "Eye",
+                        color: "blue",
+                        items: [
+                            "TTS의 한계: 구구절절한 설명(TTS)보다 <span class='text-blue-400 font-bold'>우는 장면 2초</span>가 훨씬 강력한 후킹입니다.",
+                            "배치 순서: [시각적 충격 장면(2초)] -> [TTS 설명] 순서가 국룰.",
+                            "집단지성(댓글): '30년 전엔 폰도 없었다...', '인종 상관없이...' 같은 베스트 댓글이 곧 <span class='text-white font-bold'>메시지이자 대본</span>입니다."
+                        ]
+                    },
+                    {
+                        title: "피드백: 감동 재회",
+                        icon: "Users",
+                        color: "indigo",
+                        feedback: [
+                            { type: "good", text: "대본의 몰입도가 좋고 '감동 재회' 메시지가 명확함." },
+                            { type: "fix", text: "도입부 TTS 제거. 이한 선수가 <span class='text-indigo-400 font-bold'>우는 장면</span>을 맨 앞으로 배치할 것." }
+                        ],
+                        insight: "쇼츠는 미니멀(1분 미만)이 원칙입니다. 1분 7초는 너무 깁니다."
+                    }
+                ]
+            },
+            {
+                id: "humor_behind",
+                title: "3. 유머 & 비하인드 스토리",
+                subtitle: "자막 연출과 '날먹' 전략",
+                cards: [
+                    {
+                        title: "자막 디테일 (유머)",
+                        icon: "Type",
+                        color: "yellow",
+                        items: [
+                            "위치 선정: 자막이 핵심 장면(얼굴 표정 등)을 가리면 안 됨. <span class='text-yellow-400 font-bold'>눈 높이(뇌 쪽)</span>나 하단으로 이동.",
+                            "템포 조절: 웃긴 포인트에서 글자가 너무 빨리 지나가면 재미가 반감됨.",
+                            "얼빡 주의: 과도한 얼굴 확대(얼빡)는 전체 흐름을 방해함. 상황이 한눈에 보이게 편집할 것."
+                        ]
+                    },
+                    {
+                        title: "비하인드 썰 (날먹)",
+                        icon: "Music",
+                        color: "purple",
+                        items: [
+                            "날먹(Easy) 콘텐츠: 비하인드 썰(정인, 이적 등)은 영상 소스가 주제와 상관없어도 됨. (제작 난이도 하)",
+                            "소재 확장: '원곡보다 잘 부른 커버', '리메이크 역주행' 등 SNS에 소재 무궁무진함.",
+                            "힐링썰 형식: 주제와 무관한 배경(드라이브 등) 깔고 스토리에만 집중시키는 방식."
+                        ]
+                    }
+                ]
+            },
+            {
+                id: "fantube_incident",
+                title: "4. 팬튜브 & 사건사고",
+                subtitle: "성공 공식과 힘 빼기",
+                cards: [
+                    {
+                        title: "팬튜브 성공 공식",
+                        icon: "Star",
+                        color: "pink",
+                        items: [
+                            "와우 포인트 공식: 예쁘고 잘생긴 연예인의 <span class='text-pink-400 font-bold'>귀엽거나 웃긴 장면</span>은 팬이 아니어도 봅니다.",
+                            "재가공의 힘: 원작이 4.6만 뷰라도, 구간 편집(구다리 변경) 잘하면 1,000만 뷰 가능.",
+                            "아이돌 팁: 무조건 <span class='text-white font-bold'>'귀염뽀짝'</span>하게. (자막, 필터, 효과음 무장)"
+                        ]
+                    },
+                    {
+                        title: "사건사고 & 쇼핑 경합",
+                        icon: "Siren",
+                        color: "red",
+                        items: [
+                            "힘 빼기의 미학: 화려한 편집 불필요. <span class='text-red-400 font-bold'>메시지(직관성)</span>만 보이면 됨. (예: 경찰 전기충격기)",
+                            "쇼핑 경합: '쇼핑 일왕'들의 경쟁(틴트 등)이 치열함. 레드오션(최신)보다 <span class='text-white font-bold'>잊혀진 고점 콘텐츠</span>(블루오션)를 노리는 전략 추천."
+                        ]
+                    }
+                ]
+            }
+        ]
+    };
+
+    window.Contents.momcare_week3_part2 = () => {
+        const data = momcareWeek3FeedbackPart2Data;
+
+        return html`
+            <div className="space-y-48 pb-60">
+                 <!-- Header -->
+                <div className="text-center space-y-12 py-32 animate-fade-in relative">
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-purple-900/20 rounded-full blur-[100px] -z-10"></div>
+                     <${Badge} color="purple">${data.meta.week}<//>
+                    <h1 className="text-6xl lg:text-8xl font-black tracking-tighter leading-none text-white mb-8 drop-shadow-2xl" dangerouslySetInnerHTML=${{ __html: data.meta.title }}></h1>
+                    <p className="text-2xl lg:text-3xl text-zinc-200 max-w-5xl mx-auto leading-normal font-bold" dangerouslySetInnerHTML=${{ __html: data.meta.subtitle }}></p>
+                </div>
+
+                ${data.sections.map(s => html`
+                    <${Section} title=${s.title} subtitle=${s.subtitle}>
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                            ${s.cards.map(c => html`
+                                <${Card} title=${c.title} icon=${c.icon} color=${c.color}>
+                                    ${c.items ? html`
+                                        <ul className="space-y-4 text-xl text-zinc-300">
+                                            ${c.items.map(item => html`
+                                                <li className="flex items-start gap-3">
+                                                    <span className=${`text-${c.color}-400 mt-1.5 shrink-0`}>●</span>
+                                                    <span dangerouslySetInnerHTML=${{ __html: item }}></span>
+                                                </li>
+                                            `)}
+                                        </ul>
+                                    ` : ''}
+                                    ${c.feedback ? html`
+                                        <div className="space-y-4">
+                                            ${c.feedback.map(f => html`
+                                                <div className="flex items-start gap-3">
+                                                    <span className=${`shrink-0 px-2 py-1 rounded text-xs font-black uppercase mt-1 ${f.type === 'good' ? 'bg-green-900/50 text-green-400 border border-green-500/30' : 'bg-red-900/50 text-red-400 border border-red-500/30'}`}>${f.type.toUpperCase()}</span>
+                                                    <p className="text-zinc-200 text-lg leading-relaxed" dangerouslySetInnerHTML=${{ __html: f.text }}></p>
+                                                </div>
+                                            `)}
+                                        </div>
+                                    ` : ''}
+                                <//>
+                            `)}
+                        </div>
+                    <//>
+                `)}
+            </div>
+        `;
+    };
+
+    // --- Momcare Week 3 Feedback Part 3 Data ---
+    const momcareWeek3FeedbackPart3Data = {
+        meta: {
+            week: "MOMCARE WEEK 3 - FEEDBACK 3",
+            title: "성공하는 채널의 1% 디테일",
+            subtitle: "양념(재가공)과 <span class='text-green-400'>시스템화</span>의 완성.<br/>사족을 빼고 <span class='text-white font-bold'>메시지</span>로 승부하라.",
+            keywords: ["시스템화", "사족 제거", "양념 공식", "영드자", "지식형 후킹"]
+        },
+        sections: [
+            {
+                id: "drama_movie",
+                title: "1. 드라마/유머 & 영드자",
+                subtitle: "(몰입도와 재각색의 정석)",
+                cards: [
+                    {
+                        title: "유머: 남친의 어리광",
+                        icon: "Smile",
+                        color: "yellow",
+                        feedback: [
+                            { type: "good", text: "정수리 냄새, 헬스장 이모티콘 등 멘트와 디테일을 원작보다 더 재미있게 양념함." },
+                            { type: "good", text: "원작 소스 외에 다른 클립(축구공, 아령 등)을 섞어 일치율을 낮추고 재미를 극대화." },
+                            { type: "insight", text: "첫 영상에서의 '과도한 열정(사족)'은 독입니다. 시청자가 보기 편안한 것만 남기세요." }
+                        ]
+                    },
+                    {
+                        title: "영드자: 며느리의 상처",
+                        icon: "Film",
+                        color: "purple",
+                        feedback: [
+                            { type: "good", text: "<span class='text-purple-400 font-bold'>구달(구간 나누기)이 완벽함.</span> 시어머니의 감정선을 위해 '며느리의 폭로' 장면을 추가한 재각색이 압권." },
+                            { type: "insight", text: "라마 채널처럼 남들이 안 쓰는 소재(빈틈)를 공략하세요. 어제 먹은 치킨은 오늘 맛없습니다." }
+                        ]
+                    },
+                    {
+                        title: "영드자: 추격자 (대결)",
+                        icon: "Video",
+                        color: "zinc",
+                        feedback: [
+                            { type: "fix", text: "템포가 루즈함. 긴박한 대결 상황은 <span class='text-white font-bold'>템포를 올려야</span> 몰입됨." },
+                            { type: "fix", text: "인트로의 사투리 비하 멘트('김일성이네') 등 부적절한 드립 절대 금지." },
+                            { type: "fix", text: "TTS가 완전한 문장으로 다 나오면 몰입도가 깨짐. 중간중간 툭툭 칠 것." }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: "knowledge_curiosity",
+                title: "2. 지식 & 호기심 (Curiosity)",
+                subtitle: "(사족을 빼고 간결하게)",
+                cards: [
+                    {
+                        title: "지식: 양초 얼음",
+                        icon: "Thermometer",
+                        color: "blue",
+                        feedback: [
+                            { type: "good", text: "후킹 포인트와 제목 흐름이 좋음. 위기감 조성 탁월." },
+                            { type: "fix", text: "영상이 끝나고 의견(사족)을 붙이지 말 것. <span class='text-red-400'>교장 선생님 훈화 말씀</span>처럼 느껴져 이탈 발생." }
+                        ]
+                    },
+                    {
+                        title: "지식: 드릴 사탕 실험",
+                        icon: "Zap",
+                        color: "orange",
+                        feedback: [
+                            { type: "good", text: "제목('문과생이 울어버린 이유')으로 관점을 기가 막히게 바꿈." },
+                            { type: "fix", text: "어려운 용어('캐러멜화', '원심력')를 '실리콘처럼', '젤라틴처럼' 등 <span class='text-orange-400 font-bold'>직관적 단어</span>로 바꿀 것." }
+                        ]
+                    },
+                    {
+                        title: "시사: 번식 노예 타파스카",
+                        icon: "Anchor",
+                        color: "red",
+                        feedback: [
+                            { type: "good", text: "자녀 수(250명) 내용을 빼고 '비극적 삶(메시지)'에 집중. 28초 미니멀 편집 훌륭." },
+                            { type: "insight", text: "시사/지식은 <span class='text-white font-bold'>템포가 너무 빠르면 안 됨</span>. 메시지를 음미할 시간을 줘야 함." }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: "celeb_sports",
+                title: "3. 연예인 & 스포츠 & 예능",
+                subtitle: "(TTS 톤과 템포 조절)",
+                cards: [
+                    {
+                        title: "연예인: 빅뱅 대성",
+                        icon: "Mic",
+                        color: "pink",
+                        feedback: [
+                            { type: "fix", text: "재밌고 찰진 내용에 진지한(다큐) 아나운서 톤 TTS는 최악. <span class='text-pink-400 font-bold'>창수/해리</span> 같은 캐릭터 목소리 쓸 것." },
+                            { type: "good", text: "출처 표기 루틴(우등생 스멜) 훌륭함." }
+                        ]
+                    },
+                    {
+                        title: "스포츠: 타이거 우즈",
+                        icon: "Activity",
+                        color: "green",
+                        feedback: [
+                            { type: "fix", text: "<span class='text-red-400 font-bold'>템포 조절 실패.</span> 자막이 너무 빨라 시청자가 읽을 수가 없음." },
+                            { type: "insight", text: "소제목 제안: '폼은 일시적이나 클래스는 영원하다', '신도 실수를 한다' 등 명언 활용." }
+                        ]
+                    },
+                    {
+                        title: "예능: 정승재 강사",
+                        icon: "Smile",
+                        color: "teal",
+                        feedback: [
+                            { type: "good", text: "소제목에 '큰 한 개(크)'를 붙여 차별화 시도." },
+                            { type: "fix", text: "인트로 할머니 TTS가 너무 김. <span class='text-teal-400'>1.2배속</span>으로 짧고 강하게 쳐야 함." }
+                        ]
+                    },
+                    {
+                        title: "명언: 이효리",
+                        icon: "Star",
+                        color: "indigo",
+                        feedback: [
+                            { type: "fix", text: "이효리 명언집인가, <span class='text-indigo-400 font-bold'>창수(TTS) 명언집</span>인가? TTS 멘트를 제발 줄일 것." },
+                            { type: "insight", text: "명언만 나열하지 말고, 춤/예능 장면을 교차 편집(스위치)하여 지루함 탈피." }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: "final_system",
+                title: "4. 시스템화 & 마인드셋",
+                subtitle: "(Next Level)",
+                cards: [
+                    {
+                        title: "학습 루틴 (족보 만들기)",
+                        icon: "BookOpen",
+                        color: "blue",
+                        items: [
+                            "복습 및 요약: 평일에는 1~2강 반복 시청, 주말에는 반드시 <span class='text-blue-400 font-bold'>나만의 족보(요약본)</span>를 만드세요.",
+                            "조급함 금지: 초심자가 첫 술에 배부를 수 없습니다. 속도가 느린 것은 당연합니다.",
+                            "채널 1개 금지: 채널 한 개에 목매지 말고, 각자의 페이스에 맞춰 계속 전진하세요."
+                        ]
+                    },
+                    {
+                        title: "시스템화 & 스노우볼",
+                        icon: "Layers",
+                        color: "green",
+                        items: [
+                            "단계별 로드맵: [에셋 확보] -> [대본 루틴] -> [시스템(위임/확장)].",
+                            "스노우볼 효과: 기존 채널 수익을 재투자하면 수익이 순식간에 불어납니다.",
+                            "성공 공식: <span class='text-white font-bold'>메시지(댓글) + 양념(대본) - 사족(욕심) = 고조회수.</span>"
+                        ]
+                    }
+                ]
+            }
+        ]
+    };
+
+    window.Contents.momcare_week3_part3 = () => {
+        const data = momcareWeek3FeedbackPart3Data;
+
+        return html`
+            <div className="space-y-48 pb-60">
+                 <!-- Header -->
+                <div className="text-center space-y-12 py-32 animate-fade-in relative">
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-red-900/20 rounded-full blur-[100px] -z-10"></div>
+                     <${Badge} color="red">${data.meta.week}<//>
+                    <h1 className="text-6xl lg:text-8xl font-black tracking-tighter leading-none text-white mb-8 drop-shadow-2xl" dangerouslySetInnerHTML=${{ __html: data.meta.title }}></h1>
+                    <p className="text-2xl lg:text-3xl text-zinc-200 max-w-5xl mx-auto leading-normal font-bold" dangerouslySetInnerHTML=${{ __html: data.meta.subtitle }}></p>
+                </div>
+
+                ${data.sections.map(s => html`
+                    <${Section} title=${s.title} subtitle=${s.subtitle}>
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                            ${s.cards.map(c => html`
+                                <${Card} title=${c.title} icon=${c.icon} color=${c.color}>
+                                    ${c.items ? html`
+                                        <ul className="space-y-4 text-xl text-zinc-300">
+                                            ${c.items.map(item => html`
+                                                <li className="flex items-start gap-3">
+                                                    <span className=${`text-${c.color}-400 mt-1.5 shrink-0`}>●</span>
+                                                    <span dangerouslySetInnerHTML=${{ __html: item }}></span>
+                                                </li>
+                                            `)}
+                                        </ul>
+                                    ` : ''}
+                                    ${c.feedback ? html`
+                                        <div className="space-y-4">
+                                            ${c.feedback.map(f => html`
+                                                <div className="flex items-start gap-3">
+                                                    <span className=${`shrink-0 px-2 py-1 rounded text-xs font-black uppercase mt-1 ${f.type === 'good' ? 'bg-green-900/50 text-green-400 border border-green-500/30' : f.type === 'insight' ? 'bg-blue-900/50 text-blue-400 border border-blue-500/30' : 'bg-red-900/50 text-red-400 border border-red-500/30'}`}>${f.type.toUpperCase()}</span>
+                                                    <p className="text-zinc-200 text-lg leading-relaxed" dangerouslySetInnerHTML=${{ __html: f.text }}></p>
+                                                </div>
+                                            `)}
+                                        </div>
+                                    ` : ''}
+                                <//>
+                            `)}
+                        </div>
+                    <//>
+                `)}
+            </div>
+        `;
+    };
+
     // Expose Data for Search (Full-Text Search Support)
     window.LectureData = {
         lecture1_part1: lecture1Part1Data, // Week 1 Part 1
@@ -2954,7 +4974,13 @@
         lecture2_part2: lecture2Part2Data, // Week 2 Part 2
         lecture3_part1: lecture3Part1Data, // Week 3 Part 1
         lecture3_part2: lecture3Part2Data, // Week 3 Part 2
-        lecture3_part3: lecture3Part3Data  // Week 3 Part 3
+        lecture3_part3: lecture3Part3Data,  // Week 3 Part 3
+        momcare_lecture1_part1: momcareLecture1Part1Data,
+        momcare_lecture1_part2: momcareLecture1Part2Data,
+        momcare_week2_part1: momcareWeek2FeedbackPart1Data,
+        momcare_week2_part2: momcareWeek2FeedbackPart2Data,
+        momcare_week3_part1: momcareWeek3FeedbackPart1Data,
+        momcare_week3_part2: momcareWeek3FeedbackPart2Data,
+        momcare_week3_part3: momcareWeek3FeedbackPart3Data
     };
 })();
-
