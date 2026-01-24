@@ -4965,6 +4965,775 @@
         `;
     };
 
+    // --- Lecture 4 Part 1 Data ---
+    const lecture4Part1Data = {
+        meta: {
+            badgeColor: "blue",
+            badgeText: "WEEK 4 - PART 1",
+            title: "쇼츠 채널<br/><span class='text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500 font-black'>오토 시스템 구축</span>",
+            subtitle: "기획에 집중하고 편집을 버려라.<br/>물리적 한계를 극복하고 수익을 극대화하는 레버리지의 본질을 배웁니다.",
+            keywords: ["시스템 구축", "외주 활용", "레버리지", "사업가 마인드셋", "프리랜서 채용", "인큐베이팅"]
+        },
+        sections: [
+            {
+                id: "intro",
+                title: "1. 4주차 학습 방향성",
+                subtitle: "속도보다 방향성, 기획이 먼저다",
+                cards: [
+                    {
+                        title: "1.1. 강의 진행 및 학습 마인드",
+                        icon: "PlayCircle",
+                        color: "blue",
+                        items: [
+                            { label: "과제 관리:", text: "3주차 과제 130개 접수됨. 새 채널은 깡통 채널에 영상 1개 업로드 시 확인 가능함." },
+                            { label: "반복 학습:", text: "1~2강 내용을 1.2~1.3배속으로 반복 인스톨 추천. 강사 지식의 90% 이상 이해 목표임." },
+                            { label: "포기 금지:", text: "'하모 된다' 마인드로 동료들과 함께 끝까지 완주 추천. 강사는 끝까지 포기하지 않음." }
+                        ]
+                    },
+                    {
+                        title: "1.2. 기획의 힘 & 성과 지표",
+                        icon: "BarChart3",
+                        color: "purple",
+                        items: [
+                            { label: "기획 우선:", text: "섣부른 업로드보다 정확한 채널 설계가 중요함. 하루 이틀 재정비 후 업로드가 유리함." },
+                            { label: "성과 입증:", text: "강사 신규 채널 운영 5일 만에 <mark>180만 뷰</mark> 돌파. 1~2강 공식의 위력이 증명됨." },
+                            { label: "시야 확보:", text: "한국 트렌드 파악 및 신선한 소재(옛날 영상 등)를 선별하는 눈이 성공의 핵심임." }
+                        ]
+                    },
+                    {
+                        title: "1.3. 시스템 구축의 목적",
+                        icon: "Settings",
+                        color: "indigo",
+                        items: [
+                            { label: "오토 시스템:", text: "내가 아프거나 여행 중에도 채널이 돌아가는 구조임. 편집을 버리고 기획에 올인 추천." },
+                            { label: "레버리지:", text: "고수익자 대부분 시스템 활용 중임. 물리적 시간 한계를 위임으로 극복 추천." },
+                            { label: "전제 조건:", text: "내가 직접 해서 조회수를 내본 뒤, 안목이 생겼을 때 비로소 위임 가능함." }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: "recap",
+                title: "2. 1~3강 본질 복습 (Must Know)",
+                subtitle: "기본이 흐려지면 수익도 사라진다",
+                cards: [
+                    {
+                        title: "2.1. 가이드라인 & 알고리즘",
+                        icon: "ShieldCheck",
+                        color: "yellow",
+                        items: [
+                            { label: "가이드라인:", text: "기본 중의 기본임. 지피티(GPT)를 활용한 단어 변경 및 검수 루틴 필수 준수 추천." },
+                            { label: "알고리즘:", text: "시청자가 좋아하는 영상이 정답임. 대중성 있는 한계치 높은 소재 선별 추천." },
+                            { label: "제작 철학:", text: "과장(오버쿡) 지양. 힘을 빼고 적당히 편하게 던지는 영상 제작 추천." }
+                        ]
+                    },
+                    {
+                        title: "2.2. 소재·댓글·에셋 (D.C.A)",
+                        icon: "Database",
+                        color: "green",
+                        items: [
+                            { label: "소재 선정:", text: "성공의 <mark>80%</mark> 차지함. 소재를 고르는 순간 이미 채널 운명이 결정됨." },
+                            { label: "공감대 형성:", text: "베스트 댓글이 곧 정답지임. 내 주관을 빼고 데이터 중심으로 분석 추천." },
+                            { label: "에셋 구축:", text: "결이 맞는 벤치 채널을 모으는 '돈 버는 취미' 습관화 추천. 타이밍 선점 필수임." }
+                        ]
+                    },
+                    {
+                        title: "2.3. 제작 루틴 & 트렌드 해킹",
+                        icon: "Zap",
+                        color: "blue",
+                        items: [
+                            { label: "제작 프로세스:", text: "가이드라인 → 단어 변경 → 야부리(양념) → 자막 → 편집점 변경 순서임." },
+                            { label: "기획자 마인드:", text: "창조가 아닌 트렌드 해킹임. 한국 채널 날짜/인기순 분석에 시간 투자 추천." },
+                            { label: "시장 조사:", text: "완벽한 시장 조사가 성공을 보장함. 5~10시간 이상 충분한 조사 추천." }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: "volume_strategy",
+                title: "3. 물량 투입 & 수익 로드맵",
+                subtitle: "채널 안착에서 스노우볼까지",
+                cards: [
+                    {
+                        title: "3.1. 채널 성장 단계별 전략",
+                        icon: "TrendingUp",
+                        color: "red",
+                        items: [
+                            { label: "안착기 (1~10일):", text: "1일 1영상 업로드. 10만 뷰 근접 영상 확인 시 물량 증대 시점임." },
+                            { label: "확장기 (볼륨 업):", text: "월화수 2개, 목금토일 3~4개 증량 추천. 트래픽 피크는 목~일요일임." },
+                            { label: "빨간 날 전략:", text: "공휴일엔 시청 시간 급증함. 집중적으로 영상 투입하여 채널 키우기 추천." }
+                        ]
+                    },
+                    {
+                        title: "3.2. 수익 등급 & 시스템 시점",
+                        icon: "Coins",
+                        color: "emerald",
+                        content: [
+                            { label: "월 2,500만 원:", text: "48시간 볼륨 <mark>1,000만 뷰</mark> 유지 시 가능함.", color: "text-red-400" },
+                            { label: "월 1,000만 원:", text: "48시간 볼륨 <mark>400만 뷰</mark> 유지 시 가능함.", color: "text-emerald-400" },
+                            { label: "월 500만 원:", text: "48시간 볼륨 <mark>200만 뷰</mark> 유지 시 가능함.", color: "text-blue-400" },
+                            { label: "시스템 구축 기준:", text: "월 125만 원(48h 50만 뷰) 번 시점부터 외주 시스템화 강력 추천.", color: "text-yellow-400" }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: "deep_mechanics",
+                title: "4. 알고리즘 & 제작 메커니즘 심화",
+                subtitle: "통찰력 있는 채널 운영 기술",
+                cards: [
+                    {
+                        title: "4.1. 후킹 & 데이터 분석",
+                        icon: "Target",
+                        color: "indigo",
+                        items: [
+                            { label: "와우 포인트:", text: "2초 내외의 강렬한 감정 장면을 맨 앞에 배치 추천. TTS는 툭 치듯 시작함." },
+                            { label: "댓글형 대본:", text: "나레이션과 소제목 모두 댓글 반응에 기반하여 작성 추천." },
+                            { label: "지표의 진실:", text: "지시율(75% 등) 통계 오류 조심. 대신 조회수와 이탈 방지 본질에 집중 추천." }
+                        ]
+                    },
+                    {
+                        title: "4.2. 노출 알고리즘 & 대처",
+                        icon: "Cpu",
+                        color: "orange",
+                        items: [
+                            { label: "테스트 피드:", text: "초반 15개 영상까지 꾸준함 필수임. 하나 터지면 이전 영상도 노출 열림." },
+                            { label: "결 변경 적응:", text: "소재 바꿨을 때의 계단식 성장은 알고리즘의 재인식 신호임. 꾸준히 업로드 추천." },
+                            { label: "영상 재활용:", text: "제로 펀치(0뷰) 시 삭제 후 다른 채널 업로드 가능함. 확신 없으면 폐기 추천." },
+                            { label: "현실적 등급:", text: "3만 뷰 이상이면 합격. 1,000 뷰 이하는 영상 재미가 부족한 시그널임." }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: "business_mind",
+                title: "5. 사업가 마인드셋 & 레버리지",
+                subtitle: "고기 굽기를 멈추고 주인이 되어라",
+                cards: [
+                    {
+                        title: "5.1. 레버리지의 본질",
+                        icon: "Key",
+                        color: "blue",
+                        items: [
+                            { label: "선택과 집중:", text: "워렌 버핏 전략. '무엇을 하지 않을 것인가' 선택이 성공의 열쇠임." },
+                            { label: "편집 위임:", text: "물리적 시간 한계 탈피를 위해 가장 먼저 '편집'을 레버리지 해야 함." },
+                            { label: "수익 효율:", text: "창업비 1억 치킨집보다 월 60~100만 원 외주 채널 여러 개가 압도적 효율임." }
+                        ]
+                    },
+                    {
+                        title: "5.2. 프랜차이즈형 시스템",
+                        icon: "Network",
+                        color: "green",
+                        items: [
+                            { label: "오토 운영:", text: "식당과 달리 온라인은 시장/업무가 명확하면 오토 구축이 가능함." },
+                            { label: "전제 조건:", text: "내가 직접 해서 조회수를 내본 뒤, 안목이 생겼을 때 비로소 위임 시작 추천." },
+                            { label: "스노우볼:", text: "채널 1개 수익을 2개 채널 외주비로 재투자하는 사업적 순환 구조 구축 추천." }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: "hiring_process",
+                title: "6. 프리랜서 채용 6단계 (처음부터 끝까지)",
+                subtitle: "좋은 파트너를 찾는 실전 절차",
+                recruitment_steps: [
+                    { step: "1단계", title: "공고문 작성 & 게시", desc: "잡코리아, 알바몬, 당근, 숨고 활용. 공고문 차별화(카테고리 어필) 필수임." },
+                    { step: "2단계", title: "데이터 정리 & 초대", desc: "지원자 번호 지피티(GPT)로 정리. 오픈카톡방 링크 단체 발송으로 1:1 대화 유도 추천." },
+                    { step: "3단계", title: "1차 면접 (오픈톡)", desc: "양산형 유무, 편집 툴 파악. 프리미어 프로(Premiere Pro) 사용자 단가/풀 측면 유리함." },
+                    { step: "4단계", title: "2차 선별 (결 체크)", desc: "포트폴리오 확인. 퀄리티 85~90% 및 결 일치 시 폰 등록 및 개별 대화 진행 추천." },
+                    { step: "5단계", title: "샘플 작업 & 가이드", desc: "'테스트' 아닌 '샘플링' 요청. 자막 파일(SRT), 음성 합성(TTS), 폰트 세팅 등 상세 지시서 제공 추천." },
+                    { step: "6단계", title: "계약 & 인큐베이팅", desc: "합 맞추는 기간 필요함. 칭찬과 따뜻한 피드백으로 트레이닝(인큐베이팅) 추천." }
+                ],
+                hiring_tips: [
+                    { label: "파트너 마인드:", text: "고용주-고용인 아닌 파트너 관점 유지. 하대하지 말고 고마움 표현 추천." },
+                    { label: "피드백 기술:", text: "칭찬 먼저, 고칠 부분 정중하게. '다음에 더 완벽할 것 같아요' 등 따뜻한 말투 사용 추천." },
+                    { label: "급여 & 보너스:", text: "3.3% 공제 지급. 성과에 따른 인센티브/보너스로 충성도 확보 추천." }
+                ]
+            }
+        ]
+    };
+
+    window.Contents.lecture4_part1 = () => {
+        const data = lecture4Part1Data;
+        const s1 = data.sections[0];
+        const s2 = data.sections[1];
+        const s3 = data.sections[2];
+        const s4 = data.sections[3];
+        const s5 = data.sections[4];
+        const s6 = data.sections[5];
+
+        return html`
+            <div className="space-y-48 pb-60">
+                <!-- Header -->
+                <div className="text-center space-y-12 py-32 animate-fade-in relative">
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-blue-900/20 rounded-full blur-[120px] -z-10"></div>
+                    <${Badge} color="blue">${data.meta.badgeText}<//>
+                    <h1 className="text-7xl lg:text-9xl font-black tracking-tighter leading-none text-white mb-8 drop-shadow-2xl" dangerouslySetInnerHTML=${{ __html: data.meta.title }}></h1>
+                    <p className="text-3xl lg:text-4xl text-zinc-200 max-w-6xl mx-auto leading-normal font-bold" dangerouslySetInnerHTML=${{ __html: data.meta.subtitle }}></p>
+                </div>
+
+                <!-- Section 1 -->
+                <${Section} title=${s1.title} subtitle=${s1.subtitle}>
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        ${s1.cards.map(card => html`
+                            <${Card} title=${card.title} icon=${card.icon} color=${card.color}>
+                                <ul className="space-y-4 text-xl">
+                                    ${card.items.map(item => html`
+                                        <li className="flex items-start gap-3">
+                                            <span className="text-blue-400 mt-1.5 shrink-0">●</span>
+                                            <span className="text-zinc-300"><strong>${item.label}</strong> <span dangerouslySetInnerHTML=${{ __html: item.text }}></span></span>
+                                        </li>
+                                    `)}
+                                </ul>
+                            <//>
+                        `)}
+                    </div>
+                <//>
+
+                <!-- Section 2 -->
+                <${Section} title=${s2.title} subtitle=${s2.subtitle}>
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        ${s2.cards.map(card => html`
+                            <${Card} title=${card.title} icon=${card.icon} color=${card.color}>
+                                <ul className="space-y-4 text-xl">
+                                    ${card.items.map(item => html`
+                                        <li className="flex items-start gap-3">
+                                            <span className=${`text-${card.color}-400 mt-1.5 shrink-0`}>●</span>
+                                            <span className="text-zinc-300"><strong>${item.label}</strong> <span dangerouslySetInnerHTML=${{ __html: item.text }}></span></span>
+                                        </li>
+                                    `)}
+                                </ul>
+                            <//>
+                        `)}
+                    </div>
+                <//>
+
+                <!-- Section 3 -->
+                <${Section} title=${s3.title} subtitle=${s3.subtitle}>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                        <${Card} title=${s3.cards[0].title} icon=${s3.cards[0].icon} color=${s3.cards[0].color}>
+                            <ul className="space-y-6 text-xl">
+                                ${s3.cards[0].items.map(item => html`
+                                    <li className="flex items-start gap-4 p-4 bg-black/40 rounded-2xl border border-zinc-800">
+                                        <span className="text-red-500 font-black text-2xl pt-1">!</span>
+                                        <div>
+                                            <strong className="text-white block mb-1">${item.label}</strong>
+                                            <span className="text-zinc-300" dangerouslySetInnerHTML=${{ __html: item.text }}></span>
+                                        </div>
+                                    </li>
+                                `)}
+                            </ul>
+                        <//>
+                        <${Card} title=${s3.cards[1].title} icon=${s3.cards[1].icon} color=${s3.cards[1].color}>
+                            <div className="space-y-6">
+                                ${s3.cards[1].content.map(item => html`
+                                    <div className="flex justify-between items-center p-5 bg-zinc-900 rounded-2xl border border-zinc-800">
+                                        <span className="text-xl font-bold text-zinc-200">${item.label}</span>
+                                        <span className=${`text-3xl font-black ${item.color}`} dangerouslySetInnerHTML=${{ __html: item.text }}></span>
+                                    </div>
+                                `)}
+                            </div>
+                        <//>
+                    </div>
+                <//>
+
+                <!-- Section 4 -->
+                <${Section} title=${s4.title} subtitle=${s4.subtitle}>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                        ${s4.cards.map(card => html`
+                            <${Card} title=${card.title} icon=${card.icon} color=${card.color}>
+                                <ul className="space-y-6 text-xl">
+                                    ${card.items.map(item => html`
+                                        <li className="flex items-start gap-4">
+                                            <div className=${`mt-2 w-2 h-2 rounded-full bg-${card.color}-400 shrink-0`}></div>
+                                            <span className="text-zinc-200"><strong>${item.label}</strong> ${item.text}</span>
+                                        </li>
+                                    `)}
+                                </ul>
+                            <//>
+                        `)}
+                    </div>
+                <//>
+
+                <!-- Section 5 -->
+                <${Section} title=${s5.title} subtitle=${s5.subtitle}>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                        ${s5.cards.map(card => html`
+                            <${Card} title=${card.title} icon=${card.icon} color=${card.color} className="bg-zinc-900/80">
+                                <ul className="space-y-8 text-xl">
+                                    ${card.items.map(item => html`
+                                        <li className="space-y-2">
+                                            <strong className=${`block text-2xl text-${card.color}-400`}>${item.label}</strong>
+                                            <p className="text-zinc-200 leading-relaxed" dangerouslySetInnerHTML=${{ __html: item.text }}></p>
+                                        </li>
+                                    `)}
+                                </ul>
+                            <//>
+                        `)}
+                    </div>
+                <//>
+
+                <!-- Section 6 -->
+                <${Section} title=${s6.title} subtitle=${s6.subtitle}>
+                    <div className="space-y-12">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            ${s6.recruitment_steps.map((item, idx) => html`
+                                <div className="p-8 bg-zinc-900 rounded-[2.5rem] border border-zinc-800 hover:border-yellow-500/50 transition-all group">
+                                    <div className="text-yellow-500 font-black text-xl mb-4 opacity-50 group-hover:opacity-100">${item.step}</div>
+                                    <h4 className="text-2xl font-black text-white mb-4">${item.title}</h4>
+                                    <p className="text-zinc-400 text-lg leading-relaxed" dangerouslySetInnerHTML=${{ __html: item.desc }}></p>
+                                </div>
+                            `)}
+                        </div>
+                        
+                        <${Card} title="실전 매니지먼트 & 팁" icon="HeartHandshake" color="emerald">
+                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                                <div className="space-y-6">
+                                    ${s6.hiring_tips.map(tip => html`
+                                        <div className="p-6 bg-black/40 rounded-3xl border border-emerald-900/30">
+                                            <strong className="block text-emerald-400 text-xl font-bold mb-2">${tip.label}</strong>
+                                            <p className="text-zinc-200 text-lg" dangerouslySetInnerHTML=${{ __html: tip.text }}></p>
+                                        </div>
+                                    `)}
+                                </div>
+                                <div className="bg-emerald-950/20 p-10 rounded-[3rem] border border-emerald-500/20 flex flex-col justify-center text-center">
+                                    <${LucideIcon} name="UserCheck" size=${80} className="text-emerald-400 mx-auto mb-8" />
+                                    <h4 className="text-3xl font-black text-white mb-4">인큐베이팅의 핵심</h4>
+                                    <p className="text-xl text-zinc-300 leading-relaxed">
+                                        "상대방이 나에게 고마워하는 것이 아니라 <br/>
+                                        <span className="text-emerald-400 font-bold underline decoration-2">미안하게 만드는 배려</span>와 인간적인 대우가 <br/>
+                                        오토 시스템의 영혼입니다."
+                                    </p>
+                                </div>
+                            </div>
+                        <//>
+                    </div>
+                <//>
+            </div>
+        `;
+    };
+
+    // --- Lecture 4 Part 2 Data ---
+    const lecture4Part2Data = {
+        meta: {
+            badgeColor: "blue",
+            badgeText: "WEEK 4 - PART 2",
+            title: "사업 자동화와<br/><span class='text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500 font-black'>수익 퀀텀 점프</span>",
+            subtitle: "프리랜서를 넘어 매니저 시스템으로.<br/>기획에만 집중하여 채널을 무한 확장하는 쇼츠 사업화의 정점을 배웁니다.",
+            keywords: ["매니저 시스템", "사업 자동화", "퀀텀 점프", "성과 인증", "55일 챌린지", "재사용 이슈"]
+        },
+        sections: [
+            {
+                id: "system_essence",
+                title: "1. 제작 시스템의 본질 & 학습 루틴",
+                subtitle: "본질을 꿰뚫는 자가 시장을 지배함",
+                cards: [
+                    {
+                        title: "1.1. 편집 툴의 본질적 이해",
+                        icon: "Monitor",
+                        color: "blue",
+                        items: [
+                            { label: "픽셀값 수정:", text: "인코딩 시 픽셀값은 동일하며 명도, 조도, 색감 등 항목만 수정하면 됨 추천." },
+                            { label: "비상 무기:", text: "편집 툴 차단 대비 3가지 이상 대비책 완비됨. 1~2강 정확한 이해 시 이미 상위 레벨임." },
+                            { label: "툴 호환성:", text: "프리미어 프로 작업물을 캡컷으로 가져와 픽셀 수정하는 것도 좋은 방법임. 툴보다 본질이 중요함." }
+                        ]
+                    },
+                    {
+                        title: "1.2. 실전 특강 및 성공 사례",
+                        icon: "Trophy",
+                        color: "purple",
+                        items: [
+                            { label: "특강 계획:", text: "정규 4강은 이론의 끝일 뿐이며 초보자/트렌드 게릴라 특강 지속 예정임 추천." },
+                            { label: "사장 마인드:", text: "수강생 성과 부진 시 악덕 사장 모드로 철저히 관리 예정임. 돈을 벌어오는 것이 목표임." },
+                            { label: "사례 공개:", text: "완전 초보 수강생(화영님)이 4번째 영상에서 조회수 1만 돌파하며 퀀텀 점프 시그널 증명됨." }
+                        ]
+                    },
+                    {
+                        title: "1.3. 족보(Summary) 제작 루틴",
+                        icon: "BookOpen",
+                        color: "indigo",
+                        items: [
+                            { label: "복습의 힘:", text: "강의 반복 시 새로운 깨달음이 생기는 것은 이해도 상승의 증거임. 1강에만 매몰되지 말 것 추천." },
+                            { label: "서머리 필수:", text: "눈으로만 보는 공부 절대 금지임. 반드시 타이핑하며 나만의 족보를 만들어야 함 추천." },
+                            { label: "몸소 실천:", text: "헷갈릴 때 영상 대신 족보를 보고 텍스트화하며 직접 만들어야 무조건 내 것이 됨 추천." }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: "freelancer_mgmt",
+                title: "2. 프리랜서(편집자) 외주 시스템",
+                subtitle: "인큐베이팅과 합 리미티드 완성",
+                cards: [
+                    {
+                        title: "2.1. 인큐베이팅 (2주 합 맞추기)",
+                        icon: "Clock",
+                        color: "blue",
+                        items: [
+                            { label: "합 맞추기:", text: "초반 100% 만족은 불가능함. 2주 정도 티키타카하며 디렉션 이행 여부 확인 필수임 추천." },
+                            { label: "피드백 방식:", text: "칭찬으로 시작하여 매일 정밀 피드백 제공 추천. 2주 뒤엔 검수 손 안 가는 '공장' 가동됨." },
+                            { label: "시각적 교육:", text: "캡컷 프로젝트 공유 활용. 내 입맛대로 수정한 완성본을 공유하는 것이 가장 직관적임 추천." }
+                        ]
+                    },
+                    {
+                        title: "2.2. 계약 및 비용 관리",
+                        icon: "FileOutput",
+                        color: "green",
+                        items: [
+                            { label: "샘플비 정책:", text: "샘플비는 미지급 원칙임. 단, 계약 성사 시 첫 작업비에 포함 지급 약속으로 우수 인력 필터링 추천." },
+                            { label: "합리적 계약:", text: "카페 제공 계약서(2페이지) 이름만 바꿔 활용 추천. 기간은 보통 10개월 단위 계약 추천." },
+                            { label: "전자 서명:", text: "모두의사인 등 플랫폼 활용 추천. 통장 사본 수집 및 3.3% 사업 소득 공제 지급 관리 필수임." }
+                        ]
+                    },
+                    {
+                        title: "2.3. 운영 원칙: 세이빙(Saving)",
+                        icon: "HardDrive",
+                        color: "indigo",
+                        items: [
+                            { label: "재고 축적:", text: "당일 업로드분 아닌 내일/모레분을 미리 세이브하는 개념으로 운영 추천. 누적 시스템 필수임." },
+                            { label: "소스 전달:", text: "정해진 시간보다 상시 전달 후 확인 요청 추천. 벤치 채널과 영상을 충분히 공유해야 함." },
+                            { label: "파트너 마인드:", text: "인사가 만사임. 갑을 관계 아닌 파트너 존중 필수. 성품 좋고 의견 수용 잘하는 분 채용 추천." }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: "manager_system",
+                title: "3. 매니저 도입 및 사업 확장",
+                subtitle: "나를 복제하여 컨트롤 타워에 앉음",
+                cards: [
+                    {
+                        title: "3.1. 셀프 인큐베이팅 단계",
+                        icon: "UserCheck",
+                        color: "yellow",
+                        items: [
+                            { label: "실력 우선:", text: "기획이 막히면 나부터 칭찬하며 기초 교육 마스터 추천. 조회수로 내 실력 증명 먼저임." },
+                            { label: "소통 툴:", text: "복잡한 툴 지양하고 전국민이 익숙한 카톡으로 모든 지시 및 소통 일원화 추천." },
+                            { label: "확신 형성:", text: "내가 직접 해서 조회수가 터지는 것을 봐야 프리랜서에게 확신 있는 디렉션 가능함 추천." }
+                        ]
+                    },
+                    {
+                        title: "3.2. 매니저 채용 (대역 체계 구축)",
+                        icon: "Users",
+                        color: "emerald",
+                        items: [
+                            { label: "도입 시점:", text: "월급 지급 후에도 수익 남고 더 확장 원할 때 도입 추천. 보통 프리랜서 관리 업무 위임함." },
+                            { label: "복제 교육:", text: "내가 하던 일 그대로 컨트롤 C, 컨트롤 V 교육 추천. 보름~한 달이면 내 역할의 80% 수행 가능함." },
+                            { label: "매니저 역할:", text: "풀 스케줄 관리, 납품 검수, 업로드 관리 전담. 나는 오로지 '기획'에만 집중 추천." }
+                        ]
+                    },
+                    {
+                        title: "3.3. 컨트롤 타워 전략",
+                        icon: "Activity",
+                        color: "blue",
+                        items: [
+                            { label: "재택근무:", text: "사무실 없이 프리/매니저 전원 재택 시스템 추천. 인건비 외 고정비 최소화가 사업 핵심임." },
+                            { label: "인재 확보:", text: "꼭 전공자 아녀도 됨. 성실한 지인 교육도 방법임. 내가 얼마나 잘 시키느냐가 관건임 추천." },
+                            { label: "기획자 변신:", text: "매니저가 잡무 처리 시 나는 채널 기획 및 고도화 대본에만 15시간 몰두하여 수익 극대화 추천." }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: "business_final",
+                title: "4. 사업화 최종 단계 & 성공 지표",
+                subtitle: "공급 과잉 시장에서의 퀀텀 점프",
+                cards: [
+                    {
+                        title: "4.1. 사업화 로드맵",
+                        icon: "TrendingUp",
+                        color: "red",
+                        items: [
+                            { label: "고용 진화:", text: "프리랜서를 넘어 작가, 편집자 정규직 고용 단계로 진입 추천. 수익의 사업화 필수임." },
+                            { label: "수익 규모:", text: "정확한 기획력 장착 시 월 1천만 원 아닌 3천~4천만 원대로 바로 퀀텀 점프 가능함." },
+                            { label: "자신감 확보:", text: "공급이 많아도 내 기획에 확신 있다면 2억~4억 수익도 달성 가능한 기회의 시장임." }
+                        ]
+                    },
+                    {
+                        title: "4.2. 성과 인증 (신규 채널)",
+                        icon: "BarChart",
+                        color: "orange",
+                        items: [
+                            { label: "최신 지표:", text: "새로 판 5일 된 채널 48시간 조회수 <mark>192만</mark> 달성. 1~2강 공식의 현장 위력 입증됨." },
+                            { label: "기획 80%:", text: "소재 선정과 결 맞추기가 성패의 80%임. 강의를 곱씹어 내 것으로 만든 후 업로드 추천." },
+                            { label: "맘케어 지원:", text: "1억 이상 수익 낸 매니저들이 단톡방/1:1 톡으로 실시간 시스템 구축 질문 지원 예정임 추천." }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: "mindset_priority",
+                title: "5. 마인드셋 & 운영의 우선순위",
+                subtitle: "감기를 이겨내는 기우제의 지혜",
+                cards: [
+                    {
+                        title: "5.1. 재사용 및 정지 대처",
+                        icon: "AlertCircle",
+                        color: "yellow",
+                        items: [
+                            { label: "재사용 이슈:", text: "명확한 근거 없는 '감기' 같은 것임. 90일 후 재항소 가능하며 다시 시작하는 의지 필수임 추천." },
+                            { label: "본질 집중:", text: "관리자 설정 등 부수적 것에 매몰 금지임. 노출의 핵심은 무조건 '기획'과 '재미'임 추천." },
+                            { label: "성공 비결:", text: "성공은 기우제임. 비 올 때(터질 때)까지 하는 것임. 우리는 알고리즘을 만드는 법을 배움." }
+                        ]
+                    },
+                    {
+                        title: "5.2. 운영 우선순위",
+                        icon: "CheckCircle",
+                        color: "blue",
+                        items: [
+                            { label: "기획 우선:", text: "세팅보다 기획이 우선임. 재미없으면 조회수 안 나오므로 아무 의미 없음 추천." },
+                            { label: "반복 실행:", text: "듣고 정리하는 것만으론 부족함. 반복 청취 후 무조건 몸으로 부딪혀 실행 추천." },
+                            { label: "본질 유지:", text: "쉽게 사라지지 않는 나만의 기획 지표를 가지고 꾸준히 나아가는 것이 성공 유일로임 추천." }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: "challenge_event",
+                title: "6. 55일 챌린지 & 성과 이벤트",
+                subtitle: "실행 동기를 부여하는 강력한 보상",
+                challenge_rules: [
+                    { title: "챌린지 규칙", desc: "55일 동안 꾸준함 습관화. '쇼츠학개론 챌린지 [55일-해당 일차]' 제목 기록 필수임." },
+                    { title: "업로드 기준", desc: "실제 영상 업로드 날만 기록 인정. 공부만 한 날은 불인정. 3일에 1회 이상 필수 기록 추천." },
+                    { title: "완수 보상", desc: "치킨 기프티콘 및 2기 수강 시 파격 혜택 제공. 이사 등 개인 사정 무관 실행 필수임." }
+                ],
+                events: [
+                    { title: "조회수 달성", criteria: "48시간 100만 뷰 달성 시", reward: "치킨 기프티콘 (전원 참여)" },
+                    { title: "구독자 달성", criteria: "1천/5천/1만/3만(치킨), 5만(한우), 10만(순금)", reward: "단계별 상품 누적 지급" },
+                    { title: "월 수익 인증", criteria: "매달 정기 진행 예정", reward: "순금, 한우 등 고가 상품 예정" }
+                ],
+                beginner_guide: [
+                    { label: "유예 기간:", text: "초보자는 2주간 강의 리마인드 후 시작 허용. 성급한 포기 방지 위한 배려임." },
+                    { label: "일기 작성:", text: "'하모된다' 탭에 공부 내용/깨달음 자유 기술 필수임. 강사가 직접 확인 예정임 추천." },
+                    { label: "기존 수강생:", text: "3일 내 챌린지 즉시 시작 필수. 매일 업로드가 돈 버는 가장 빠른 길임 추천." }
+                ]
+            },
+            {
+                id: "qa_closing",
+                title: "7. 실전 Q&A 및 강의 마무리",
+                subtitle: "미친 자의 실전이 시작됨",
+                qa_items: [
+                    { q: "사업자 등록 필수?", a: "유리함. 1인 콘텐츠 미디어 창작업 종목 추천. 겸업 불가 시 가족 명의 활용 추천." },
+                    { q: "계약 갱신 팁?", a: "10개월 유지 후 종료, 2~3개월 뒤 재계약 시 4대 보험 리스크 없이 효율적 운영 가능함 추천." },
+                    { q: "BGM 소싱?", a: "캡컷 음원보다 유튜브 스튜디오 라이브러리 음원 사용이 저작권상 가장 안전함 추천." },
+                    { q: "짧은 영상 외주?", a: "10~20초 이내 쉬운 영상은 내가 직접 편집하여 비용 아끼고 실력 키우는 것 추천." },
+                    { q: "채널 비공개?", a: "제목 알면 다 찾아짐. 숨길 이유 없으며 당당히 알려지는 것이 성장에 도움 됨 추천." }
+                ],
+                closing: [
+                    { label: "인사 만사:", text: "톡방서 숨지 말고 소통하며 친해지기 추천. 1억 자의 1:1 코칭 기회 적극 활용 추천." },
+                    { label: "동료 응원:", text: "남의 성공 부러워 말고 응원하기 추천. 곧 내가 따라갈 길이며 서로 끌어줘야 함." },
+                    { label: "끝이 아닌 시작:", text: "정식 강의는 마무리되나 이제 실전 수익 창출의 시작임. 카톡방서 끝까지 함께함 추천." }
+                ]
+            }
+        ]
+    };
+
+    window.Contents.lecture4_part2 = () => {
+        const data = lecture4Part2Data;
+        const s1 = data.sections[0];
+        const s2 = data.sections[1];
+        const s3 = data.sections[2];
+        const s4 = data.sections[3];
+        const s5 = data.sections[4];
+        const s6 = data.sections[5];
+        const s7 = data.sections[6];
+
+        return html`
+            <div className="space-y-48 pb-60">
+                <!-- Header -->
+                <div className="text-center space-y-12 py-32 animate-fade-in relative">
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-blue-900/20 rounded-full blur-[120px] -z-10"></div>
+                    <${Badge} color="blue">${data.meta.badgeText}<//>
+                    <h1 className="text-7xl lg:text-9xl font-black tracking-tighter leading-none text-white mb-8 drop-shadow-2xl" dangerouslySetInnerHTML=${{ __html: data.meta.title }}></h1>
+                    <p className="text-3xl lg:text-4xl text-zinc-200 max-w-6xl mx-auto leading-normal font-bold" dangerouslySetInnerHTML=${{ __html: data.meta.subtitle }}></p>
+                </div>
+
+                <!-- Section 1 -->
+                <${Section} title=${s1.title} subtitle=${s1.subtitle}>
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        ${s1.cards.map(card => html`
+                            <${Card} title=${card.title} icon=${card.icon} color=${card.color}>
+                                <ul className="space-y-4 text-xl">
+                                    ${card.items.map(item => html`
+                                        <li className="flex items-start gap-3">
+                                            <span className="text-blue-400 mt-1.5 shrink-0">●</span>
+                                            <span className="text-zinc-300"><strong>${item.label}</strong> ${item.text}</span>
+                                        </li>
+                                    `)}
+                                </ul>
+                            <//>
+                        `)}
+                    </div>
+                <//>
+
+                <!-- Section 2 -->
+                <${Section} title=${s2.title} subtitle=${s2.subtitle}>
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        ${s2.cards.map(card => html`
+                            <${Card} title=${card.title} icon=${card.icon} color=${card.color}>
+                                <ul className="space-y-6 text-xl">
+                                    ${card.items.map(item => html`
+                                        <li className="space-y-2">
+                                            <strong className="text-white block">${item.label}</strong>
+                                            <p className="text-zinc-300 leading-relaxed" dangerouslySetInnerHTML=${{ __html: item.text }}></p>
+                                        </li>
+                                    `)}
+                                </ul>
+                            <//>
+                        `)}
+                    </div>
+                <//>
+
+                <!-- Section 3 -->
+                <${Section} title=${s3.title} subtitle=${s3.subtitle}>
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+                        ${s3.cards.map(card => html`
+                            <${Card} title=${card.title} icon=${card.icon} color=${card.color} className="bg-zinc-900/60 shadow-inner">
+                                <ul className="space-y-5 text-xl">
+                                    ${card.items.map(item => html`
+                                        <li className="flex items-start gap-3">
+                                            <div className="mt-2 w-2 h-2 rounded-full bg-emerald-400 shrink-0"></div>
+                                            <span className="text-zinc-200"><strong>${item.label}</strong> ${item.text}</span>
+                                        </li>
+                                    `)}
+                                </ul>
+                            <//>
+                        `)}
+                    </div>
+                <//>
+
+                <!-- Section 4 -->
+                <${Section} title=${s4.title} subtitle=${s4.subtitle}>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                        ${s4.cards.map(card => html`
+                            <${Card} title=${card.title} icon=${card.icon} color=${card.color}>
+                                <ul className="space-y-8 text-xl">
+                                    ${card.items.map(item => html`
+                                        <li className="flex items-start gap-4">
+                                            <div className="bg-zinc-800 p-2 rounded-xl shrink-0">
+                                                <${LucideIcon} name="Check" className=${`text-${card.color}-400`} size=${24} />
+                                            </div>
+                                            <span className="text-zinc-200"><strong>${item.label}</strong> <span dangerouslySetInnerHTML=${{ __html: item.text }}></span></span>
+                                        </li>
+                                    `)}
+                                </ul>
+                            <//>
+                        `)}
+                    </div>
+                <//>
+
+                <!-- Section 5 -->
+                <${Section} title=${s5.title} subtitle=${s5.subtitle}>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                        ${s5.cards.map(card => html`
+                            <${Card} title=${card.title} icon=${card.icon} color=${card.color} className="border-l-8 border-l-yellow-500/30">
+                                <ul className="space-y-6 text-xl">
+                                    ${card.items.map(item => html`
+                                        <li className="flex items-start gap-4">
+                                            <span className="text-2xl pt-1">💡</span>
+                                            <div className="space-y-1">
+                                                <strong className="text-white block">${item.label}</strong>
+                                                <p className="text-zinc-300" dangerouslySetInnerHTML=${{ __html: item.text }}></p>
+                                            </div>
+                                        </li>
+                                    `)}
+                                </ul>
+                            <//>
+                        `)}
+                    </div>
+                <//>
+
+                <!-- Section 6: Challenge & Event -->
+                <${Section} title=${s6.title} subtitle=${s6.subtitle}>
+                    <div className="space-y-12">
+                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            ${s6.challenge_rules.map(rule => html`
+                                <div className="p-8 bg-zinc-900/80 rounded-[2.5rem] border border-zinc-800 hover:border-blue-500/30 transition-all">
+                                    <h4 className="text-2xl font-black text-white mb-4 border-b border-zinc-800 pb-4">${rule.title}</h4>
+                                    <p className="text-zinc-300 text-lg leading-relaxed" dangerouslySetInnerHTML=${{ __html: rule.desc }}></p>
+                                </div>
+                            `)}
+                        </div>
+
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                             <${Card} title="성과 인증 혜택 (누적 기회)" icon="Gift" color="orange">
+                                <div className="space-y-4">
+                                    ${s6.events.map(event => html`
+                                        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center p-5 bg-black/40 rounded-2xl border border-zinc-800 gap-4">
+                                            <div>
+                                                <span className="block text-zinc-500 text-sm font-bold uppercase mb-1">${event.title}</span>
+                                                <span className="text-xl text-white font-bold">${event.criteria}</span>
+                                            </div>
+                                            <div className="px-4 py-2 bg-orange-950/30 border border-orange-500/30 rounded-xl">
+                                                <span className="text-orange-400 font-black">${event.reward}</span>
+                                            </div>
+                                        </div>
+                                    `)}
+                                </div>
+                            <//>
+
+                            <div className="p-10 bg-indigo-950/20 rounded-[3rem] border border-indigo-500/20">
+                                <h4 className="text-3xl font-black text-white mb-8 flex items-center gap-3">
+                                    <${LucideIcon} name="Map" size=${32} className="text-indigo-400" /> 초심자 실행 가이드
+                                </h4>
+                                <ul className="space-y-6">
+                                    ${s6.beginner_guide.map(guide => html`
+                                        <li className="flex items-start gap-4">
+                                            <div className="mt-1 w-1.5 h-6 bg-indigo-500 rounded-full shrink-0"></div>
+                                            <div>
+                                                <strong className="text-zinc-100 text-xl block mb-1">${guide.label}</strong>
+                                                <p className="text-zinc-400 text-lg leading-relaxed" dangerouslySetInnerHTML=${{ __html: guide.text }}></p>
+                                            </div>
+                                        </li>
+                                    `)}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                <//>
+
+                <!-- Section 7 -->
+                <${Section} title=${s7.title} subtitle=${s7.subtitle}>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                        <div className="space-y-6">
+                            <h4 className="text-3xl font-black text-white px-6 mb-8 border-l-4 border-emerald-500">실전 마무리를 위한 Q&A</h4>
+                            ${s7.qa_items.map(item => html`
+                                <div className="p-6 bg-zinc-900/60 rounded-3xl border border-zinc-800 hover:border-emerald-500/20 transition-all">
+                                    <div className="flex gap-4">
+                                        <span className="text-emerald-400 font-bold text-xl min-w-[24px]">Q.</span>
+                                        <strong className="text-zinc-100 text-xl font-bold leading-tight">${item.q}</strong>
+                                    </div>
+                                    <div className="mt-4 flex gap-4 pl-4 border-l-2 border-emerald-900/50">
+                                        <span className="text-blue-400 font-bold text-xl min-w-[24px]">A.</span>
+                                        <p className="text-zinc-300 text-lg leading-relaxed" dangerouslySetInnerHTML=${{ __html: item.a }}></p>
+                                    </div>
+                                </div>
+                            `)}
+                        </div>
+                        
+                        <div className="flex flex-col gap-8">
+                             <h4 className="text-3xl font-black text-white px-6 mb-8 border-l-4 border-indigo-500">Final Encouragement</h4>
+                             <div className="p-10 bg-gradient-to-br from-indigo-900/40 via-zinc-900 to-black rounded-[3.5rem] border border-indigo-500/30 shadow-2xl relative overflow-hidden flex-1">
+                                <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-10 pointer-events-none"></div>
+                                <div className="relative z-10 space-y-12">
+                                     ${s7.closing.map(item => html`
+                                        <div className="space-y-3">
+                                            <strong className="block text-2xl text-indigo-300 font-black">${item.label}</strong>
+                                            <p className="text-xl text-zinc-100 font-medium leading-relaxed" dangerouslySetInnerHTML=${{ __html: item.text }}></p>
+                                        </div>
+                                     `)}
+                                     <div className="pt-8 border-t border-white/10 text-center">
+                                         <p className="text-4xl lg:text-5xl font-black text-white italic tracking-tighter">"하모 된다, 우리 함께 수익 퀀텀 점프!"</p>
+                                     </div>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                <//>
+            </div>
+        `;
+    };
+
     // Expose Data for Search (Full-Text Search Support)
     window.LectureData = {
         lecture1_part1: lecture1Part1Data, // Week 1 Part 1
@@ -4975,6 +5744,8 @@
         lecture3_part1: lecture3Part1Data, // Week 3 Part 1
         lecture3_part2: lecture3Part2Data, // Week 3 Part 2
         lecture3_part3: lecture3Part3Data,  // Week 3 Part 3
+        lecture4_part1: lecture4Part1Data, // Week 4 Part 1
+        lecture4_part2: lecture4Part2Data, // Week 4 Part 2
         momcare_lecture1_part1: momcareLecture1Part1Data,
         momcare_lecture1_part2: momcareLecture1Part2Data,
         momcare_week2_part1: momcareWeek2FeedbackPart1Data,

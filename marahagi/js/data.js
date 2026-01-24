@@ -30,6 +30,15 @@ window.seriesData = [
         ]
     },
     {
+        id: 'week4',
+        category: '일반반',
+        title: "4주차 | 시스템 구축과 레버리지",
+        items: [
+            { id: 'lecture4_part1', title: '4강 1부: 쇼츠 채널 오토 시스템 구축', icon: 'Settings', keywords: '시스템 구축, 외주 활용, 레버리지, 사업가 마인드셋, 채용' },
+            { id: 'lecture4_part2', title: '4강 2부: 사업 자동화와 퀀텀 점프', icon: 'Zap', keywords: '매니저 시스템, 사업화, 챌린지, 성과 인증, 수익 자동화' },
+        ]
+    },
+    {
         id: 'momcare_week1',
         category: '맘케어반',
         title: "맘케어반 1주차 | 대본 작성과 영드자 기법",
