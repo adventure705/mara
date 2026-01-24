@@ -7,8 +7,8 @@
     const Section = ({ title, subtitle, children }) => html`
         <section className="mb-32 animate-fade-in-up">
             <div className="mb-14 border-l-[6px] border-blue-500 pl-8 py-2">
-                <h2 className="text-4xl lg:text-7xl font-black italic text-white mb-6 tracking-tight leading-tight uppercase font-sans">${title}</h2>
-                ${subtitle && html`<p className="text-2xl lg:text-3xl text-zinc-200 font-bold tracking-wide">${subtitle}</p>`}
+                <h2 className="text-4xl lg:text-7xl font-black italic text-white mb-6 tracking-tight leading-tight uppercase font-sans break-keep">${title}</h2>
+                ${subtitle && html`<p className="text-2xl lg:text-3xl text-zinc-200 font-bold tracking-wide break-keep">${subtitle}</p>`}
             </div>
             <div className="space-y-12">
                 ${children}
@@ -54,10 +54,10 @@
              ${title && html`
                 <div className="flex items-center gap-6 mb-10">
                     ${icon && html`<div className="p-5 bg-black rounded-3xl border border-zinc-700 shadow-inner"><${LucideIcon} name=${icon} size=${40} className=${iconColors[color] || iconColors.blue} /></div>`}
-                    <h3 className="text-3xl lg:text-4xl font-black text-white leading-tight tracking-tight">${title}</h3>
+                    <h3 className="text-3xl lg:text-4xl font-black text-white leading-tight tracking-tight break-keep">${title}</h3>
                 </div>
             `}
-            <div className="relative z-10 text-xl lg:text-2xl leading-relaxed text-zinc-100 space-y-6 font-medium">
+            <div className="relative z-10 text-xl lg:text-2xl leading-relaxed text-zinc-100 space-y-6 font-medium break-keep">
                 ${children}
             </div>
         </div>
@@ -80,8 +80,8 @@
 
     const InfoBox = ({ children, title }) => html`
         <div className="p-10 rounded-[2rem] bg-zinc-900 border border-zinc-700 flex flex-col gap-4 shadow-xl">
-            ${title && html`<strong className="text-2xl text-white block mb-2 font-black flex items-center gap-3"><${LucideIcon} name="Info" size=${28} className="text-blue-400"/> ${title}</strong>`}
-            <div className="text-zinc-100 text-xl lg:text-2xl font-medium leading-relaxed">${children}</div>
+            ${title && html`<strong className="text-2xl text-white block mb-2 font-black flex items-center gap-3 break-keep"><${LucideIcon} name="Info" size=${28} className="text-blue-400"/> ${title}</strong>`}
+            <div className="text-zinc-100 text-xl lg:text-2xl font-medium leading-relaxed break-keep">${children}</div>
         </div>
     `;
 
@@ -5168,8 +5168,8 @@
                 <div className="text-center space-y-12 py-32 animate-fade-in relative">
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-blue-900/20 rounded-full blur-[120px] -z-10"></div>
                     <${Badge} color="blue">${data.meta.badgeText}<//>
-                    <h1 className="text-7xl lg:text-9xl font-black tracking-tighter leading-none text-white mb-8 drop-shadow-2xl" dangerouslySetInnerHTML=${{ __html: data.meta.title }}></h1>
-                    <p className="text-3xl lg:text-4xl text-zinc-200 max-w-6xl mx-auto leading-normal font-bold" dangerouslySetInnerHTML=${{ __html: data.meta.subtitle }}></p>
+                    <h1 className="text-7xl lg:text-9xl font-black tracking-tighter leading-none text-white mb-8 drop-shadow-2xl break-keep" dangerouslySetInnerHTML=${{ __html: data.meta.title }}></h1>
+                    <p className="text-3xl lg:text-4xl text-zinc-200 max-w-6xl mx-auto leading-normal font-bold break-keep" dangerouslySetInnerHTML=${{ __html: data.meta.subtitle }}></p>
                 </div>
 
                 <!-- Section 1 -->
@@ -5278,9 +5278,9 @@
                     <div className="space-y-12">
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                             ${s6.recruitment_steps.map((item, idx) => html`
-                                <div className="p-8 bg-zinc-900 rounded-[2.5rem] border border-zinc-800 hover:border-yellow-500/50 transition-all group">
+                                <div className="p-8 bg-zinc-900 rounded-[2.5rem] border border-zinc-800 hover:border-yellow-500/50 transition-all group break-keep">
                                     <div className="text-yellow-500 font-black text-xl mb-4 opacity-50 group-hover:opacity-100">${item.step}</div>
-                                    <h4 className="text-2xl font-black text-white mb-4">${item.title}</h4>
+                                    <h4 className="text-2xl font-black text-white mb-4 break-keep">${item.title}</h4>
                                     <p className="text-zinc-400 text-lg leading-relaxed" dangerouslySetInnerHTML=${{ __html: item.desc }}></p>
                                 </div>
                             `)}
@@ -5290,13 +5290,13 @@
                             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                                 <div className="space-y-6">
                                     ${s6.hiring_tips.map(tip => html`
-                                        <div className="p-6 bg-black/40 rounded-3xl border border-emerald-900/30">
+                                        <div className="p-6 bg-black/40 rounded-3xl border border-emerald-900/30 break-keep">
                                             <strong className="block text-emerald-400 text-xl font-bold mb-2">${tip.label}</strong>
                                             <p className="text-zinc-200 text-lg" dangerouslySetInnerHTML=${{ __html: tip.text }}></p>
                                         </div>
                                     `)}
                                 </div>
-                                <div className="bg-emerald-950/20 p-10 rounded-[3rem] border border-emerald-500/20 flex flex-col justify-center text-center">
+                                <div className="bg-emerald-950/20 p-10 rounded-[3rem] border border-emerald-500/20 flex flex-col justify-center text-center break-keep">
                                     <${LucideIcon} name="UserCheck" size=${80} className="text-emerald-400 mx-auto mb-8" />
                                     <h4 className="text-3xl font-black text-white mb-4">인큐베이팅의 핵심</h4>
                                     <p className="text-xl text-zinc-300 leading-relaxed">
@@ -5544,8 +5544,8 @@
                 <div className="text-center space-y-12 py-32 animate-fade-in relative">
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-blue-900/20 rounded-full blur-[120px] -z-10"></div>
                     <${Badge} color="blue">${data.meta.badgeText}<//>
-                    <h1 className="text-7xl lg:text-9xl font-black tracking-tighter leading-none text-white mb-8 drop-shadow-2xl" dangerouslySetInnerHTML=${{ __html: data.meta.title }}></h1>
-                    <p className="text-3xl lg:text-4xl text-zinc-200 max-w-6xl mx-auto leading-normal font-bold" dangerouslySetInnerHTML=${{ __html: data.meta.subtitle }}></p>
+                    <h1 className="text-7xl lg:text-9xl font-black tracking-tighter leading-none text-white mb-8 drop-shadow-2xl break-keep" dangerouslySetInnerHTML=${{ __html: data.meta.title }}></h1>
+                    <p className="text-3xl lg:text-4xl text-zinc-200 max-w-6xl mx-auto leading-normal font-bold break-keep" dangerouslySetInnerHTML=${{ __html: data.meta.subtitle }}></p>
                 </div>
 
                 <!-- Section 1 -->
@@ -5648,8 +5648,8 @@
                     <div className="space-y-12">
                          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                             ${s6.challenge_rules.map(rule => html`
-                                <div className="p-8 bg-zinc-900/80 rounded-[2.5rem] border border-zinc-800 hover:border-blue-500/30 transition-all">
-                                    <h4 className="text-2xl font-black text-white mb-4 border-b border-zinc-800 pb-4">${rule.title}</h4>
+                                <div className="p-8 bg-zinc-900/80 rounded-[2.5rem] border border-zinc-800 hover:border-blue-500/30 transition-all break-keep">
+                                    <h4 className="text-2xl font-black text-white mb-4 border-b border-zinc-800 pb-4 break-keep">${rule.title}</h4>
                                     <p className="text-zinc-300 text-lg leading-relaxed" dangerouslySetInnerHTML=${{ __html: rule.desc }}></p>
                                 </div>
                             `)}
@@ -5672,8 +5672,8 @@
                                 </div>
                             <//>
 
-                            <div className="p-10 bg-indigo-950/20 rounded-[3rem] border border-indigo-500/20">
-                                <h4 className="text-3xl font-black text-white mb-8 flex items-center gap-3">
+                            <div className="p-10 bg-indigo-950/20 rounded-[3rem] border border-indigo-500/20 break-keep">
+                                <h4 className="text-3xl font-black text-white mb-8 flex items-center gap-3 break-keep">
                                     <${LucideIcon} name="Map" size=${32} className="text-indigo-400" /> 초심자 실행 가이드
                                 </h4>
                                 <ul className="space-y-6">
@@ -5696,7 +5696,7 @@
                 <${Section} title=${s7.title} subtitle=${s7.subtitle}>
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                         <div className="space-y-6">
-                            <h4 className="text-3xl font-black text-white px-6 mb-8 border-l-4 border-emerald-500">실전 마무리를 위한 Q&A</h4>
+                            <h4 className="text-3xl font-black text-white px-6 mb-8 border-l-4 border-emerald-500 break-keep">실전 마무리를 위한 Q&A</h4>
                             ${s7.qa_items.map(item => html`
                                 <div className="p-6 bg-zinc-900/60 rounded-3xl border border-zinc-800 hover:border-emerald-500/20 transition-all">
                                     <div className="flex gap-4">
@@ -5712,8 +5712,8 @@
                         </div>
                         
                         <div className="flex flex-col gap-8">
-                             <h4 className="text-3xl font-black text-white px-6 mb-8 border-l-4 border-indigo-500">Final Encouragement</h4>
-                             <div className="p-10 bg-gradient-to-br from-indigo-900/40 via-zinc-900 to-black rounded-[3.5rem] border border-indigo-500/30 shadow-2xl relative overflow-hidden flex-1">
+                             <h4 className="text-3xl font-black text-white px-6 mb-8 border-l-4 border-indigo-500 break-keep">Final Encouragement</h4>
+                             <div className="p-10 bg-gradient-to-br from-indigo-900/40 via-zinc-900 to-black rounded-[3.5rem] border border-indigo-500/30 shadow-2xl relative overflow-hidden flex-1 break-keep">
                                 <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-10 pointer-events-none"></div>
                                 <div className="relative z-10 space-y-12">
                                      ${s7.closing.map(item => html`
