@@ -5734,6 +5734,1453 @@
         `;
     };
 
+    // --- Saturday Feedback Special Part 1 Data ---
+    const saturdayFeedbackPart1Data = {
+        meta: {
+            week: "SATURDAY SPECIAL - PART 1",
+            title: "토요 피드백 특강<br/><span class='text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500'>대본 분석 & 실전 재각색</span>",
+            subtitle: "단순한 요약이 아닌, 수강생들의 실제 대본을 바탕으로 한<br/><span class='text-blue-400'>와우 포인트 포착</span>과 <span class='text-purple-400'>일치율 0% 제거</span>의 실전 기술을 전수합니다.",
+            keywords: ["와우 포인트", "재각색 루틴", "일치율 제거", "에셋 구축", "C급 감성", "시니어 타겟팅", "의역의 기술"]
+        },
+        sections: [
+            {
+                id: "routine_essence",
+                title: "1. 쇼츠 제작의 본질과 루틴화",
+                subtitle: "성공의 80%는 소재와 대본에서 결정됨",
+                cards: [
+                    {
+                        title: "대본 루틴의 3요소",
+                        icon: "Zap",
+                        color: "blue",
+                        items: [
+                            { label: "소재 선정 (80%):", text: "고점(한계선)이 높은 소재를 골라 에셋을 구축하는 것이 수익화의 핵심임." },
+                            { label: "대본 루틴화:", text: "제목, 소제목, 영상 구간(깍두기) 표시가 몸에 배어야 제작 속도가 혁신적으로 빨라짐." },
+                            { label: "시간 효율성:", text: "에셋과 루틴이 갖춰지면 대본 작성부터 편집점 설정까지 20분 내외로 단축 가능함." }
+                        ]
+                    },
+                    {
+                        title: "실시간 코멘트의 목적",
+                        icon: "Cpu",
+                        color: "purple",
+                        items: [
+                            { label: "사고방식 전수:", text: "완성된 피드백 배포보다, 실시간으로 어떤 관점에서 영상을 쪼개고 비트는지 보여주는 것이 중요함." },
+                            { label: "교보재 활용:", text: "매니저 대본과 수강생 숙제를 비교하며 단어 선택과 흐름의 차이를 체득해야 함." }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: "feedback_emotional",
+                title: "2. 감동 및 차별화 전략 피드백",
+                subtitle: "관점의 전환과 감정의 디테일",
+                cards: [
+                    {
+                        title: "우크라이나 이별 소재 (재각색)",
+                        icon: "Heart",
+                        color: "red",
+                        content: [
+                            { title: "시나리오 재배치", text: "뒷부분의 아빠 군 입대 사실을 나중에 배치하고, 아이의 시각에서 엄마와 아빠를 보는 장면을 인트로로 활용하여 반전 감동 극대화함.", color: "text-red-400" },
+                            { title: "소제목의 마법", text: "단순 나열이 아닌 '애써' 웃으려는 아빠와 같이 감정 형용사를 넣어 시청자의 몰입을 유도함.", color: "text-zinc-200" }
+                        ]
+                    },
+                    {
+                        title: "야구냐 채널 벤치마킹",
+                        icon: "Target",
+                        color: "green",
+                        content: [
+                            { title: "C급 감성 차별화", text: "더빙 채널 벤치마킹 시 원본의 맛을 넘어서려면 일상 은어, B급/C급 감성, 독특한 TTS 등 나만의 무기가 필요함.", color: "text-emerald-400" },
+                            { title: "구간 표시의 중요성", text: "대본만 봐도 영상의 어느 구간을 쓸지 직관적으로 보여야 함. (깍두기 루틴 필수)", color: "text-zinc-200" }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: "wow_point_strategy",
+                title: "3. 해외 소재 활용 및 와우 포인트",
+                subtitle: "눈길이 확 갈 만한 장면을 앞으로",
+                cards: [
+                    {
+                        title: "해외 스포츠/국뽕 소재",
+                        icon: "Globe",
+                        color: "blue",
+                        items: [
+                            { label: "확장성:", text: "한국뿐만 아니라 스페인, 이탈리아 등 해외의 동기부여/감동 소재는 무궁무진함." },
+                            { label: "자막 제거 기술:", text: "자막을 지우고 구간만 바꿔도 '다른 영상'으로 인식되어 높은 조회수 기록 가능함." }
+                        ]
+                    },
+                    {
+                        title: "와우 포인트 (Hooking Point)",
+                        icon: "Anchor",
+                        color: "yellow",
+                        desc: "살면서 실제로 봤을 때 가던 길을 멈추고 쳐다볼 만한 장면이 바로 후킹임.",
+                        examples: ["식당 뺨 때리기", "버스 정류장 사고", "갑작스러운 일침 장면"]
+                    }
+                ],
+                infoBox: {
+                    title: "영상 앞뒤 뒤집기 전략",
+                    text: "사진작가와 소녀의 재회와 같이 극적인 결말을 앞으로 빼고, 다시 과거로 돌아가는 구성은 시청 지속 시간을 대폭 향상시킴."
+                }
+            },
+            {
+                id: "compression_detail",
+                title: "4. 임팩트 압축 및 디테일략",
+                subtitle: "버릴 구간은 과감히 버리는 기술",
+                cards: [
+                    {
+                        title: "임팩트 압축 (20초의 법칙)",
+                        icon: "Scissors",
+                        color: "orange",
+                        content: [
+                            { title: "압축 훈련", text: "40초 영상을 억지로 늘리지 말고, 귀엽고 재밌는 구간만 빡 치는 15~20초 구성이 더 강력함.", color: "text-orange-400" },
+                            { title: "브랜딩 가미", text: "단순 육아 영상에 '독방 육아', '육퇴' 같은 일상 키워드를 녹여 시청자와 공감대를 형성함.", color: "text-zinc-200" }
+                        ]
+                    },
+                    {
+                        title: "시니어 타겟팅 디테일",
+                        icon: "Users",
+                        color: "zinc",
+                        desc: "CCTV 미담 등 사회적 감동물은 4565 세대가 선호함.<br/><span class='text-zinc-100 font-bold'>상황을 드라마처럼 세분화</span>하여 시각화된 대본을 구성하는 것이 핵심임."
+                    }
+                ]
+            },
+            {
+                id: "paraphrasing_feedback",
+                title: "5. 의역의 중요성 및 재능의 영역",
+                subtitle: "일치율을 제거하는 가장 강력한 무기",
+                cards: [
+                    {
+                        title: "의역과 단어 변경",
+                        icon: "Type",
+                        color: "pink",
+                        content: [
+                            { title: "일치율 제거 필수", text: "내용의 흐름을 바꿨어도 대본 내 단어가 원본과 같으면 위험함. 최대한 많은 단어를 의역해야 함.", color: "text-pink-400" },
+                            { title: "대화체 활용", text: "원본에 대화가 있다면 이는 기회임. 남편이나 아내의 멘트를 아예 다른 감정의 말로 바꾸어 재창조 가능함.", color: "text-zinc-200" }
+                        ]
+                    },
+                    {
+                        title: "재능의 영역 (멜라니아 예시)",
+                        icon: "Star",
+                        color: "yellow",
+                        desc: "제목과 소제목만으로 시청자를 압도하는 감각. '트럼프한테 투표하는 게 분명한 멜라니아'와 같이 강렬한 훅을 발굴해야 함."
+                    }
+                ]
+            },
+            {
+                id: "comment_insight",
+                title: "6. 직관적 이해와 댓글 활용",
+                subtitle: "댓글 속에 다음 영상의 정답이 있음",
+                items: [
+                    { title: "시청자 직관성", text: "아무리 멋진 각색도 시청자가 한눈에 상황을 이해하지 못하면 조회수는 오르지 않음." },
+                    { title: "댓글 기반 피드백", text: "후킹 포인트가 너무 많을 때는 댓글을 확인하여 가장 반응이 좋은 주제(예: 우정, 의리)로 방향을 잡아야 함." },
+                    { title: "결단력 (발라내기)", text: "영상 전체를 쓸 생각 버리기. 댓글이 열광하는 임팩트 구간만 발라내고 나머지는 버릴 줄 알아야 함." }
+                ],
+                finalMessage: {
+                    title: "토요 특강 1강 마무리",
+                    text: '20명의 대본을 연달아 보며 "어떻게 비터내는지" 그 사고의 흐름을 느꼈다면 성공임.<br/>강사가 제공하는 PPT 자료를 보며 단어 하나하나를 뜯어보고 본인의 것으로 만드십시오.'
+                }
+            }
+        ]
+    };
+
+    window.Contents.saturday_feedback_1_1 = () => {
+        const data = saturdayFeedbackPart1Data;
+        const s1 = data.sections[0];
+        const s2 = data.sections[1];
+        const s3 = data.sections[2];
+        const s4 = data.sections[3];
+        const s5 = data.sections[4];
+        const s6 = data.sections[5];
+
+        return html`
+            <div className="space-y-48 pb-60">
+                <!-- Header -->
+                <div className="text-center space-y-12 py-32 animate-fade-in">
+                    <${Badge} color="blue">${data.meta.week}<//>
+                    <h1 className="text-7xl lg:text-9xl font-black tracking-tighter leading-none text-white mb-8 drop-shadow-2xl" dangerouslySetInnerHTML=${{ __html: data.meta.title }}></h1>
+                    <p className="text-3xl lg:text-4xl text-zinc-200 max-w-6xl mx-auto leading-normal font-bold" dangerouslySetInnerHTML=${{ __html: data.meta.subtitle }}></p>
+                </div>
+
+                <!-- Section 1 -->
+                <${Section} title=${s1.title} subtitle=${s1.subtitle}>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                        ${s1.cards.map(card => html`
+                            <${Card} title=${card.title} icon=${card.icon} color=${card.color}>
+                                <ul className="space-y-6 text-xl lg:text-2xl">
+                                    ${card.items.map(item => html`
+                                        <li className="flex items-start gap-4">
+                                            <div className="mt-2 w-2 h-2 rounded-full bg-${card.color}-400 shrink-0"></div>
+                                            <span><strong>${item.label}</strong> <span dangerouslySetInnerHTML=${{ __html: item.text }}></span></span>
+                                        </li>
+                                    `)}
+                                </ul>
+                            <//>
+                        `)}
+                    </div>
+                <//>
+
+                <!-- Section 2 -->
+                <${Section} title=${s2.title} subtitle=${s2.subtitle}>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                        ${s2.cards.map(card => html`
+                            <${Card} title=${card.title} icon=${card.icon} color=${card.color}>
+                                <div className="space-y-8">
+                                    ${card.content.map(item => html`
+                                        <div>
+                                            <strong className=${`block text-2xl mb-2 ${item.color}`}>${item.title}</strong>
+                                            <p className="text-zinc-100">${item.text}</p>
+                                        </div>
+                                    `)}
+                                </div>
+                            <//>
+                        `)}
+                    </div>
+                <//>
+
+                <!-- Section 3 -->
+                <${Section} title=${s3.title} subtitle=${s3.subtitle}>
+                    <div className="space-y-10">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                            <${Card} title=${s3.cards[0].title} icon=${s3.cards[0].icon} color=${s3.cards[0].color}>
+                                <ul className="space-y-6 text-xl lg:text-2xl">
+                                    ${s3.cards[0].items.map(item => html`
+                                        <li className="flex items-start gap-4">
+                                            <${LucideIcon} name="Check" className="text-blue-400 mt-1 shrink-0" size=${24} />
+                                            <span><strong>${item.label}</strong> ${item.text}</span>
+                                        </li>
+                                    `)}
+                                </ul>
+                            <//>
+                            <${Card} title=${s3.cards[1].title} icon=${s3.cards[1].icon} color=${s3.cards[1].color}>
+                                <p className="text-2xl text-white font-bold mb-6">${s3.cards[1].desc}</p>
+                                <div className="flex flex-wrap gap-4">
+                                    ${s3.cards[1].examples.map(ex => html`<span className="bg-zinc-800 px-4 py-2 rounded-xl text-zinc-300 font-bold border border-zinc-700">${ex}</span>`)}
+                                </div>
+                            <//>
+                        </div>
+                        <${InfoBox} title=${s3.infoBox.title}>
+                            <p>${s3.infoBox.text}</p>
+                        <//>
+                    </div>
+                <//>
+
+                <!-- Section 4 -->
+                <${Section} title=${s4.title} subtitle=${s4.subtitle}>
+                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                        <${Card} title=${s4.cards[0].title} icon=${s4.cards[0].icon} color=${s4.cards[0].color}>
+                            <div className="space-y-8">
+                                ${s4.cards[0].content.map(item => html`
+                                    <div>
+                                        <strong className=${`block text-2xl mb-2 ${item.color}`}>${item.title}</strong>
+                                        <p className="text-zinc-100">${item.text}</p>
+                                    </div>
+                                `)}
+                            </div>
+                        <//>
+                        <${Card} title=${s4.cards[1].title} icon=${s4.cards[1].icon} color=${s4.cards[1].color}>
+                            <div className="p-8 bg-zinc-950 rounded-[2rem] border border-zinc-800 shadow-inner">
+                                <p className="text-2xl text-zinc-200 leading-relaxed" dangerouslySetInnerHTML=${{ __html: s4.cards[1].desc }}></p>
+                            </div>
+                        <//>
+                    </div>
+                <//>
+
+                <!-- Section 5 -->
+                <${Section} title=${s5.title} subtitle=${s5.subtitle}>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                        <${Card} title=${s5.cards[0].title} icon=${s5.cards[0].icon} color=${s5.cards[0].color}>
+                            <div className="space-y-8">
+                                ${s5.cards[0].content.map(item => html`
+                                    <div>
+                                        <strong className=${`block text-2xl mb-2 ${item.color}`}>${item.title}</strong>
+                                        <p className="text-zinc-100">${item.text}</p>
+                                    </div>
+                                `)}
+                            </div>
+                        <//>
+                        <${Card} title=${s5.cards[1].title} icon=${s5.cards[1].icon} color=${s5.cards[1].color}>
+                             <div className="p-8 bg-zinc-950 rounded-[2rem] border border-zinc-800 shadow-inner">
+                                <p className="text-2xl text-zinc-200 leading-relaxed italic" dangerouslySetInnerHTML=${{ __html: s5.cards[1].desc }}></p>
+                            </div>
+                        <//>
+                    </div>
+                <//>
+
+                <!-- Section 6 -->
+                <${Section} title=${s6.title} subtitle=${s6.subtitle}>
+                    <div className="space-y-12">
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            ${s6.items.map((item, idx) => html`
+                                <div className="p-10 bg-zinc-900/50 rounded-[2.5rem] border border-zinc-800 flex flex-col gap-4">
+                                    <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-black text-2xl mb-2">${idx + 1}</div>
+                                    <strong className="text-2xl text-white font-black">${item.title}</strong>
+                                    <p className="text-zinc-300 text-xl font-medium leading-normal">${item.text}</p>
+                                </div>
+                            `)}
+                        </div>
+                        <div className="p-10 bg-gradient-to-r from-blue-900/20 to-purple-900/20 rounded-[3rem] border border-blue-500/30 text-center">
+                            <h4 className="text-3xl font-black text-white mb-6">${s6.finalMessage.title}</h4>
+                            <p className="text-2xl lg:text-3xl text-zinc-100 font-bold" dangerouslySetInnerHTML=${{ __html: s6.finalMessage.text }}></p>
+                        </div>
+                    </div>
+                <//>
+            </div>
+        `;
+    };
+
+    // --- Saturday Feedback Special Part 2 Data ---
+    const saturdayFeedbackPart2Data = {
+        meta: {
+            week: "SATURDAY SPECIAL - PART 2",
+            title: "토요 피드백 특강<br/><span class='text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500'>메시지 파악 & 차별화 전략</span>",
+            subtitle: "영상의 본질인 '메시지'를 꿰뚫어 보고,<br/><span class='text-teal-400'>시점 변경</span>과 <span class='text-blue-400'>클립 믹싱</span>으로 독점적 가치를 창출하는 비법임.",
+            keywords: ["메시지 파악", "기획 의도", "시점 변경", "클립 믹싱", "카테고리별 피드백", "수익화 루틴"]
+        },
+        sections: [
+            {
+                id: "strategy_goal",
+                title: "1. 특강 운영 목표 및 매니저 케어",
+                subtitle: "수강생의 성과가 곧 강사의 도파민임",
+                cards: [
+                    {
+                        title: "심층 피드백 및 경험 확장",
+                        icon: "Users",
+                        color: "blue",
+                        items: [
+                            { label: "간접 경험:", text: "다양한 카테고리의 대본화 과정을 보는 것만으로도 콘텐츠 판단력이 비약적으로 상승함." },
+                            { label: "시간 확대:", text: "수강생의 소중한 시간을 위해 휴식을 포기하고 새벽까지 세세한 피드백을 준비함." },
+                            { label: "목표 지향:", text: "단순 학습을 넘어 실제 '수익화(경제활동)'로 이어지는 것에 모든 초점을 맞춤." }
+                        ]
+                    },
+                    {
+                        title: "매니저 밀착 케어 시스템",
+                        icon: "ShieldCheck",
+                        color: "teal",
+                        items: [
+                            { label: "전원 순방:", text: "수천만 원대 채널 운영 경험을 가진 매니저들이 모든 수강생의 채널을 직접 방문하여 점검함." },
+                            { label: "물량/디테일 케어:", text: "업로드 주기, 물량 등 혼자서는 막막한 부분을 함께 페이스를 맞추며 확신을 부여함." }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: "differentiation_viewpoint",
+                title: "2. 카테고리별 피드백 & 시점 차별화",
+                subtitle: "영득자(영화/드라마) 카테고리의 생존 전략",
+                cards: [
+                    {
+                        title: "동물 카테고리 (양념 전략)",
+                        icon: "PawPrint",
+                        color: "orange",
+                        content: [
+                            { title: "댓글이 곧 작가임", text: '"피지컬이 깡패네"와 같은 시청자 반응을 대본이나 자막에 녹여 공감대를 형성함.', color: "text-orange-400" },
+                            { title: "효과음/BGM 웅장화", text: "동물들의 대치 상황에 웅장한 사운드와 자막 양념을 쳐서 몰입도를 극대화함.", color: "text-zinc-200" }
+                        ]
+                    },
+                    {
+                        title: "영득자 시점 차별화 (핵심)",
+                        icon: "Camera",
+                        color: "blue",
+                        content: [
+                            { title: "1인칭 시점의 힘", text: "가난한 계급 사회의 현실을 주인공의 독백 형태로 풀어내어 시청자를 영상 안으로 끌어들임.", color: "text-blue-400" },
+                            { title: "감독/평론가 시점", text: '"나는 이 영상을 통해 세상을 알리고 싶었다"와 같은 창작자의 메시지를 TTS로 구현함.', color: "text-zinc-200" }
+                        ]
+                    }
+                ],
+                infoBox: {
+                    title: "올 TTS vs 갈라치기",
+                    text: "전체 흐름을 성우 한 명으로 밀어붙이는 '올 TTS'보다, 인물 대화와 TTS 설명을 적절히 섞는 '갈라치기'가 더 전문적이고 몰입감 있음."
+                }
+            },
+            {
+                id: "message_essence",
+                title: "3. 영상 기획의 본질: 메시지 파악",
+                subtitle: "무엇을 말하고 싶은지 세 글자로 요약함",
+                cards: [
+                    {
+                        title: "메시지 = 기획 의도",
+                        icon: "MessageSquare",
+                        color: "purple",
+                        items: [
+                            { label: "본질 파악:", text: "영상을 한두 번 돌려보며 '아직 세상은 살만하다', '우정은 소중하다'와 같은 핵심을 먼저 느껴야 함." },
+                            { label: "강박 탈피:", text: "'맛있게 써야지' 하는 압박보다 영상이 주는 순수한 감정을 먼저 정의하는 것이 기획의 시작임." },
+                            { label: "댓글 활용:", text: "내가 느낀 메시지가 맞는지 댓글의 반응과 공감대를 통해 검증하고 보완함." }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: "category_feedback_complex",
+                title: "4. 다양한 장르별 실전 피드백",
+                subtitle: "훈수 본능과 압축의 기술",
+                cards: [
+                    {
+                        title: "건축/목공 (훈수 카테고리)",
+                        icon: "Hammer",
+                        color: "green",
+                        desc: "시청자들이 '훈수 두고 싶어 환장하는' 분야임. 무너질 것 같은 위험천만한 장면을 후킹으로 사용하여 고조회수 유도함.",
+                    },
+                    {
+                        title: "격투기/웹쇼 (유머 포인트)",
+                        icon: "Sword",
+                        color: "red",
+                        desc: "김동현 예시처럼 '주짓수가 최고'라는 정보와 '침 흘리는 놈이 제일 무섭다'는 유머 메시지를 적절히 믹싱하여 엔딩 매듭 지음."
+                    }
+                ],
+                secondaryCards: [
+                    {
+                        title: "동물 오디션 (갈라치기)",
+                        icon: "Mic2",
+                        color: "yellow",
+                        desc: "후킹이 많은 영상은 장면마다 툭툭 끊어가는 구성을 취하고, 고양이 묘기를 '유격 훈련' 등에 비유하여 차별화함."
+                    },
+                    {
+                        title: "유명인 비하인드 (정중한 말투)",
+                        icon: "Award",
+                        color: "zinc",
+                        desc: "잭 니콜슨 사례처럼 유명인의 미담은 정중하고 격조 있는 말투가 필수임. 썰/짤 말투는 절대 금기임."
+                    }
+                ]
+            },
+            {
+                id: "mixing_differentiation",
+                title: "5. 클립 믹싱 및 차별화 필살기",
+                subtitle: "검색 비중이 높은 소재를 섞어 쓰는 기술",
+                cards: [
+                    {
+                        title: "클립 믹싱 (Mixing)",
+                        icon: "Shuffle",
+                        color: "teal",
+                        content: [
+                            { title: "서로 다른 영상 조합", text: "정승재 쌤의 '공부 특징' 영상과 '아침 기상' 영상을 섞어 나만의 새로운 스토리를 창조함.", color: "text-teal-400" },
+                            { title: "일치율 자동 삭제", text: "이렇게 믹싱하면 중복 영상 감지를 완벽히 피할 수 있으며, 발품 5~10분이 엄청난 수익 차이를 만듦.", color: "text-zinc-200" }
+                        ]
+                    },
+                    {
+                        title: "리액션 클립 활용",
+                        icon: "Play",
+                        color: "pink",
+                        desc: "메인 벤치 영상 중간중간에 '와, 대박이다'와 같은 다른 영상의 리액션 클립을 삽입하여 일치율을 낮추고 재미를 배가시킴."
+                    }
+                ]
+            },
+            {
+                id: "final_ment",
+                title: "6. 피드백 특강 1강 마무리",
+                subtitle: "수강생 성과를 위한 다짐",
+                items: [
+                    { title: "감동 콘텐츠 주의사항", text: "슬픔의 결을 깨는 단어 사용은 절대 금지임. 감정이 극대화될 수 있도록 슬픔의 깊이를 유지해야 함." },
+                    { title: "정승재 키워드 활용", text: "주가가 높지만 피로도가 있으므로 4~6개월 주기로 활용하거나 믹싱 전략을 적극 권장함." },
+                    { title: "지속적인 동참", text: "토요일 밤까지 자리를 지킨 수강생들에게 보답하기 위해 매니저들과 함께 끝까지 페이스메이커가 되어줄 것임." }
+                ],
+                closing: "단순히 대본을 쓰는 기계가 되지 마십시오. 영상이 주는 메시지를 먼저 맛보고, 나만의 시각을 한 스푼 얹어 '세상에 없던 영상'을 만드십시오."
+            }
+        ]
+    };
+
+    window.Contents.saturday_feedback_1_2 = () => {
+        const data = saturdayFeedbackPart2Data;
+        const s1 = data.sections[0];
+        const s2 = data.sections[1];
+        const s3 = data.sections[2];
+        const s4 = data.sections[3];
+        const s5 = data.sections[4];
+        const s6 = data.sections[5];
+
+        return html`
+            <div className="space-y-48 pb-60">
+                <!-- Header -->
+                <div className="text-center space-y-12 py-32 animate-fade-in">
+                    <${Badge} color="teal">${data.meta.week}<//>
+                    <h1 className="text-7xl lg:text-9xl font-black tracking-tighter leading-none text-white mb-8 drop-shadow-2xl" dangerouslySetInnerHTML=${{ __html: data.meta.title }}></h1>
+                    <p className="text-3xl lg:text-4xl text-zinc-200 max-w-6xl mx-auto leading-normal font-bold" dangerouslySetInnerHTML=${{ __html: data.meta.subtitle }}></p>
+                </div>
+
+                <!-- Section 1 -->
+                <${Section} title=${s1.title} subtitle=${s1.subtitle}>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                        ${s1.cards.map(card => html`
+                            <${Card} title=${card.title} icon=${card.icon} color=${card.color}>
+                                <ul className="space-y-6 text-xl lg:text-2xl">
+                                    ${card.items.map(item => html`
+                                        <li className="flex items-start gap-4">
+                                            <div className="mt-2 w-2 h-2 rounded-full bg-${card.color}-400 shrink-0"></div>
+                                            <span><strong>${item.label}</strong> ${item.text}</span>
+                                        </li>
+                                    `)}
+                                </ul>
+                            <//>
+                        `)}
+                    </div>
+                <//>
+
+                <!-- Section 2 -->
+                <${Section} title=${s2.title} subtitle=${s2.subtitle}>
+                    <div className="space-y-10">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                            ${s2.cards.map(card => html`
+                                <${Card} title=${card.title} icon=${card.icon} color=${card.color}>
+                                    <div className="space-y-8">
+                                        ${card.content.map(item => html`
+                                            <div>
+                                                <strong className=${`block text-2xl mb-2 ${item.color}`}>${item.title}</strong>
+                                                <p className="text-zinc-100">${item.text}</p>
+                                            </div>
+                                        `)}
+                                    </div>
+                                <//>
+                            `)}
+                        </div>
+                        <${InfoBox} title=${s2.infoBox.title}>
+                            <p>${s2.infoBox.text}</p>
+                        <//>
+                    </div>
+                <//>
+
+                <!-- Section 3 -->
+                <${Section} title=${s3.title} subtitle=${s3.subtitle}>
+                    <div className="max-w-4xl mx-auto">
+                        <${Card} title=${s3.cards[0].title} icon=${s3.cards[0].icon} color=${s3.cards[0].color}>
+                            <ul className="space-y-8 text-xl lg:text-2xl">
+                                ${s3.cards[0].items.map(item => html`
+                                    <li className="flex items-start gap-4">
+                                        <div className="mt-2 w-3 h-3 rounded bg-purple-500 shrink-0 rotate-45"></div>
+                                        <span><strong>${item.label}</strong> ${item.text}</span>
+                                    </li>
+                                `)}
+                            </ul>
+                        <//>
+                    </div>
+                <//>
+
+                <!-- Section 4 -->
+                <${Section} title=${s4.title} subtitle=${s4.subtitle}>
+                    <div className="space-y-10">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                            ${s4.cards.map(card => html`
+                                <${Card} title=${card.title} icon=${card.icon} color=${card.color}>
+                                    <p className="text-2xl text-white font-bold leading-relaxed px-2">${card.desc}</p>
+                                <//>
+                            `)}
+                        </div>
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                            ${s4.secondaryCards.map(card => html`
+                                <${Card} title=${card.title} icon=${card.icon} color=${card.color} className="bg-zinc-900/40">
+                                    <p className="text-xl text-zinc-300">${card.desc}</p>
+                                <//>
+                            `)}
+                        </div>
+                    </div>
+                <//>
+
+                <!-- Section 5 -->
+                <${Section} title=${s5.title} subtitle=${s5.subtitle}>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                        ${s5.cards.map(card => html`
+                            <${Card} title=${card.title} icon=${card.icon} color=${card.color}>
+                                ${card.content ? html`
+                                    <div className="space-y-8">
+                                        ${card.content.map(item => html`
+                                            <div>
+                                                <strong className=${`block text-2xl mb-2 ${item.color}`}>${item.title}</strong>
+                                                <p className="text-zinc-100">${item.text}</p>
+                                            </div>
+                                        `)}
+                                    </div>
+                                ` : html`
+                                    <div className="p-8 bg-black rounded-3xl border border-zinc-800">
+                                        <p className="text-2xl text-zinc-200 leading-relaxed">${card.desc}</p>
+                                    </div>
+                                `}
+                            <//>
+                        `)}
+                    </div>
+                <//>
+
+                <!-- Section 6 -->
+                <${Section} title=${s6.title} subtitle=${s6.subtitle}>
+                    <div className="space-y-12">
+                        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                            ${s6.items.map((item, idx) => html`
+                                <div className="p-10 bg-zinc-900/40 rounded-[2.5rem] border border-zinc-800 hover:border-teal-500/20 transition-all group">
+                                    <div className="flex items-center gap-4 mb-6">
+                                        <div className="w-10 h-10 bg-teal-500/10 border border-teal-500/30 rounded-full flex items-center justify-center text-teal-400 font-black">${idx + 1}</div>
+                                        <strong className="text-2xl text-white font-black">${item.title}</strong>
+                                    </div>
+                                    <p className="text-xl text-zinc-300 leading-normal">${item.text}</p>
+                                </div>
+                            `)}
+                        </div>
+                        <div className="p-16 bg-gradient-to-br from-teal-900/20 via-zinc-900 to-black rounded-[4rem] border border-teal-500/20 text-center shadow-2xl relative overflow-hidden">
+                            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-teal-500/50 to-transparent"></div>
+                            <${LucideIcon} name="Quote" className="text-teal-500/20 mx-auto mb-8" size=${64} />
+                            <p className="text-3xl lg:text-4xl text-white font-black leading-tight max-w-5xl mx-auto break-keep italic">
+                                "${s6.closing}"
+                            </p>
+                        </div>
+                    </div>
+                <//>
+            </div>
+        `;
+    };
+
+    // --- Saturday Feedback Special Part 3 Data ---
+    const saturdayFeedbackPart3Data = {
+        meta: {
+            week: "SATURDAY SPECIAL - PART 3",
+            title: "토요 피드백 특강<br/><span class='text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-red-500'>소재 다각화 & 틈새 공략</span>",
+            subtitle: "포화된 시장에서 살아남는 <span class='text-amber-400'>신선한 소재 발굴</span>과<br/><span class='text-red-400'>날먹 전략(로블록스/브롤스타즈)</span>의 실전 기술임.",
+            keywords: ["소재 다각화", "국뽕 차별화", "감동/스포츠 서사", "동물 자막 양념", "문화 차이 틈새", "게임 밈 날먹", "RPM 극대화"]
+        },
+        sections: [
+            {
+                id: "strategy_core",
+                title: "1. 쇼츠 제작의 핵심: 차별화와 디테일",
+                subtitle: "남들과 똑같이 해서는 살아남을 수 없음",
+                cards: [
+                    {
+                        title: "차별화(Discrimination)의 위력",
+                        icon: "Zap",
+                        color: "amber",
+                        items: [
+                            { label: "강력한 무기:", text: "이미 잘 되는 채널의 요소를 포착하여 나만의 차별점을 1%만 더해도 성장 속도가 비약적으로 빨라짐." },
+                            { label: "간접 경험의 힘:", text: "카테고리별 스크립트 적용 방식을 보는 것만으로도 콘텐츠 판단력이 정교해짐." },
+                            { label: "시스템화 목표:", text: "루틴화된 대본 작성을 통해 월 2~3천만 원, 나아가 1억 수익 시스템을 구축하는 것이 본질임." }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: "k_culture_strategy",
+                title: "2. 국뽕(K-Culture) 소재 차별화",
+                subtitle: "피로도가 높은 카테고리에서의 생존법",
+                cards: [
+                    {
+                        title: "Case 1: 기본 안주 문화 (족발집)",
+                        icon: "Flag",
+                        color: "red",
+                        content: [
+                            { title: "대본 단어 변경", text: '"주문한 거 맞아?"와 같은 직관적이고 궁금증 유발형 단어로 변경하여 몰입도 향상함.', color: "text-red-400" },
+                            { title: "와우 포인트 조절", text: "매번 똑같은 패턴이 되지 않도록 특정 와우 포인트를 의도적으로 빼거나 비틀어 신선함 유지함.", color: "text-zinc-200" }
+                        ]
+                    },
+                    {
+                        title: "Case 2: 한국인의 정(情)",
+                        icon: "Heart",
+                        color: "rose",
+                        content: [
+                            { title: "후킹의 기술", text: '"밥 먹다 눈물 흘린 이유"와 같이 감정선을 건드리는 소제목과 장면을 인트로로 활용함.', color: "text-rose-400" },
+                            { title: "댓글 공감대 녹이기", text: "댓글에서 가장 반응 좋은 키워드를 추출하여 대본 엔딩이나 자막에 적극 반영함.", color: "text-zinc-200" }
+                        ]
+                    }
+                ],
+                infoBox: {
+                    title: "시장 포화도 대응",
+                    text: "한국 채널 소재는 포화 상태임. 해외의 신선한 국뽕 소재를 발굴하거나, 감명 깊은 장면을 랭킹 시스템처럼 묶어 포맷의 변화를 주어야 함."
+                }
+            },
+            {
+                id: "emotional_sports",
+                title: "3. 감동 & 스포츠 서사 구축",
+                subtitle: "시니어 층을 사로잡는 강력한 스토리텔링",
+                cards: [
+                    {
+                        title: "감동 서사 (쌍둥이/자폐 아들)",
+                        icon: "Users",
+                        color: "blue",
+                        items: [
+                            { label: "관점의 전환:", text: "쌍둥이 병사를 '남매'로 표현하거나 재회 시점을 앞으로 당기는 등 구성의 변화 시도함." },
+                            { label: "숫자 파괴:", text: "원본의 '10주'를 '13주'로 바꾸는 등 디테일한 수치 변경으로 일치율 완벽 제거함." },
+                            { label: "슬픔의 깊이:", text: "몰입도를 해치는 사족이나 가벼운 말투는 절대 금기이며, 감정이 최고조에 달할 때 매듭지어야 함." }
+                        ]
+                    },
+                    {
+                        title: "스포츠 와우 포인트 (부산 아이파크)",
+                        icon: "Trophy",
+                        color: "orange",
+                        desc: '"부탁할게", "선수단 잘 들어"와 같이 선수와 팬 사이의 강렬한 소통 포인트를 후킹으로 설정함.',
+                        tip: "천만 조회수 소재는 늘 와우 포인트가 살아있음. 한국 상위 채널을 분석하며 그 흐름을 체득해야 함."
+                    }
+                ]
+            },
+            {
+                id: "animal_culture_gap",
+                title: "4. 동물 양념 & 문화 차이 틈새",
+                subtitle: "작은 디테일이 큰 조회수를 만듦",
+                cards: [
+                    {
+                        title: "동물 콘텐츠 (양념 기술)",
+                        icon: "PawPrint",
+                        color: "green",
+                        content: [
+                            { title: "자막/효과음 양념", text: "동물의 귀여운 행동에 '방구석 호랑이', '육퇴' 같은 브랜딩 자막과 뽀짝한 효과음 필수임.", color: "text-emerald-400" },
+                            { title: "사족 제거", text: '"안녕하십니까", "안부를 묻는" 식의 사족은 몰입도를 해치므로 과감히 걷어내야 함.', color: "text-zinc-200" }
+                        ]
+                    },
+                    {
+                        title: "문화 차이 (밴쿠버/K-버스정류장)",
+                        icon: "Globe",
+                        color: "indigo",
+                        desc: "한국 버스정류장의 온열의자 등 외국인이 놀라는 문화적 차이는 시니어 층의 국뽕 자부심을 자극하는 블루오션임.",
+                        tip: "의문문은 처음에 쓰지 말고, 마지막에 여운을 주거나 궁금증을 유발하는 용도로만 배치할 것."
+                    }
+                ]
+            },
+            {
+                id: "meme_efficiency",
+                title: "5. 밈(Meme) 제작과 효율성 전략",
+                subtitle: "짧은 영상으로 수익을 극대화하는 법",
+                cards: [
+                    {
+                        title: "밈 콘텐츠 (8초의 마법)",
+                        icon: "Zap",
+                        color: "yellow",
+                        items: [
+                            { label: "양념 믹싱:", text: "사자가 반겨주는 짧은 영상에 유명 밈 사운드나 반전 BGM을 섞어 임팩트 부여함." },
+                            { label: "제작 효율:", text: "8초와 55초의 RPM은 비슷함. 소재만 좋으면 20분 내외로 제작 가능하여 물량 공세에 유리함." }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: "game_meme_strategy",
+                title: "6. 틈새 게임 밈: 날먹 전략",
+                subtitle: "로블록스 & 브롤스타즈 공략",
+                cards: [
+                    {
+                        title: "날먹(Ease of Content) 기법",
+                        icon: "Gamepad2",
+                        color: "pink",
+                        content: [
+                            { title: "게임 몰라도 가능함", text: "스트리머의 사운드와 상황에 직관적인 리액션 자막만 쳐도 20~100만 조회수 쉽게 달성함.", color: "text-pink-400" },
+                            { title: "압도적 모수", text: "로블록스 쇼츠 6천만 개 이상. 초등학생 시청자 층이 두터워 소재가 절대 마르지 않음.", color: "text-zinc-200" },
+                            { title: "수익성(RPM)", text: "게임 밈 RPM은 400~500원대로 형성이 매우 달달하여 가성비 최고의 카테고리임.", color: "text-zinc-100 font-bold" }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: "final_practice",
+                title: "7. 마무리 및 실습 숙제",
+                subtitle: "노력이 아닌 생활화가 정답임",
+                items: [
+                    { title: "본질로의 회귀", text: "에셋 구축 후 구다리(단어) 바꾸기와 대본 작성이 쇼츠의 가장 강력한 근본임." },
+                    { title: "연습의 생활화", text: "하루 1시간 새로운 카테고리 탐색. 혼자 영상을 볼 때도 와우 포인트를 잡는 연습을 계속해야 함." },
+                    { title: "감정의 전달", text: "짜깁기 영상이라도 시청자의 긍정적/부정적 감정을 확실히 건드려야 폭발력이 생김." }
+                ],
+                closing: "천 번 쓰면 보이고, 만 번 쓰면 터짐. 지금 당장 틈새를 찾아 '날먹'부터 시작해 보십시오."
+            }
+        ]
+    };
+
+    window.Contents.saturday_feedback_1_3 = () => {
+        const data = saturdayFeedbackPart3Data;
+        const s1 = data.sections[0];
+        const s2 = data.sections[1];
+        const s3 = data.sections[2];
+        const s4 = data.sections[3];
+        const s5 = data.sections[4];
+        const s6 = data.sections[5];
+        const s7 = data.sections[6];
+
+        return html`
+            <div className="space-y-48 pb-60">
+                <!-- Header -->
+                <div className="text-center space-y-12 py-32 animate-fade-in">
+                    <${Badge} color="amber">${data.meta.week}<//>
+                    <h1 className="text-7xl lg:text-9xl font-black tracking-tighter leading-none text-white mb-8 drop-shadow-2xl" dangerouslySetInnerHTML=${{ __html: data.meta.title }}></h1>
+                    <p className="text-3xl lg:text-4xl text-zinc-200 max-w-6xl mx-auto leading-normal font-bold" dangerouslySetInnerHTML=${{ __html: data.meta.subtitle }}></p>
+                </div>
+
+                <!-- Section 1 -->
+                <${Section} title=${s1.title} subtitle=${s1.subtitle}>
+                    <div className="max-w-4xl mx-auto">
+                        <${Card} title=${s1.cards[0].title} icon=${s1.cards[0].icon} color=${s1.cards[0].color}>
+                            <ul className="space-y-8 text-xl lg:text-2xl">
+                                ${s1.cards[0].items.map(item => html`
+                                    <li className="flex items-start gap-4">
+                                        <div className="mt-2 w-3 h-3 rounded-full bg-amber-500 shrink-0 shadow-[0_0_10px_rgba(245,158,11,0.5)]"></div>
+                                        <span><strong>${item.label}</strong> ${item.text}</span>
+                                    </li>
+                                `)}
+                            </ul>
+                        <//>
+                    </div>
+                <//>
+
+                <!-- Section 2 -->
+                <${Section} title=${s2.title} subtitle=${s2.subtitle}>
+                    <div className="space-y-10">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                            ${s2.cards.map(card => html`
+                                <${Card} title=${card.title} icon=${card.icon} color=${card.color}>
+                                    <div className="space-y-8">
+                                        ${card.content.map(item => html`
+                                            <div>
+                                                <strong className=${`block text-2xl mb-2 ${item.color}`}>${item.title}</strong>
+                                                <p className="text-zinc-100">${item.text}</p>
+                                            </div>
+                                        `)}
+                                    </div>
+                                <//>
+                            `)}
+                        </div>
+                        <${InfoBox} title=${s2.infoBox.title}>
+                            <p>${s2.infoBox.text}</p>
+                        <//>
+                    </div>
+                <//>
+
+                <!-- Section 3 -->
+                <${Section} title=${s3.title} subtitle=${s3.subtitle}>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                        <${Card} title=${s3.cards[0].title} icon=${s3.cards[0].icon} color=${s3.cards[0].color}>
+                            <ul className="space-y-8 text-xl lg:text-2xl">
+                                ${s3.cards[0].items.map(item => html`
+                                    <li className="flex items-start gap-4">
+                                        <div className="mt-2 w-2 h-2 rounded bg-blue-400 shrink-0"></div>
+                                        <span><strong>${item.label}</strong> ${item.text}</span>
+                                    </li>
+                                `)}
+                            </ul>
+                        <//>
+                        <${Card} title=${s3.cards[1].title} icon=${s3.cards[1].icon} color=${s3.cards[1].color}>
+                            <p className="text-2xl text-white font-bold mb-8 px-2">${s3.cards[1].desc}</p>
+                            <div className="p-6 bg-zinc-950 rounded-2xl border border-zinc-800 italic text-zinc-400">
+                                ${s3.cards[1].tip}
+                            </div>
+                        <//>
+                    </div>
+                <//>
+
+                <!-- Section 4 -->
+                <${Section} title=${s4.title} subtitle=${s4.subtitle}>
+                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                        ${s4.cards.map(card => html`
+                            <${Card} title=${card.title} icon=${card.icon} color=${card.color}>
+                                ${card.content ? html`
+                                    <div className="space-y-8">
+                                        ${card.content.map(item => html`
+                                            <div>
+                                                <strong className=${`block text-2xl mb-2 ${item.color}`}>${item.title}</strong>
+                                                <p className="text-zinc-100">${item.text}</p>
+                                            </div>
+                                        `)}
+                                    </div>
+                                ` : html`
+                                    <div className="space-y-6">
+                                        <p className="text-2xl text-zinc-200 leading-relaxed">${card.desc}</p>
+                                        <div className="p-4 bg-indigo-900/20 border border-indigo-500/30 rounded-xl text-lg text-indigo-200">
+                                            <strong>Pro Tip:</strong> ${card.tip}
+                                        </div>
+                                    </div>
+                                `}
+                            <//>
+                        `)}
+                    </div>
+                <//>
+
+                <!-- Section 5 -->
+                <${Section} title=${s5.title} subtitle=${s5.subtitle}>
+                    <div className="max-w-4xl mx-auto">
+                        <${Card} title=${s5.cards[0].title} icon="Timer" color="yellow">
+                            <ul className="space-y-8 text-xl lg:text-2xl">
+                                ${s5.cards[0].items.map(item => html`
+                                    <li className="flex items-start gap-4">
+                                        <${LucideIcon} name="CheckCircle2" className="text-yellow-400 mt-1 shrink-0" size=${28} />
+                                        <span><strong>${item.label}</strong> ${item.text}</span>
+                                    </li>
+                                `)}
+                            </ul>
+                        <//>
+                    </div>
+                <//>
+
+                <!-- Section 6 -->
+                <${Section} title=${s6.title} subtitle=${s6.subtitle}>
+                    <div className="max-w-5xl mx-auto">
+                        <${Card} title=${s6.cards[0].title} icon=${s6.cards[0].icon} color=${s6.cards[0].color} className="border-pink-500/30 bg-pink-900/5">
+                            <div className="space-y-10">
+                                ${s6.cards[0].content.map(item => html`
+                                    <div className="relative pl-12">
+                                        <div className="absolute left-0 top-0 text-pink-500 opacity-20"><${LucideIcon} name="Zap" size=${40} /></div>
+                                        <strong className=${`block text-3xl mb-3 ${item.color}`}>${item.title}</strong>
+                                        <p className="text-2xl text-zinc-100 leading-relaxed">${item.text}</p>
+                                    </div>
+                                `)}
+                            </div>
+                        <//>
+                    </div>
+                <//>
+
+                <!-- Section 7 -->
+                <${Section} title=${s7.title} subtitle=${s7.subtitle}>
+                    <div className="space-y-12">
+                        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                            ${s7.items.map((item, idx) => html`
+                                <div className="p-10 bg-zinc-900/60 rounded-[3rem] border border-zinc-800 hover:border-red-500/20 transition-all flex flex-col gap-4">
+                                    <div className="text-red-500 font-black text-4xl opacity-50">0${idx + 1}</div>
+                                    <strong className="text-2xl text-white font-black">${item.title}</strong>
+                                    <p className="text-xl text-zinc-300 leading-normal font-medium">${item.text}</p>
+                                </div>
+                            `)}
+                        </div>
+                        <div className="p-16 bg-gradient-to-br from-red-900/20 via-zinc-900 to-black rounded-[4rem] border border-red-500/20 text-center shadow-2xl">
+                            <h4 className="text-4xl font-black text-white mb-8">Next Step</h4>
+                            <p className="text-3xl lg:text-4xl text-zinc-100 font-bold italic leading-tight max-w-4xl mx-auto break-keep">
+                                "${s7.closing}"
+                            </p>
+                        </div>
+                    </div>
+                <//>
+            </div>
+        `;
+    };
+
+    // --- Saturday Feedback Special 2-1 Data ---
+    const saturdayFeedback2Part1Data = {
+        meta: {
+            week: "SATURDAY SPECIAL 2 - PART 1",
+            title: "토요 피드백 특강<br/><span class='text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500'>대본 기획 & 영상 연출</span>",
+            subtitle: "대본이 80, 영상이 20이라는 본질을 꿰뚫는<br/><span class='text-blue-400'>대본 중심의 역순 기획</span>과 <span class='text-purple-400'>몰입도 극대화</span>의 실전 기술임.",
+            keywords: ["역순 기획", "대본 80대20 법칙", "와우 포인트", "트렌드 피로도", "시니어 소구력", "창작 채널 발굴", "효율성 RPM"]
+        },
+        sections: [
+            {
+                id: "reverse_planning",
+                title: "1. 콘텐츠 제작의 본질: 역순 기획",
+                subtitle: "영상이 아닌 대본이 80%의 성공을 결정함",
+                cards: [
+                    {
+                        title: "대본 80, 영상 20 법칙",
+                        icon: "Target",
+                        color: "blue",
+                        items: [
+                            { label: "역순 기획:", text: "영상 길이에 대본을 맞추는 것이 아니라, 대본의 몰입도 전개에 맞게 영상을 편집해야 함." },
+                            { label: "TTS의 도구화:", text: "후킹 장면을 앞세운 뒤, TTS는 뒷장면과의 이음새를 매끄럽게 잇는 연결고리로 활용함." },
+                            { label: "숙련의 과정:", text: "초반에는 10시간 이상 걸릴 수 있으나, 10개 정도의 대본을 먼저 뽑는 훈련을 통해 숙련도를 쌓아야 함." }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: "case_study_1",
+                title: "2. 대본 분석 실습 (성공 사례 & 차별화)",
+                subtitle: "단순 정보를 넘어서는 관점의 전환",
+                cards: [
+                    {
+                        title: "멀리뛰기 금지 기술",
+                        icon: "Zap",
+                        color: "yellow",
+                        content: [
+                            { title: "착지 장면 후킹", text: "세계 신기록 근처에 착지하는 장면을 앞으로 빼고, '실수'가 '기술'이 된 서사를 구축함.", color: "text-amber-400" },
+                            { title: "단어의 변주", text: "50년 전을 '수십 년 전'으로 의역하고, 자세 묘사를 '쏘아지듯 날아갑니다'로 풍성하게 표현함.", color: "text-zinc-200" }
+                        ]
+                    },
+                    {
+                        title: "자전거 슈퍼맨 자세",
+                        icon: "Rocket",
+                        color: "blue",
+                        content: [
+                            { title: "수치 강조", text: "24% 더 빠른 속력을 '페달을 밟을 때보다 30%가량 빨라진다'로 강조하여 와우 포인트 강화함.", color: "text-blue-400" },
+                            { title: "댓글 아이디어", text: "대본 구성과 소제목의 힌트는 항상 댓글에서 얻어 시청자 공감대와 일치시킴.", color: "text-zinc-200" }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: "trend_analysis",
+                title: "3. 시장 흐름과 트렌드 분석",
+                subtitle: "피로도가 높은 소재를 피하는 것이 실력임",
+                cards: [
+                    {
+                        title: "트렌드 필터링 기법",
+                        icon: "TrendingUp",
+                        color: "purple",
+                        items: [
+                            { label: "채널 모니터링:", text: "동종 카테고리 10~15개 채널을 선정하고 '최신순'으로 최근 한 달간의 흐름 파악함." },
+                            { label: "피로도 회피:", text: "이미 많이 쓰인 소재는 아무리 잘 만들어도 조회수가 안 나옴. 1년 된 소재를 재발굴하거나 신규 창작물을 선점해야 함." },
+                            { label: "창작 채널 선점:", text: "남들이 퍼가기 전, 해외 창작자가 어제 올린 영상을 오늘 바로 '우라까이' 치는 속도전이 필요함." }
+                        ]
+                    },
+                    {
+                        title: "우수 사례: 달 착륙 봉인",
+                        icon: "Star",
+                        color: "red",
+                        desc: "제목을 '이 악물고 봉인한 이유'로 자극적으로 뽑고, 대본 중간에 '가엾은 송아지 같다' 등의 비유적 양념을 넣어 우수한 몰입도 보여줌."
+                    }
+                ]
+            },
+            {
+                id: "senior_targeting",
+                title: "4. 시니어 대상 & 관점 변경 전략",
+                subtitle: "여운과 감동을 주는 디테일의 힘",
+                cards: [
+                    {
+                        title: "시니어 전용 대본 (친절함)",
+                        icon: "Users",
+                        color: "zinc",
+                        content: [
+                            { title: "길게가 아닌 자세히", text: "상황을 친절하고 세세하게 풀었을 때 시니어 층은 더 큰 감동을 느끼며 충성도가 높아짐.", color: "text-zinc-100" },
+                            { title: "정치 핀셋의 저력", text: "박정희 대통령 사례처럼 정치 관련 소재는 한계선은 낮아도 고정 조회수(저점)가 매우 탄탄함.", color: "text-zinc-200" }
+                        ]
+                    },
+                    {
+                        title: "감동 1단계 우라까이",
+                        icon: "Heart",
+                        color: "rose",
+                        desc: "문신 직원 사례처럼 와우 포인트만 앞으로 빼고 단어만 바꿔줘도 조회수가 나옴. 이것이 변천의 정석임.",
+                        tip: "내 채널의 결(가족, 힐링 등)에 맞는 키워드를 제목에 적극 활용할 것."
+                    }
+                ]
+            },
+            {
+                id: "efficiency_strategy",
+                title: "5. 해외 소재 & 고효율 전략",
+                subtitle: "힘을 빼고도 터트리는 지능적 제작법",
+                cards: [
+                    {
+                        title: "10초의 마법 (효율성)",
+                        icon: "Timer",
+                        color: "teal",
+                        content: [
+                            { title: "RPM 동일 법칙", text: "55초나 10초나 수익(RPM)은 같음. 10초짜리 짧고 강렬한 소재로 물량과 효율을 동시에 잡아야 함.", color: "text-teal-400" },
+                            { title: "손흥민 날먹 사례", text: "7~8초 렌즈 슛 장면에 멘트 하나 얹어 천만 뷰 달성. 가성비 최고의 제작 방식임.", color: "text-zinc-200" }
+                        ]
+                    },
+                    {
+                        title: "해외 예능 확장",
+                        icon: "Globe",
+                        color: "indigo",
+                        content: [
+                            { title: "제3국 공략", text: "미국 예능은 중복도가 높음. 스페인, 프랑스, 호주 등 다른 나라 비영어권 웹 예능으로 눈을 돌려야 함.", color: "text-indigo-400" },
+                            { title: "대화체 보존", text: "예능 소재는 올 TTS보다 현장의 생생한 대화가 섞여야 몰입도가 깨지지 않음.", color: "text-zinc-200" }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: "special_category",
+                title: "6. 특수 카테고리 운영 비법",
+                subtitle: "블루오션과 시스템화의 조화",
+                cards: [
+                    {
+                        title: "썰/짤/굴림보 (블루오션)",
+                        icon: "Layers",
+                        color: "pink",
+                        desc: "진입 장벽이 높아 항상 블루오션이며 고점이 매우 탄탄함. 템플릿이 정해져 있어 외주(편집자)를 쓰기에 가장 최적화된 카테고리임.",
+                        items: ["ABCC11 유전자 같은 지식 썰", "호날두 노쇼 같은 강력한 후킹 소재"]
+                    },
+                    {
+                        title: "동물 콘텐츠 (지식형 추천)",
+                        icon: "PawPrint",
+                        color: "green",
+                        desc: "단순 귀여움만으로는 포화 시장임. '동물 생활 보감' 같은 지식형 정보에 귀여운 자막 양념을 쳐야 승산 있음."
+                    }
+                ],
+                finalMessage: {
+                    title: "2강 1부 마무리",
+                    text: '연습만이 정답임. 영상을 볼 때마다 "어떻게 비틀지", "어떤 양념을 칠지" 뇌를 풀가동하고 10개의 대본을 먼저 뽑아보십시오.'
+                }
+            }
+        ]
+    };
+
+    window.Contents.saturday_feedback_2_1 = () => {
+        const data = saturdayFeedback2Part1Data;
+        const s1 = data.sections[0];
+        const s2 = data.sections[1];
+        const s3 = data.sections[2];
+        const s4 = data.sections[3];
+        const s5 = data.sections[4];
+        const s6 = data.sections[5];
+
+        return html`
+            <div className="space-y-48 pb-60">
+                <!-- Header -->
+                <div className="text-center space-y-12 py-32 animate-fade-in">
+                    <${Badge} color="blue">${data.meta.week}<//>
+                    <h1 className="text-7xl lg:text-9xl font-black tracking-tighter leading-none text-white mb-8 drop-shadow-2xl" dangerouslySetInnerHTML=${{ __html: data.meta.title }}></h1>
+                    <p className="text-3xl lg:text-4xl text-zinc-200 max-w-6xl mx-auto leading-normal font-bold" dangerouslySetInnerHTML=${{ __html: data.meta.subtitle }}></p>
+                </div>
+
+                <!-- Section 1 -->
+                <${Section} title=${s1.title} subtitle=${s1.subtitle}>
+                    <div className="max-w-4xl mx-auto">
+                        <${Card} title=${s1.cards[0].title} icon=${s1.cards[0].icon} color=${s1.cards[0].color}>
+                            <ul className="space-y-8 text-xl lg:text-2xl">
+                                ${s1.cards[0].items.map(item => html`
+                                    <li className="flex items-start gap-4">
+                                        <div className="mt-2 w-3 h-3 rounded-full bg-blue-500 shrink-0"></div>
+                                        <span><strong>${item.label}</strong> ${item.text}</span>
+                                    </li>
+                                `)}
+                            </ul>
+                        <//>
+                    </div>
+                <//>
+
+                <!-- Section 2 -->
+                <${Section} title=${s2.title} subtitle=${s2.subtitle}>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                        ${s2.cards.map(card => html`
+                            <${Card} title=${card.title} icon=${card.icon} color=${card.color}>
+                                <div className="space-y-8">
+                                    ${card.content.map(item => html`
+                                        <div>
+                                            <strong className=${`block text-2xl mb-2 ${item.color}`}>${item.title}</strong>
+                                            <p className="text-zinc-100">${item.text}</p>
+                                        </div>
+                                    `)}
+                                </div>
+                            <//>
+                        `)}
+                    </div>
+                <//>
+
+                <!-- Section 3 -->
+                <${Section} title=${s3.title} subtitle=${s3.subtitle}>
+                    <div className="space-y-12">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                            <${Card} title=${s3.cards[0].title} icon=${s3.cards[0].icon} color=${s3.cards[0].color}>
+                                <ul className="space-y-6 text-xl lg:text-2xl">
+                                    ${s3.cards[0].items.map(item => html`
+                                        <li className="flex items-start gap-4 text-purple-200">
+                                            <${LucideIcon} name="Check" className="text-purple-400 mt-1 shrink-0" size=${24} />
+                                            <span><strong>${item.label}</strong> ${item.text}</span>
+                                        </li>
+                                    `)}
+                                </ul>
+                            <//>
+                            <${Card} title=${s3.cards[1].title} icon=${s3.cards[1].icon} color=${s3.cards[1].color}>
+                                <div className="p-8 bg-black/40 rounded-[2rem] border border-red-500/20 shadow-inner">
+                                    <p className="text-2xl text-zinc-100 leading-relaxed font-bold">${s3.cards[1].desc}</p>
+                                </div>
+                            <//>
+                        </div>
+                    </div>
+                <//>
+
+                <!-- Section 4 -->
+                <${Section} title=${s4.title} subtitle=${s4.subtitle}>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                        <${Card} title=${s4.cards[0].title} icon=${s4.cards[0].icon} color=${s4.cards[0].color}>
+                            <div className="space-y-8">
+                                ${s4.cards[0].content.map(item => html`
+                                    <div>
+                                        <strong className="block text-2xl mb-2 text-zinc-200 border-l-2 border-zinc-500 pl-4">${item.title}</strong>
+                                        <p className="text-zinc-300 ml-4">${item.text}</p>
+                                    </div>
+                                `)}
+                            </div>
+                        <//>
+                        <${Card} title=${s4.cards[1].title} icon=${s4.cards[1].icon} color=${s4.cards[1].color}>
+                             <p className="text-2xl text-white font-black mb-8 leading-tight italic">${s4.cards[1].desc}</p>
+                             <div className="text-xl bg-rose-900/10 border border-rose-500/20 p-6 rounded-2xl">
+                                <strong>마라하기 Tip:</strong> ${s4.cards[1].tip}
+                             </div>
+                        <//>
+                    </div>
+                <//>
+
+                <!-- Section 5 -->
+                <${Section} title=${s5.title} subtitle=${s5.subtitle}>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                        ${s5.cards.map(card => html`
+                            <${Card} title=${card.title} icon=${card.icon} color=${card.color}>
+                                <div className="space-y-8">
+                                    ${card.content.map(item => html`
+                                        <div>
+                                            <strong className=${`block text-2xl mb-2 ${item.color}`}>${item.title}</strong>
+                                            <p className="text-zinc-100">${item.text}</p>
+                                        </div>
+                                    `)}
+                                </div>
+                            <//>
+                        `)}
+                    </div>
+                <//>
+
+                <!-- Section 6 -->
+                <${Section} title=${s6.title} subtitle=${s6.subtitle}>
+                    <div className="space-y-12">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                            <${Card} title=${s6.cards[0].title} icon=${s6.cards[0].icon} color=${s6.cards[0].color}>
+                                <p className="text-2xl text-zinc-100 mb-8 font-medium">${s6.cards[0].desc}</p>
+                                <div className="flex flex-col gap-4">
+                                    ${s6.cards[0].items.map(ex => html`
+                                        <div className="bg-zinc-800/50 p-4 rounded-xl border border-pink-500/10 text-xl font-bold text-pink-300">
+                                            - ${ex}
+                                        </div>
+                                    `)}
+                                </div>
+                            <//>
+                            <${Card} title=${s6.cards[1].title} icon=${s6.cards[1].icon} color=${s6.cards[1].color}>
+                                <p className="text-2xl text-green-100 leading-relaxed font-bold">${s6.cards[1].desc}</p>
+                            <//>
+                        </div>
+                        <div className="p-16 bg-gradient-to-br from-blue-900/30 via-zinc-900 to-black rounded-[4rem] border border-blue-500/30 text-center shadow-2xl relative overflow-hidden flex flex-col items-center">
+                            <div className="w-20 h-20 bg-blue-500 rounded-2xl flex items-center justify-center text-white mb-8 shadow-[0_0_30px_rgba(59,130,246,0.5)]">
+                                <${LucideIcon} name="Award" size=${48} />
+                            </div>
+                            <h4 className="text-4xl font-black text-white mb-6">${s6.finalMessage.title}</h4>
+                            <p className="text-3xl lg:text-4xl text-zinc-100 font-bold max-w-5xl break-keep" dangerouslySetInnerHTML=${{ __html: s6.finalMessage.text }}></p>
+                        </div>
+                    </div>
+                <//>
+            </div>
+        `;
+    };
+
+    // --- Saturday Feedback Special 2-2 Data ---
+    const saturdayFeedback2Part2Data = {
+        meta: {
+            week: "SATURDAY SPECIAL 2 - PART 2",
+            title: "토요 피드백 특강<br/><span class='text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-500'>소재 발굴 & 수익화 마인드셋</span>",
+            subtitle: "인기 채널의 빈틈을 파고드는 <span class='text-emerald-400'>안 터진 영상 공략법</span>과<br/>사업적 관점의 <span class='text-teal-400'>효율적 대본 유통 전략</span>임.",
+            keywords: ["소재 발굴", "일왕 채널 공략", "사업적 마인드셋", "대본 유통", "시니어 썰", "트렌드 피로도", "수익 자동화"]
+        },
+        sections: [
+            {
+                id: "business_mindset",
+                title: "1. 사업가적 관점과 수익화 마인드셋",
+                subtitle: "빈틈을 발견하고 시스템을 구축하는 능력",
+                cards: [
+                    {
+                        title: "과거 사업 경험 (마스크 사례)",
+                        icon: "Briefcase",
+                        color: "emerald",
+                        items: [
+                            { label: "빈틈 포착:", text: "마스크 생산과 포장 속도의 불균형을 발견하고, 포장되지 않은 물량을 확보하여 스티커만 붙여 기업에 납품함." },
+                            { label: "레버리지 활용:", text: "부업 팀을 가동하여 1년 만에 10억 이상의 수익을 창출하며 효율 중심의 사업 구조를 체험함." },
+                            { label: "전환의 계기:", text: "MCN 사업의 인적 리스크(크리에이터 사고/공황장애)를 겪으며 시스템 기반의 양산형 채널에 주목함." }
+                        ]
+                    },
+                    {
+                        title: "쇼츠 제작자의 안목",
+                        icon: "Eye",
+                        color: "teal",
+                        items: [
+                            { label: "프로의 태도:", text: "우리는 구글로부터 돈을 받는 프로임. 영상을 볼 때 '어떻게 돈이 될까'를 항상 고민해야 함." },
+                            { label: "트렌드 탐색:", text: "홈피드에 뜨는 모든 노출물은 곧 트렌드임. 검색 외의 흐름을 읽는 것을 취미로 삼아야 함." },
+                            { label: "즐기는 마음:", text: "돈 이전에 작업 자체를 즐겨야 함. 관심과 애정이 있을 때 비로소 남들이 못 보는 빈틈이 보임." }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: "popular_channel_strategy",
+                title: "2. 인기 채널 소재 공략 필살기",
+                subtitle: "인기순이 아닌 날짜순 '안 터진 영상'에 주목함",
+                cards: [
+                    {
+                        title: "일왕 채널 공략 원칙",
+                        icon: "Flag",
+                        color: "amber",
+                        content: [
+                            { title: "인기순 금지", text: "상위 조회수 영상은 이미 전 국민이 본 것임. 가져와 봤자 원작의 아성을 넘기 힘들고 짝퉁 취급받음.", color: "text-amber-400" },
+                            { title: "조회수 300만 미만 공략", text: "성공한 채널의 기획력은 검증되었으나 타이밍이나 알고리즘 문제로 못 터진 소재를 가져와 재각색함.", color: "text-zinc-200" }
+                        ]
+                    },
+                    {
+                        title: "소재 타이밍의 마법",
+                        icon: "Timer",
+                        color: "emerald",
+                        content: [
+                            { title: "1년 이상 된 소재", text: "2천만 뷰가 터졌더라도 1년 이상 지났다면 시청자 기억에서 잊힘. 지금 꺼내면 다시 터질 수 있음.", color: "text-emerald-400" },
+                            { title: "피로도 관리", text: "최근 6개월 내 유행한 소재(군대 친구, 사이다 딸 등)는 대중의 피로도가 극에 달해 있어 피하는 것이 상책임.", color: "text-zinc-200" }
+                        ]
+                    }
+                ],
+                infoBox: {
+                    title: "인간국 채널 분석",
+                    text: "인간국 같은 대형 채널은 대본의 몰입력이 엄청남. 원작의 소제목과 후킹 포인트를 벤치마킹하되, 최근 한 달간 쓰이지 않은 소재를 골라오는 것이 핵심임."
+                }
+            },
+            {
+                id: "category_insight",
+                title: "3. 카테고리별 실전 피드백 & 유통",
+                subtitle: "시점을 바꾸면 대본은 무한히 재생산됨",
+                cards: [
+                    {
+                        title: "시니어 썰 (대본 유통 기술)",
+                        icon: "MessageSquare",
+                        color: "teal",
+                        items: [
+                            { label: "설정 변경:", text: "할머니를 할아버지로, 시내버스를 지하철로 바꾸는 등 주인공과 배경 설정만 비틀어도 새 영상이 됨." },
+                            { label: "감정 자극:", text: "고부 갈등, 시누이 갈등처럼 검증된 소재를 가져와 나이와 환경만 바꾸어 유통력을 극대화함." }
+                        ]
+                    },
+                    {
+                        title: "동물 & 미담 소재",
+                        icon: "PawPrint",
+                        color: "emerald",
+                        items: [
+                            { label: "영상 쪼개기:", text: "해달의 겨드랑이 주머니 사례처럼 1분 넘는 영상을 앞뒤로 쪼개어 두 개의 쇼츠로 제작 권장함." },
+                            { label: "감정의 고점:", text: "CCTV형 미담(과일 트럭 사고 등)은 시청자의 '인류애'를 건드리므로 감정선을 폭발시키는 자막 배치가 필수임." }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: "differentiation_tips",
+                title: "4. 차별화 제작 디테일",
+                subtitle: "군더더기를 빼고 쇼츠의 호흡을 맞춤",
+                cards: [
+                    {
+                        title: "대본 피드백 & 개선",
+                        icon: "Scissors",
+                        color: "rose",
+                        content: [
+                            { title: "안부 인사 삭제", text: '"안녕하십니까", "영상 보셨나요" 같은 불필요한 사족은 쇼츠의 빠른 템포를 방해함.', color: "text-rose-400" },
+                            { title: "미드폼 경계", text: "원작 1분인데 대본 1분 40초면 쇼츠 규격 이탈임. 군더더기를 걷어내고 와우 포인트만 남겨야 함.", color: "text-zinc-200" }
+                        ]
+                    },
+                    {
+                        title: "뉴스 & 창작자 활용",
+                        icon: "Newspaper",
+                        color: "indigo",
+                        desc: "미담 소재는 뉴스를 검색하여 원본을 확보함. 해외 창작자가 어제 올린 영상을 오늘 바로 '우라까이' 치는 것이 피로도 해소의 정석임."
+                    }
+                ]
+            },
+            {
+                id: "future_plans",
+                title: "5. 특강 마무리 및 향후 일정",
+                subtitle: "지속적인 성장과 에셋 분석의 시간",
+                items: [
+                    { title: "휴강 공지", text: "1월 31일(돌잔치 참석)은 휴강이며, 다음 강의는 2월 7일에 진행 예정임." },
+                    { title: "에셋 분석 강화", text: "앞으로 특강에서는 3,000개의 에셋을 현시점 트렌드에 맞춰 분석하는 시간을 대폭 늘릴 것임." },
+                    { title: "피드백 밸런싱", text: "초보자를 위한 카테고리 분석과 숙련자를 위한 심화 인사이트 전달의 균형을 맞출 것임." }
+                ],
+                closing: "대본은 돈을 벌기 위한 수단이자 프로의 증거임. 영상을 볼 때마다 '어떻게 하면 돈이 될까'를 고민하며, 일단 작업을 즐기십시오."
+            }
+        ]
+    };
+
+    window.Contents.saturday_feedback_2_2 = () => {
+        const data = saturdayFeedback2Part2Data;
+        const s1 = data.sections[0];
+        const s2 = data.sections[1];
+        const s3 = data.sections[2];
+        const s4 = data.sections[3];
+        const s5 = data.sections[4];
+
+        return html`
+            <div className="space-y-48 pb-60">
+                <!-- Header -->
+                <div className="text-center space-y-12 py-32 animate-fade-in">
+                    <${Badge} color="emerald">${data.meta.week}<//>
+                    <h1 className="text-7xl lg:text-9xl font-black tracking-tighter leading-none text-white mb-8 drop-shadow-2xl" dangerouslySetInnerHTML=${{ __html: data.meta.title }}></h1>
+                    <p className="text-3xl lg:text-4xl text-zinc-200 max-w-6xl mx-auto leading-normal font-bold" dangerouslySetInnerHTML=${{ __html: data.meta.subtitle }}></p>
+                </div>
+
+                <!-- Section 1 -->
+                <${Section} title=${s1.title} subtitle=${s1.subtitle}>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                        ${s1.cards.map(card => html`
+                            <${Card} title=${card.title} icon=${card.icon} color=${card.color}>
+                                <ul className="space-y-6 text-xl lg:text-2xl">
+                                    ${card.items.map(item => html`
+                                        <li className="flex items-start gap-4">
+                                            <div className="mt-2 w-2 h-2 rounded-full bg-emerald-400 shrink-0"></div>
+                                            <span><strong>${item.label}</strong> ${item.text}</span>
+                                        </li>
+                                    `)}
+                                </ul>
+                            <//>
+                        `)}
+                    </div>
+                <//>
+
+                <!-- Section 2 -->
+                <${Section} title=${s2.title} subtitle=${s2.subtitle}>
+                    <div className="space-y-10">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                            ${s2.cards.map(card => html`
+                                <${Card} title=${card.title} icon=${card.icon} color=${card.color}>
+                                    <div className="space-y-8">
+                                        ${card.content.map(item => html`
+                                            <div>
+                                                <strong className=${`block text-2xl mb-2 ${item.color}`}>${item.title}</strong>
+                                                <p className="text-zinc-100">${item.text}</p>
+                                            </div>
+                                        `)}
+                                    </div>
+                                <//>
+                            `)}
+                        </div>
+                        <${InfoBox} title=${s2.infoBox.title}>
+                            <p>${s2.infoBox.text}</p>
+                        <//>
+                    </div>
+                <//>
+
+                <!-- Section 3 -->
+                <${Section} title=${s3.title} subtitle=${s3.subtitle}>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                        ${s3.cards.map(card => html`
+                            <${Card} title=${card.title} icon=${card.icon} color=${card.color}>
+                                <ul className="space-y-6 text-xl lg:text-2xl">
+                                    ${card.items.map(item => html`
+                                        <li className="flex items-start gap-4">
+                                            <div className="mt-2 w-3 h-3 rounded bg-teal-500/20 border border-teal-500/40 shrink-0 flex items-center justify-center">
+                                                <div className="w-1 h-1 bg-teal-400"></div>
+                                            </div>
+                                            <span><strong>${item.label}</strong> ${item.text}</span>
+                                        </li>
+                                    `)}
+                                </ul>
+                            <//>
+                        `)}
+                    </div>
+                <//>
+
+                <!-- Section 4 -->
+                <${Section} title=${s4.title} subtitle=${s4.subtitle}>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                        <${Card} title=${s4.cards[0].title} icon=${s4.cards[0].icon} color=${s4.cards[0].color}>
+                            <div className="space-y-8">
+                                ${s4.cards[0].content.map(item => html`
+                                    <div className="border-l-4 border-rose-500/30 pl-6">
+                                        <strong className=${`block text-2xl mb-2 ${item.color}`}>${item.title}</strong>
+                                        <p className="text-zinc-200">${item.text}</p>
+                                    </div>
+                                `)}
+                            </div>
+                        <//>
+                        <${Card} title=${s4.cards[1].title} icon=${s4.cards[1].icon} color=${s4.cards[1].color}>
+                             <div className="p-8 bg-zinc-950 rounded-[2.5rem] border border-zinc-800 shadow-inner">
+                                <p className="text-2xl lg:text-3xl text-zinc-100 leading-relaxed font-bold">${s4.cards[1].desc}</p>
+                             </div>
+                        <//>
+                    </div>
+                <//>
+
+                <!-- Section 5 -->
+                <${Section} title=${s5.title} subtitle=${s5.subtitle}>
+                    <div className="space-y-12">
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            ${s5.items.map((item, idx) => html`
+                                <div className="p-10 bg-zinc-900/50 rounded-[2.5rem] border border-zinc-800 hover:border-emerald-500/30 transition-all flex flex-col gap-4 group">
+                                    <div className="w-12 h-12 bg-emerald-500 rounded-2xl flex items-center justify-center text-white font-black text-2xl mb-2 shadow-lg group-hover:scale-110 transition-transform">${idx + 1}</div>
+                                    <strong className="text-2xl text-white font-black">${item.title}</strong>
+                                    <p className="text-zinc-300 text-xl font-medium leading-normal">${item.text}</p>
+                                </div>
+                            `)}
+                        </div>
+                        <div className="p-16 bg-gradient-to-br from-emerald-900/20 via-zinc-900 to-black rounded-[4rem] border border-emerald-500/20 text-center relative overflow-hidden">
+                            <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-10 pointer-events-none"></div>
+                            <h4 className="text-4xl font-black text-white mb-8">Lesson Summary</h4>
+                            <p className="text-3xl lg:text-4xl text-zinc-100 font-bold italic leading-tight max-w-5xl mx-auto break-keep italic">
+                                "${s5.closing}"
+                            </p>
+                        </div>
+                    </div>
+                <//>
+            </div>
+        `;
+    };
+
     // Expose Data for Search (Full-Text Search Support)
     window.LectureData = {
         lecture1_part1: lecture1Part1Data, // Week 1 Part 1
@@ -5752,6 +7199,16 @@
         momcare_week2_part2: momcareWeek2FeedbackPart2Data,
         momcare_week3_part1: momcareWeek3FeedbackPart1Data,
         momcare_week3_part2: momcareWeek3FeedbackPart2Data,
-        momcare_week3_part3: momcareWeek3FeedbackPart3Data
+        momcare_week3_part3: momcareWeek3FeedbackPart3Data,
+        saturday_feedback_1_1: saturdayFeedbackPart1Data,
+        saturday_feedback_1_2: saturdayFeedbackPart2Data,
+        saturday_feedback_1_3: saturdayFeedbackPart3Data,
+        saturday_feedback_2_1: saturdayFeedback2Part1Data,
+        saturday_feedback_2_2: saturdayFeedback2Part2Data
     };
 })();
+
+
+
+
+

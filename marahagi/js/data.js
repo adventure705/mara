@@ -65,5 +65,24 @@ window.seriesData = [
             { id: 'momcare_week3_part2', title: '3주차 특강 2부: 라이프핵 & 피드백', icon: 'ShoppingBag', keywords: '쇼핑 접목, 팬튜브, 유머 템포, 비하인드, 수익화' },
             { id: 'momcare_week3_part3', title: '3주차 특강 3부: 최종 점검 & 시스템화', icon: 'CheckSquare', keywords: '족보, 시스템, 일치율 삭제, TTS 톤, 성공 공식' },
         ]
+    },
+    {
+        id: 'saturday_special_week1',
+        category: '맘케어반 - 토요특강',
+        title: "토요 피드백 특강 1강 | 대본 분석과 재각색",
+        items: [
+            { id: 'saturday_feedback_1_1', title: '1강 1부: 대본 루틴과 실전 피드백 (상)', icon: 'MessageSquare', keywords: '대본 루틴, 피드백, 감동 콘텐츠, 차별화 전략, 와우 포인트' },
+            { id: 'saturday_feedback_1_2', title: '1강 2부: 메시지 파악과 차별화 전략 (하)', icon: 'Zap', keywords: '메시지 파악, 기획 의도, 시점 차별화, 클립 믹싱, 카테고리 분석' },
+            { id: 'saturday_feedback_1_3', title: '1강 3부: 소재 다각화와 틈새시장 공략', icon: 'Target', keywords: '국뽕 소재, 감동/스포츠, 동물 양념, 문화 차이, 틈새 게임 밈, 날먹 전략' },
+        ]
+    },
+    {
+        id: 'saturday_special_week2',
+        category: '맘케어반 - 토요특강',
+        title: "토요 피드백 특강 2강 | 대본 기획과 영상 연출",
+        items: [
+            { id: 'saturday_feedback_2_1', title: '2강 1부: 대본 중심의 역순 기획 핵심', icon: 'PenTool', keywords: '대본 중심 기획, 역순 기획, 와우 포인트, 사례 분석, 시장 흐름' },
+            { id: 'saturday_feedback_2_2', title: '2강 2부: 소재 발굴 심화와 수익화 마인드셋', icon: 'Compass', keywords: '일왕 채널 공략, 안 터진 영상, 수익화 마인드, 대본 유통, 틈새 시장' },
+        ]
     }
 ];
