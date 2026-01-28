@@ -67,6 +67,15 @@ window.seriesData = [
         ]
     },
     {
+        id: 'momcare_week4',
+        category: '맘케어반',
+        title: "맘케어반 4주차 | 시스템화 & 하이라이트 압축",
+        items: [
+            { id: 'momcare_week4_part1', title: '4주차 1부: 시스템화 전략과 압축 대본 비법', icon: 'Zap', keywords: '시스템화, 하이라이트 압축, TTS 제거, 재사용 우회, 채널 진단' },
+            { id: 'momcare_week4_part2', title: '4주차 2부: 영상 유형별 압축 & 다채널 수익화', icon: 'Layers', keywords: '대본 효율화, 유형별 전략, 일치율 회피, 다채널 수익화, 시스템화' },
+        ]
+    },
+    {
         id: 'saturday_special_week1',
         category: '맘케어반 - 토요특강',
         title: "토요 피드백 특강 1강 | 대본 분석과 재각색",

@@ -1,6 +1,6 @@
 # 콘텐츠 이관 표준 가이드 (Content Migration Standard)
 
-사용자가 소스 파일(Markdown 등)의 내용을 코드베이스(JS/HTML)로 "복구", "이관", "카피", 또는 "구현"해달라고 요청할 때 이 워크플로우를 따르십시오.
+마라하기 1기 쇼츠학개론 맘케어반 프리미엄반 4주차 강의 2부.md 사용자가 소스 파일(Markdown 등)의 내용을 코드베이스(JS/HTML)로 "복구", "이관", "카피", 또는 "구현"해달라고 요청할 때 이 워크플로우를 따르십시오.
 
 ---
 
@@ -18,6 +18,21 @@
 4.  **타 파일 작업 금지**: 지정된 파일(`js/contents.js` 등) 외에는 수정을 금지합니다.
 
 ---
+
+# Windows PowerShell Compatibility Rules
+You are operating on a Windows system using PowerShell. To avoid "CommandNotFoundException", follow these rules:
+1. Never use Unix-only commands. Use PowerShell equivalents:
+   - Instead of 'tail -n 100', use 'Get-Content <file> -Tail 100'
+   - Instead of 'head -n 20', use 'Get-Content <file> -TotalCount 20'
+   - Instead of 'grep "pattern"', use 'Select-String -Pattern "pattern"'
+   - Instead of 'ls -la', use 'ls -Force'
+   - Instead of 'rm -rf', use 'Remove-Item -Recurse -Force'
+   - Instead of 'mkdir -p', use 'New-Item -ItemType Directory -Force'
+2. Handling Korean Characters:
+   - Use '-Encoding UTF8' when reading/writing files via PowerShell if characters appear garbled.
+3. Path Handling:
+   - Always use absolute paths (e.g., C:\Users\...) to avoid path resolution errors.
+   ---
 
 ## 1. 🔍 데이터 처리 및 텍스트 표준 (Data & Text)
 
@@ -74,6 +89,7 @@
 
 ### B. 컴포넌트 활용
 - **Card**: 개별 전략이나 핵심 요소를 그룹화할 때 사용.
+- **Badge**: 섹션의 위계(Meta 정보)를 표시할 때 사용.
 - **Badge**: 섹션의 위계(Meta 정보)를 표시할 때 사용.
 - **InfoBox**: 주의사항이나 팁을 강조할 때 사용.
 - **대본/예시**: 별도의 Box 컨테이너(`bg-zinc-800 p-6`)에 격리하여 섞이지 않게 함.

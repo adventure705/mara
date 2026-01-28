@@ -7181,6 +7181,490 @@
         `;
     };
 
+    // --- Momcare Week 4 Part 1 Data ---
+    const momcareWeek4Part1Data = {
+        meta: {
+            week: "MOMCARE WEEK 4 - 1부",
+            title: "시스템화된 전략 &<br/><span class='text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400'>압축 대본 제작 비법</span>",
+            subtitle: "음성 합성(TTS) 제거와 <mark class='bg-blue-500/30 text-white px-2 rounded'>하이라이트 압축 방식</mark>으로 조회수 폭발 실전 전략 전수."
+        },
+        sections: [
+            {
+                id: "intro_trends",
+                title: "1. 강의 시작 전 안내 및 최신 트렌드",
+                subtitle: "퀀텀 점프(급격한 성장)를 위한 시스템 구축",
+                cards: [
+                    {
+                        title: "시스템화와 마인드셋",
+                        icon: "Target",
+                        color: "blue",
+                        items: [
+                            { label: "밀착 케어:", text: "30분 이상의 줌(Zoom) 미팅을 통해 <b class='text-blue-400'>강사와 밀착 진행</b>하며 성과 극대화 지향함." },
+                            { label: "조급함 경계:", text: "수익 인증에 휘둘리지 말고 <mark class='bg-blue-950 text-blue-200 px-1'>각자의 속도</mark>를 유지하며 정확한 개념 이해에 집중할 것." },
+                            { label: "연습 과정:", text: "현재 운영 채널은연습 과정이며, 빠르게 대본화(20~30분)하여 <b class='text-white underline decoration-blue-500'>개체수를 늘리는 시스템</b> 구축이 핵심임." }
+                        ]
+                    },
+                    {
+                        title: "유튜브 재사용 정책 변화",
+                        icon: "ShieldAlert",
+                        color: "red",
+                        items: [
+                            { label: "리스크 강화:", text: "재사용 정책이 가벼운 '감기'에서 <b class='text-red-400 font-bold'>'독감/코로나'</b> 수준으로 엄격해짐. 항소 실패 시 수익 정지 리스크 존재함." },
+                            { label: "TTS 제거 전략:", text: "일치율을 낮추기 위해 <mark class='bg-red-900/30 text-rose-200 px-1'>TTS를 빼고 자막/BGM</mark>만으로 몰입도를 높이는 전략 시도 권장함." },
+                            { label: "장기 자산화:", text: "항소 실패 시에도 90일마다 재항소가 가능하므로, 수익금을 <b class='text-white'>'장기 예금'</b> 개념으로 이해하고 포기하지 말 것." }
+                        ]
+                    },
+                    {
+                        title: "깡통 채널의 물리적 주의사항",
+                        icon: "AlertTriangle",
+                        color: "orange",
+                        items: [
+                            { label: "어뷰징 밴:", text: "한 기기에서 단기간(2~3일) 내 <mark class='bg-orange-950 text-orange-200 px-1'>4~6개 이상의 채널 생성 시</mark> 어뷰징 밴 확률 매우 높음." },
+                            { label: "신용 쌓기:", text: "유튜브의 신뢰를 얻기 위해 <b class='text-white'>최소 20~30개의 영상</b>을 꾸준히 업로드하며 시청자 반응 지표를 확보해야 함." },
+                            { label: "해결 방안:", text: "조회수가 아예 안 나올 경우 타인 기기나 계정으로 <b class='text-orange-400'>깡통 계정을 새로 생성</b>하여 환경을 초기화할 것." }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: "view_diagnosis",
+                title: "2. 조회수 구간별 채널 진단 및 대처",
+                subtitle: "조회수 저조는 영상의 문제가 아니라 채널의 결함일 확률이 높음",
+                cards: [
+                    {
+                        title: "저점 구간 진단 및 대처",
+                        icon: "Activity",
+                        color: "purple",
+                        items: [
+                            { label: "0~100 미만:", text: "내 영상의 문제보다 <b class='text-purple-400'>채널 결함</b>일 확률 높음. 즉시 채널 교체하고, 구매 계정은 강사에게 즉시 문의할 것." },
+                            { label: "100~1,000 미만:", text: "일명 <mark class='bg-purple-900/40 text-purple-200 px-1'>'억까(억지로 까임)'</mark> 구간. 영상에 확신 시 채널/영상 삭제 후 새 깡통에 업로드 시 100% 조회수 발생함." },
+                            { label: "자책 지양:", text: "조회수 미달은 채널 문제이므로 자책 금지. <b class='text-white'>영상 5개 정도</b>로 성과치를 확인 후 과감히 판단할 것." }
+                        ]
+                    },
+                    {
+                        title: "성장 구간 진단 및 판단",
+                        icon: "TrendingUp",
+                        color: "green",
+                        items: [
+                            { label: "5천~2만:", text: "영상이 <b class='text-white'>'맛이 부족'</b>한 상태. 분도적(분위기, 도파민, 정보, 재미) 요소가 대본에 있는지 점검하고 조미료 보강할 것." },
+                            { label: "3만 이상:", text: "기획과 연출이 검증된 <b class='text-green-400 font-bold'>우량 채널</b>. 강사 기준 첫 지표가 2.5만~3만 나오면 70% 성공 확률로 판단함." },
+                            { label: "버리기 기준:", text: "공식 적용 후에도 <mark class='bg-green-950 text-green-200 px-1'>1000~2500 미만</mark>의 성과 지속 시 과감히 채널을 버리고 새로 시작할 것." }
+                        ]
+                    }
+                ],
+                extraBox: {
+                    title: "실전 사례 피드백",
+                    text: "강사 최근 국뽕 영상은 올리자마자 <b class='text-blue-400'>30만 회</b> 돌파함. 기획만 잘하면 조회수는 채널 등급에 상관없이 터짐."
+                }
+            },
+            {
+                id: "routine_tech",
+                title: "3. 대본 루틴 및 기술적 대응",
+                subtitle: "효율성 극대화를 통한 멀티 채널 운영 기술",
+                cards: [
+                    {
+                        title: "대본 루틴 (30분 공식)",
+                        icon: "Clock",
+                        color: "zinc",
+                        items: [
+                            { label: "시간 마감:", text: "소재 추출부터 대본 완성까지 <b class='text-white underline decoration-blue-500'>절대 30분을 넘기지 말 것</b>. 100%가 아닌 80% 만족 시 즉시 업로드함." },
+                            { label: "기획 우위:", text: "영상 소스보다 <mark class='bg-zinc-800 text-white px-1'>대본과 기획력</mark>이 조회수에 지대한 영향을 미침을 명심할 것." },
+                            { label: "물량 확보:", text: "시간 대비 영상 1개 제작 대신 짧은 대본 연습으로 <b class='text-blue-400'>채널 개체수(Volume)</b>를 늘리는 것에 집중할 것." }
+                        ]
+                    },
+                    {
+                        title: "중복도 회피 기술",
+                        icon: "Cpu",
+                        color: "emerald",
+                        items: [
+                            { label: "구다리(구성) 변경:", text: "영상을 쪼개고 순서를 재조합하여 <b class='text-emerald-400'>데이터상의 지문</b>을 완전히 다르게 변형함." },
+                            { label: "키워드/픽셀 보정:", text: "단어 전면 교체와 미세한 <mark class='bg-emerald-950 text-emerald-200 px-1'>픽셀 값 조정</mark>을 통해 알고리즘 감시망을 완벽 회피할 것." },
+                            { label: "댓글 활용:", text: "단순 정보를 넘어 <b class='text-white'>댓글의 감정과 공감대</b>를 대본에 녹여 포텐셜을 극대화할 것." }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: "liquid_strategy",
+                title: "4. 하이라이트 압축 전략",
+                subtitle: "도파민의 정점만 남기는 초압축 '액기스' 연출법",
+                cards: [
+                    {
+                        title: "압축 전략의 핵심 원칙",
+                        icon: "Zap",
+                        color: "orange",
+                        items: [
+                            { label: "기승전결 탈피:", text: "서론을 제거하고 감정이 최고조인 <b class='text-orange-400 font-black'>'와우 포인트'</b>를 전진 배치하여 이탈 방지함." },
+                            { label: "15~20초 최적화:", text: "쇼츠 시청자는 <mark class='bg-orange-950 text-orange-200 px-1'>더 짧고 강력한 도파민</b>을 선호함. 가급적 20초 이내 제작 지향할 것." },
+                            { label: "멀티 채널 유지:", text: "정석 채널과 함께 압축 채널을 <b class='text-white underline'>멀티로 병행</b>하여 채널 점유율과 수익 안정성 확보할 것." }
+                        ]
+                    },
+                    {
+                        title: "인스타 BGM 형 포맷",
+                        icon: "Music",
+                        color: "pink",
+                        items: [
+                            { label: "사운드 중심:", text: "현장음과 BGM에 힘을 주고 <b class='text-pink-400 font-bold'>TTS를 과감히 제거</b>하여 몰입도와 차별성 확보함." },
+                            { label: "시각적 템플릿:", text: "하단 자막과 감성 클립 위주의 구성을 통해 <mark class='bg-pink-900/30 text-rose-200 px-1'>재사용 리스크 완벽 제거</mark> 가능함." },
+                            { label: "범용성:", text: "콘서트, 영드자, 정치, 스포츠 등 <b class='text-white'>모든 소재</b>를 이 포맷으로 변환하여 시스템화할 것." }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: "case_study_analysis",
+                title: "5. 실전 사례 및 실습 피드백",
+                subtitle: "소재별 와우 포인트 추출 및 압축 기법 분석",
+                cards: [
+                    {
+                        title: "공연/사건사고 사례",
+                        icon: "AlertCircle",
+                        color: "indigo",
+                        items: [
+                            { label: "콘서트 관객:", text: "돌발 행동 등 시각적 충격을 앞에 배치하고 15초 내외로 함축 시 <b class='text-indigo-300'>이탈률 0%</b>에 수렴함." },
+                            { label: "CCTV/경찰:", text: "상황 설명이 필요한 시니어 타켓 영상은 <mark class='bg-indigo-950 text-indigo-100 px-1'>원본 템포를 유지</mark>하되 임팩트 구간만 살릴 것." }
+                        ]
+                    },
+                    {
+                        title: "영드자/지식 테마",
+                        icon: "Film",
+                        color: "rose",
+                        items: [
+                            { label: "죽어야 사는 여자:", text: "51초 원본을 <b class='text-rose-400'>13~15초 액기스</b>로 압축. 영생 반전 자막 한 줄로 조회수 폭발 유도함." },
+                            { label: "699명 구웅:", text: "54초 분량을 <mark class='bg-rose-950 text-rose-100 px-1'>25초 BGM 형</mark>으로 함축. 웅장한 음악과 함께 감동 코드로만 짧게 연출함." },
+                            { label: "사과달팽이:", text: "지식형도 15~20초로 함축. 타격감 있는 정보 전달과 <b class='text-white'>찰떡 BGM</b> 조합이 핵심임." }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: "execution_process",
+                title: "6. 실행 프로세스 및 마인드셋",
+                subtitle: "절대 포기하지 않는 '하모된다' 무한 긍정 정신",
+                items: [
+                    { title: "48시간 볼륨 확대", text: "수익 극대화를 위해 주말/휴일에는 <b class='text-blue-400 underline'>물량 공세</b>를 통해 노출을 키우는 것이 지름길임." },
+                    { title: "실전 특강 연계", text: "구들장/찜질방 이슈를 바탕으로 <mark class='bg-zinc-800 text-white px-2 rounded'>맞춤형 피드백 특강</mark>을 임팩트 있게 주기적 개최함." },
+                    { title: "응축기와 점프", text: "헤매는 동안 기획력이 쌓이면 <b class='text-green-400'>퀀텀 점프</b>가 오며, 세상의 모든 영상이 수익 자산이 됨." }
+                ],
+                closing: "포기하지 마십시오. 기획력이 갖춰지면 <b class='text-white'>모든 영상이 당신의 수익원</b>이 됩니다."
+            }
+        ]
+    };
+
+    window.Contents.momcare_week4_part1 = () => {
+        const data = momcareWeek4Part1Data;
+
+        return html`
+            <div className="space-y-48 pb-60">
+                <!-- Header -->
+                <div className="text-center space-y-12 py-32 animate-fade-in">
+                    <${Badge} color="blue">${data.meta.week}<//>
+                    <h1 className="text-7xl lg:text-9xl font-black tracking-tighter leading-none text-white mb-8 drop-shadow-2xl" dangerouslySetInnerHTML=${{ __html: data.meta.title }}></h1>
+                    <p className="text-3xl lg:text-4xl text-zinc-200 max-w-6xl mx-auto leading-normal font-bold" dangerouslySetInnerHTML=${{ __html: data.meta.subtitle }}></p>
+                </div>
+
+                ${data.sections.map((section, sIdx) => html`
+                    <${Section} title=${section.title} subtitle=${section.subtitle}>
+                        <div className="space-y-12">
+                            ${section.cards && html`
+                                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                                    ${section.cards.map(card => html`
+                                        <${Card} title=${card.title} icon=${card.icon} color=${card.color}>
+                                            <ul className="space-y-6 text-xl lg:text-2xl">
+                                                ${card.items.map(item => html`
+                                                    <li className="flex items-start gap-4">
+                                                        <div className=${`mt-2 w-2 h-2 rounded-full shrink-0 bg-${card.color}-400`}></div>
+                                                        <span dangerouslySetInnerHTML=${{ __html: `<strong>${item.label}</strong> ${item.text}` }}></span>
+                                                    </li>
+                                                `)}
+                                            </ul>
+                                        <//>
+                                    `)}
+                                </div>
+                            `}
+                            
+                            ${section.items && html`
+                                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                                    ${section.items.map((item, idx) => html`
+                                        <div className="p-10 bg-zinc-900/50 rounded-[2.5rem] border border-zinc-800 hover:border-blue-500/30 transition-all flex flex-col gap-4 group">
+                                            <div className="w-12 h-12 bg-blue-600 rounded-2xl flex items-center justify-center text-white font-black text-2xl mb-2 shadow-lg group-hover:scale-110 transition-transform">${idx + 1}</div>
+                                            <strong className="text-2xl text-white font-black">${item.title}</strong>
+                                            <p className="text-zinc-300 text-xl font-medium leading-normal" dangerouslySetInnerHTML=${{ __html: item.text }}></p>
+                                        </div>
+                                    `)}
+                                </div>
+                            `}
+
+                            ${section.extraBox && html`
+                                <${InfoBox} title=${section.extraBox.title}>
+                                    <div dangerouslySetInnerHTML=${{ __html: section.extraBox.text }}></div>
+                                <//>
+                            `}
+
+                            ${section.closing && html`
+                                <div className="p-16 bg-gradient-to-br from-blue-900/20 via-zinc-900 to-black rounded-[4rem] border border-blue-500/20 text-center relative overflow-hidden">
+                                    <h4 className="text-4xl font-black text-white mb-8">오늘의 핵심 요약</h4>
+                                    <p className="text-3xl lg:text-4xl text-zinc-100 font-bold italic leading-tight max-w-5xl mx-auto break-keep italic" dangerouslySetInnerHTML=${{ __html: `"${section.closing}"` }}></p>
+                                </div>
+                            `}
+                        </div>
+                    <//>
+                `)}
+            </div>
+        `;
+    };
+
+    // --- Momcare Week 4 Part 2 Data ---
+    const momcareWeek4Part2Data = {
+        meta: {
+            week: "MOMCARE WEEK 4 - 2부",
+            title: "대본 효율화 및<br/><span class='text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-400'>영상 유형별 압축 전략</span>",
+            subtitle: "15~20초 압축 기술과 일치율 회피 심화 전략으로<br/><mark class='bg-emerald-500/30 text-white px-2 rounded'>다채널 수익 자동화</mark> 시스템 구축 로드맵 공유."
+        },
+        sections: [
+            {
+                id: "efficiency_trends",
+                title: "1. 대본 구성 효율화 및 트렌드 분석",
+                subtitle: "길이의 강박을 버리고 '날먹'의 효율을 극대화하는 법",
+                cards: [
+                    {
+                        title: "대본 구성의 융통성",
+                        icon: "Zap",
+                        color: "emerald",
+                        items: [
+                            { label: "길이 최소화:", text: "45~60초 분량에 집착하지 말고 <b class='text-emerald-400'>7~10초</b>의 짧은 영상으로도 충분히 수익 창출 가능함을 인지할 것." },
+                            { label: "압축적 편집:", text: "원본 영상이 50초라고 해서 반드시 다 쓸 필요 없음. <mark class='bg-emerald-950 text-emerald-200 px-1'>킬링 파트 15~20초</mark> 압축이 핵심임." },
+                            { label: "효율성 극대화:", text: "일치율을 벗기는 다양한 방법(장면 교체, 자막 양념, 픽셀 보정)을 활용하여 제작 시간을 획기적으로 단축할 것." }
+                        ]
+                    },
+                    {
+                        title: "최신 유튜브 생태계 분석",
+                        icon: "Activity",
+                        color: "blue",
+                        items: [
+                            { label: "콘텐츠 날먹화:", text: "점점 더 간결하고 효율적인 <b class='text-blue-400'>'공장형 제작'</b>이 트렌드이며, 일반 소재는 저작권 리스크가 비교적 낮음." },
+                            { label: "수질 관리(정화):", text: "유튜브가 <mark class='bg-blue-950 text-blue-100 px-1'>채널 개체수 정화</mark> 작업을 진행 중이나, 재사용 리스크에 겁낼 필요 없이 물량 공세 지속할 것." },
+                            { label: "항소 시장 변화:", text: "개념 없이 올려도 항소가 되던 시절은 끝남. 이제는 <b class='text-white'>정확한 '날먹' 기술</b>을 갖춘 채널만 살아남음." }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: "story_analysis",
+                title: "2. 감동 서사 및 영듣자(드라마) 전략",
+                subtitle: "서사의 재구성과 BGM 활용을 통한 몰입도 유도",
+                cards: [
+                    {
+                        title: "감동 서사 (댕댕이 무지개다리)",
+                        icon: "Heart",
+                        color: "rose",
+                        items: [
+                            { label: "원본 분석:", text: "천만 뷰 원본(조용해진 댕댕이)보다 <b class='text-rose-400'>수강생의 재구성 대본</b>(말수가 적어진 댕댕이의 마지막 인사)이 훨씬 감동적임." },
+                            { label: "연출 전략:", text: "댓글 내용을 활용하여 감정을 살리고, <mark class='bg-rose-950 text-rose-100 px-1'>감동적인 BGM</mark>만 깔고 장면을 따라가게 맞춰줄 것. TTS 없이도 연출 가능함." }
+                        ]
+                    },
+                    {
+                        title: "영듣자 (드라마 Suits 사례)",
+                        icon: "Film",
+                        color: "indigo",
+                        items: [
+                            { label: "데이터 기반:", text: "5개월 전 <b class='text-white'>2,000만 회</b> 조회수 기록한 벤치 영상. 영듣자는 고점이 높으나 밸런싱이 어려우므로 꾸준함이 필수임." },
+                            { label: "피드백:", text: "현장 사운드와 TTS 사이의 <mark class='bg-indigo-950 text-white px-1'>음량 밸런스</mark> 조절 실패 주의. 현장음이 살아있어야 대본의 맛이 삼." }
+                        ]
+                    }
+                ],
+                scripts: [
+                    {
+                        title: "영듣자(Suits) 하이라이트 압축 예시",
+                        content: "1. '내일부터 출근해요' 장면 전진 배치<br/>2. 중간에 일 잘하는 짤막한 장면들 삽입<br/>3. '어떻게 알았어요? 사망했대요', '그녀의 경력은 24년이었다' 대사로 마무리"
+                    }
+                ]
+            },
+            {
+                id: "case_studies_talent",
+                title: "3. 천재성 및 국뽕 소재 분석",
+                subtitle: "대본력 만렙의 비결과 타겟 맞춤형 커스터마이징",
+                cards: [
+                    {
+                        title: "암산 대회 (천재성 사례)",
+                        icon: "Star",
+                        color: "amber",
+                        items: [
+                            { label: "대본의 힘:", text: "23초 원본을 16초로 압축. <b class='text-amber-400'>'상상의 주판을 갈기고'</b>, '엇박자의 모습을 두드림' 등 자막 양념만으로 만렙 대본 완성함." },
+                            { label: "BGM 인코딩:", text: "<mark class='bg-amber-950 text-amber-200 px-1'>007 스타일</mark> 등 긴장감 음악 매칭 시 영상 느낌이 완전히 달라짐." },
+                            { label: "피날레:", text: "13번째 동률 상황을 '듣전(듣기 전쟁)'으로 묘사하며 임팩트 있게 마무리할 것." }
+                        ]
+                    },
+                    {
+                        title: "국뽕 소재 (KTX/부산 분실물)",
+                        icon: "ShieldCheck",
+                        color: "blue",
+                        items: [
+                            { label: "말투 교정:", text: "시니어 타켓 시 반말(짤채) 금지. <b class='text-blue-400 underline'>정중한 존댓말</b>('감탄을 하고 맙니다', '떠날 수 없다고 하는데요')로 수정 필수임." },
+                            { label: "타겟 미분리:", text: "국뽕 소재인데 젊은 층 감성으로 가면 <b class='text-red-400'>조회수 떡락</b>함. 유튜브 스튜디오 연령대 분석으로 타겟 핏감 맞출 것." },
+                            { label: "감정선 자극:", text: "IMF 극복 등 <mark class='bg-blue-950 text-blue-100 px-1'>한국인의 긍지</mark>를 건드리고, '무스 바르던 시절' 등의 유머 코드를 섞어 친밀감 확보함." },
+                            { label: "정치 콘텐츠:", text: "시니어 타겟 정치 소재는 <b class='text-white bg-black px-1 font-bold'>검은 배경</b>에 자막만 깔끔하게 넣는 '보수 채널' 정석 포맷 추천함." }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: "interview_quotes",
+                title: "4. 인터뷰 및 명언 일치율 탈피",
+                subtitle: "장면의 재조합과 클립 믹싱을 통한 완벽한 우회",
+                cards: [
+                    {
+                        title: "지식/인터뷰 날먹 전략",
+                        icon: "MessageCircle",
+                        color: "orange",
+                        items: [
+                            { label: "에피소드 쪼개기:", text: "미국 Z세대 기초 상식 등 잘 먹히는 소재 활용. 에피소드당 <b class='text-orange-400'>5~6초</b> 짧게 쪼개서 멀티로 생산할 것." },
+                            { label: "직관적 자막:", text: "복잡함 제거. <mark class='bg-orange-950 text-orange-200 px-1'>핵심 워딩</mark>만 자막으로 크게 강조하여 시각적 가독성을 극대화할 것." }
+                        ]
+                    },
+                    {
+                        title: "명언 콘텐츠 (김창욱 사례)",
+                        icon: "Split",
+                        color: "zinc",
+                        items: [
+                            { label: "클립 믹싱:", text: "화자 장면 사이사이에 <b class='text-white'>가요무대 박수 관객 짤</b> 등을 2~3초마다 섞어 시각적 지문을 완전히 비틀 것." },
+                            { label: "문장 재조합:", text: "순서를 바꾸거나 중간 구절을 생략해도 됨. <mark class='bg-zinc-800 text-white px-1'>A+C+B</mark> 식으로 조합하여 일치율 100% 미만 제작함." },
+                            { label: "2분할 화면:", text: "화면 분할 및 픽셀 값 조정으로 알고리즘 필터링을 완벽하게 우회할 것." }
+                        ]
+                    }
+                ]
+            },
+            {
+                id: "various_cases",
+                title: "5. 다채로운 사례별 '액기스' 연출법",
+                subtitle: "CCTV, 고양이, 예능, 영화 소재의 초압축 성공 공식",
+                cards: [
+                    {
+                        title: "동물 및 감동 CCTV",
+                        icon: "PawPrint",
+                        color: "green",
+                        items: [
+                            { label: "고양이 판테라:", text: "1차 시도 삭제, 2차 성공으로 바로 연결. <b class='text-green-400 font-bold'>15초 함축</b>과 재기발랄한 제목이 핵심임." },
+                            { label: "등록금 분실 사건:", text: "스리랑카 학생 사례. 원본 1분을 <b class='text-white underline'>51초</b>로 단축. 포옹/눈물 장면을 전진 배치하여 시청 지속 시간 확보함." }
+                        ]
+                    },
+                    {
+                        title: "예능/영화/지식",
+                        icon: "PlaySquare",
+                        color: "rose",
+                        items: [
+                            { label: "예능 (이창섭/추):", text: "159만~2,000만 뷰 기록 사례. 핵심 펀치라인만 <b class='text-rose-400'>각각 쪼개서</b> 2개 이상의 영상으로 양질의 컨텐츠 생산함." },
+                            { label: "영화 '점퍼':", text: "순간이동/은행 금고 등 도파민 테마만 추출. <mark class='bg-rose-950 text-rose-100 px-1'>15초</mark> 단위 압축 권장함." },
+                            { label: "지식형 (아바타/송):", text: "1,200만 조회수 사례. 단순 편집도 <b class='text-white'>감성 템플릿</b>과 제목('트로피는 아빠 거야')만 잘 쓰면 대박 터짐." }
+                        ]
+                    }
+                ],
+                scripts: [
+                    {
+                        title: "벌집 이주(지식형) 압축 대본 예시",
+                        content: "1. 양봉업자들이 현장에서 지키는 국룰이 있다고 함<br/>2. 수천 마리 벌 중 딱 한 놈만 찾으면 된다<br/>3. 그 녀석은 바로 여왕벌<br/>4. 여왕벌만 새집으로 옮겨두면 민족 대이동 시작 (이동 장면 노출)"
+                    }
+                ]
+            },
+            {
+                id: "automation_strategy",
+                title: "6. 수익 자동화 및 다채널 점유 전략",
+                subtitle: "개인 제작을 넘어 연봉 1억을 달성하는 시스템 구축법",
+                items: [
+                    { title: "2분 초안 루틴", text: "대본 쓰기에 겁먹지 말고 1~2분 만에 후루룩 초안을 쓰고 <b class='text-blue-400'>직관적인 양념</b>만 쳐서 루틴화할 것." },
+                    { title: "연봉 1억 로드맵", text: "수익 100만 창출 시 프리랜서 채용(60만 지출). 채널 5개 운영 시 월 1,250만 수익 발생. <mark class='bg-zinc-800 text-white px-2 rounded'>연봉 1억</mark> 시스템의 도달점임." },
+                    { title: "저품질 탈출", text: "조회수 2,000 미만 지속 시 <b class='text-red-400'>저품질 채널</b>로 간주. 과감히 버리고 수창(계정) 교체 및 에드센스 도킹 시스템 가동할 것." },
+                    { title: "에드센스 도킹", text: "유튜브용 에드센스 판매 시스템(1분 도킹 채널)을 통해 <b class='text-emerald-400 font-bold'>즉각적인 수익 창출</b> 로드맵을 선도할 것." }
+                ],
+                extraBox: {
+                    title: "향후 일정 및 숙제 안내",
+                    text: "<div class='space-y-4'><p><b>1. 화요일 특별 강의:</b> 텍사스 홀덤 소재 실전 분석 및 채널 운영 전략 하이라이트</p><p><b>2. 6주차 명사 초청:</b> 룰루쌤 초청 특강을 통한 심화 인사이트 전달 예정</p><p><b>3. 이번 주 숙제:</b> <mark class='bg-emerald-500/20 text-emerald-100 px-1'>수익형 블로그 및 쇼츠 사업 계획서</mark> 작성 후 기한 내 제출 필수</p></div>"
+                },
+                closing: "포기하지 말고 작업물을 뽑아내십시오. 대본의 시스템화가 이루어지면 <b class='text-white'>모든 영상이 당신의 자산</b>이 됩니다."
+            }
+        ]
+    };
+
+    window.Contents.momcare_week4_part2 = () => {
+        const data = momcareWeek4Part2Data;
+
+        return html`
+            <div className="space-y-48 pb-60">
+                <!-- Header -->
+                <div className="text-center space-y-12 py-32 animate-fade-in">
+                    <${Badge} color="green">${data.meta.week}<//>
+                    <h1 className="text-7xl lg:text-9xl font-black tracking-tighter leading-none text-white mb-8 drop-shadow-2xl" dangerouslySetInnerHTML=${{ __html: data.meta.title }}></h1>
+                    <p className="text-3xl lg:text-4xl text-zinc-200 max-w-6xl mx-auto leading-normal font-bold" dangerouslySetInnerHTML=${{ __html: data.meta.subtitle }}></p>
+                </div>
+
+                ${data.sections.map((section, sIdx) => html`
+                    <${Section} title=${section.title} subtitle=${section.subtitle}>
+                        <div className="space-y-12">
+                            ${section.cards && html`
+                                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                                    ${section.cards.map(card => html`
+                                        <${Card} title=${card.title} icon=${card.icon} color=${card.color}>
+                                            <ul className="space-y-6 text-xl lg:text-2xl">
+                                                ${card.items.map(item => html`
+                                                    <li className="flex items-start gap-4">
+                                                        <div className=${`mt-2 w-2 h-2 rounded-full shrink-0 bg-${card.color}-400`}></div>
+                                                        <span dangerouslySetInnerHTML=${{ __html: `<strong>${item.label}</strong> ${item.text}` }}></span>
+                                                    </li>
+                                                `)}
+                                            </ul>
+                                        <//>
+                                    `)}
+                                </div>
+                            `}
+
+                            ${section.scripts && html`
+                                <div className="space-y-8">
+                                    ${section.scripts.map(script => html`
+                                        <div className="bg-zinc-800/80 p-10 rounded-[2.5rem] border border-zinc-700 relative overflow-hidden group">
+                                            <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-100 transition-opacity">
+                                                <${LucideIcon} name="FileText" size=${48} />
+                                            </div>
+                                            <h5 className="text-2xl font-black text-white mb-6 flex items-center gap-2">
+                                                <span className="w-2 h-8 bg-green-500 rounded-full"></span>
+                                                ${script.title}
+                                            </h5>
+                                            <div className="text-xl lg:text-2xl text-zinc-300 leading-relaxed bg-black/30 p-8 rounded-2xl border border-white/5" dangerouslySetInnerHTML=${{ __html: script.content }}></div>
+                                        </div>
+                                    `)}
+                                </div>
+                            `}
+                            
+                            ${section.items && html`
+                                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                                    ${section.items.map((item, idx) => html`
+                                        <div className="p-10 bg-zinc-900/50 rounded-[2.5rem] border border-zinc-800 hover:border-emerald-500/30 transition-all flex flex-col gap-4 group">
+                                            <div className="w-12 h-12 bg-emerald-600 rounded-2xl flex items-center justify-center text-white font-black text-2xl mb-2 shadow-lg group-hover:scale-110 transition-transform">${idx + 1}</div>
+                                            <strong className="text-2xl text-white font-black">${item.title}</strong>
+                                            <p className="text-zinc-300 text-xl font-medium leading-normal" dangerouslySetInnerHTML=${{ __html: item.text }}></p>
+                                        </div>
+                                    `)}
+                                </div>
+                            `}
+
+                            ${section.extraBox && html`
+                                <${InfoBox} title=${section.extraBox.title}>
+                                    <div dangerouslySetInnerHTML=${{ __html: section.extraBox.text }}></div>
+                                <//>
+                            `}
+
+                            ${section.closing && html`
+                                <div className="p-16 bg-gradient-to-br from-emerald-900/20 via-zinc-900 to-black rounded-[4rem] border border-emerald-500/20 text-center relative overflow-hidden">
+                                    <h4 className="text-4xl font-black text-white mb-8">오늘의 핵심 요약</h4>
+                                    <p className="text-3xl lg:text-4xl text-zinc-100 font-bold italic leading-tight max-w-5xl mx-auto break-keep italic" dangerouslySetInnerHTML=${{ __html: `"${section.closing}"` }}></p>
+                                </div>
+                            `}
+                        </div>
+                    <//>
+                `)}
+            </div>
+        `;
+    };
+
     // Expose Data for Search (Full-Text Search Support)
     window.LectureData = {
         lecture1_part1: lecture1Part1Data, // Week 1 Part 1
@@ -7204,7 +7688,9 @@
         saturday_feedback_1_2: saturdayFeedbackPart2Data,
         saturday_feedback_1_3: saturdayFeedbackPart3Data,
         saturday_feedback_2_1: saturdayFeedback2Part1Data,
-        saturday_feedback_2_2: saturdayFeedback2Part2Data
+        saturday_feedback_2_2: saturdayFeedback2Part2Data,
+        momcare_week4_part1: momcareWeek4Part1Data,
+        momcare_week4_part2: momcareWeek4Part2Data
     };
 })();
 

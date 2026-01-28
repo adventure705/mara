@@ -1,0 +1,39 @@
+# Windows PowerShell Compatibility & Error Prevention
+
+You are currently working in a **Windows environment** with **PowerShell**.
+To avoid `CommandNotFoundException` (like the `tail` error) and ensure smooth operation, follow these rules strictly:
+
+## 1. 🚫 Never Use Unix/Linux Commands
+The following commands will fail in this environment. Use the PowerShell equivalents instead:
+
+- **VIEW LAST LINES**: 
+  - ❌ `tail -n 100 file.js`
+  - ✅ `Get-Content file.js -Tail 100`
+- **VIEW FIRST LINES**:
+  - ❌ `head -n 20 file.js`
+  - ✅ `Get-Content file.js -TotalCount 20`
+- **SEARCH TEXT**:
+  - ❌ `grep "search_term" file.js`
+  - ✅ `Select-String -Pattern "search_term" -Path file.js`
+- **LIST FILES**:
+  - ❌ `ls -la`
+  - ✅ `ls -Force` or `Get-ChildItem -Force`
+- **DELETE DIRECTORY**:
+  - ❌ `rm -rf dir_name`
+  - ✅ `Remove-Item -Recurse -Force dir_name`
+- **CREATE DIRECTORY**:
+  - ❌ `mkdir -p path/to/dir`
+  - ✅ `New-Item -ItemType Directory -Force path/to/dir`
+
+## 2. 🛡️ Handle Encoding (Korean Support)
+PowerShell output may contain Korean characters. If output appears garbled:
+- Use `-Encoding UTF8` when reading or writing files with PowerShell cmdlets.
+- Example: `Get-Content file.js -Encoding UTF8`
+
+## 3. 🔍 Path Consistency
+- Always use **Absolute Paths** (e.g., `c:\Users\...\file.js`).
+- Use backslashes `\` for Windows paths, though PowerShell often accepts forward slashes `/`, absolute paths are safer.
+
+## 4. 🤖 AI Self-Correction
+Before running any terminal command, check: "Is this a Unix command? If so, what is the PowerShell equivalent?"
+Do not assume `git bash` or `coreutils` are installed unless verified with `Get-Command`.
